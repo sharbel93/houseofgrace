@@ -1,0 +1,1 @@
+<p style="background-color: #0000F0">my footer</p>
