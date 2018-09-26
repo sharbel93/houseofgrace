@@ -1,0 +1,63 @@
+
+.animated  {
+    -webkit-animation-duration : 3s  ;
+    animation-duration : 3s  ;
+
+    -webkit-animation-delay : 500ms  ;
+    animation-delay : 500ms  ;
+}
+
+.animate-out {
+    -webkit-animation-delay : 0ms  ;
+    animation-delay : 0ms  ;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.owl-item {
+    display: table;
+}
+
+.owl-carousel .item {
+    height: 80vh;
+    /*background-color: #fc0;*/
+    /*display: inline;*/
+    vertical-align: middle;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    line-height: 35px;
+    height: 35px;
+    text-align: center;
+    padding: 0 20px;
+    width: auto;
+    background-color: #000;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*.slideBackgroundImage{*/
+    /*background-image: url('../images/pic.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    /*position: relative;;*/
+/*}*/
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background-color: #008ff0;
+    /*opacity: 0.4;*/
+}
+
+
