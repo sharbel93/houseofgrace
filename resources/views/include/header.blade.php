@@ -3,7 +3,7 @@
         <div class="col-md-12">
             <nav class="navbar navbar-expand-sm bg-transparent ">
                 <a class="navbar-brand" href="{{ url('/')  }} " alt="House of Grace - Eldoret">
-                    <img src="{{ asset('images/hog-logo.jpg') }}" width="90" height="90"  alt="">
+                    <img src="{{ asset('images/logo.png') }}" width="90" height="90"  alt="">
                 </a>
                 <button class="navbar-toggler "  type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo01"

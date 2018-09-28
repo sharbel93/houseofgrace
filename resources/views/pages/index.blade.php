@@ -6,7 +6,6 @@
         <div class="item " >
             <img src="{{asset('images/d.jpg')}}">
             <div class="bottom-left">
-
                 <h4  data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">Slide 1</h4>
                 <h6 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
                     Cras a elementum dolor. Praesent aliquam sapien ac eros semper ullamcorper. Sed imperdiet enim at
@@ -15,11 +14,9 @@
 
             </div>
         </div>
-
         <!-- second slide-->
         <div class="item">
             <img src="{{asset('images/d.jpg')}}">
-
             <div class="bottom-left">
                 <h4  data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">Slide 2</h4>
                 <h6 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
@@ -27,10 +24,8 @@
                     consectetur adipiscing elit. Nunc id dolor pulvinar, mollis orci vitae, molestie elit.
                     Maecenas scelerisque ipsum nibh, id imperdiet nulla lobortis nec.
                 </h6>
-
             </div>
         </div>
-
         <!-- third slide -->
         <div class="item">
             <img src="{{asset('images/d.jpg')}}">
@@ -97,18 +92,16 @@
         $(document).ready(function (){
             // Declare Carousel jquery object
             var owl = $('.owl-carousel');
-
             // Carousel initialization
             owl.owlCarousel({
                 loop: true,
-                margin:0,
+                // margin:0,
                 navSpeed:500,
                 nav:false,
                 autoplay: true,
                 rewind: true,
                 dots: false,
                 items: 1});
-
 
             // add animate.css class(es) to the elements to be animated
             function setAnimation ( _elem, _InOut ) {
@@ -144,12 +137,12 @@
             })
 
             owl.on('translated.owl.carousel', function(event) {
-                console.log (event.item.index, event.page.count);
+                // console.log (event.item.index, event.page.count);
 
                 if (event.item.index == (event.page.count - 1))  {
                     if (round < 1) {
-                        round++
-                        console.log (round);
+                        round++;
+                        // console.log (round);
                     } else {
                         owl.trigger('stop.owl.autoplay');
                         var owlData = owl.data('owl.carousel');
