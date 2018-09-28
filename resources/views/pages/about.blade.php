@@ -1,5 +1,18 @@
 @extends('layouts.app')
 @section('content')
+    <!--=================================    BREADCRUMBS BEGIN     ===============================-->
+    <ul id="breadcrumbs-one">
+        <li><a href="">Lorem ipsum</a></li>
+        <li><a href="">Vivamus nisi eros</a></li>
+        <li><a href="">Nulla sed lorem risus</a></li>
+        <li><a href="">Nam iaculis commodo</a></li>
+        <li><a href="" class="current">Current crumb</a></li>
+    </ul>
+
+    <!--=================================    BREADCRUMBS END     ===============================-->
+
+
+    <!--=================================    ABOUT BEGIN     ===============================-->
     <div class="container">
         <div class="row">
             <div class="col-md-4">
@@ -66,4 +79,6 @@
             </div>
         </div>
     </div>
+    <!--=================================    ABOUT END     ===============================-->
+
 @endsection

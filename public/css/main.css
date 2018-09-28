@@ -1,40 +1,24 @@
-/*
-***
-***********************************MAIN BODY
-***
-*/
-
-html {
-    /*background: lightgrey;*/
-    height: 100%;
-    overflow: hidden;
-}
+/*font: font-style font-variant font-weight font-size/line-height font-family;*/
+/***===================MAIN BODY SECTION BEGIN========================***/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro');
+html,
 body {
-    height: 100%;
-    /*background: whitesmoke;*/
-    overflow: scroll;
-    width: 100%;
-    margin: 0 auto;
-    /*padding: 3em;*/
-    font: 100%/1.4 serif;
-    border: 1px solid rgba(0,0,0,0.25)
-}
-body::-webkit-scrollbar {
-    width: 1em;
-}
-body::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
-body::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Source Sans Pro', sans-serif;*/
+    overflow-x: hidden;
+    color: #000;
+    -ms-overflow-style: scrollbar;
+    -webkit-font-smoothing: antialiased;
 }
 
-/*
-***
-***********************************SLIDER SECTION
-***
-*/
+.bannertitle h3 {
+    margin: 50px 0px 20px 0px;
+    padding: 30px 0px 30px 0px;
+}
+/***===================MAIN BODY SECTION END========================***/
+
+
+/***===================SLIDER SECTION BEGIN========================***/
 .animated  {
     -webkit-animation-duration : 3s  ;
     animation-duration : 3s  ;
@@ -46,12 +30,8 @@ body::-webkit-scrollbar-thumb {
     -webkit-animation-delay : 0ms  ;
     animation-delay : 0ms  ;
 }
-/*.owl-item {*/
-    /*display: table;*/
-/*}*/
 .owl-carousel .item {
     min-height: 80vh;
-    /*background-color: #fc0;*/
     display:flex;
     vertical-align: middle;
     text-align: center;
@@ -67,50 +47,82 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: #fff;
 }
-/*.slideBackgroundImage{*/
-/*background-image: url('../images/pic.jpg');*/
-/*background-repeat: no-repeat;*/
-/*background-position: center;*/
-/*position: relative;;*/
-/*}*/
 .bottom-left {
     position: absolute;
     bottom: 8px;
-    left: 16px;
-    background-color: #008ff0;
-    /*opacity: 0.4;*/
+    color: #fff;
+    left: 150px;
+    min-width: 30%;
+    line-height: 20em;
+    background: rgba(100, 149, 237, 0.6);
+    border-radius: 50px 50px 50px 50px;
+    /*background-color: #008ff0;*/
 }
 
-/*
-***
-***********************************SERVICES SECTION
-***
-*/
+.bottom-left .slidertextone {
+    font: italic 4.5em 'Source Sans Pro', sans-serif;
+    color: white;
+    width: 100%;
+    text-align: left;
+    text-shadow: 2px 2px 4px #000000;
+}
 
-/*
-***
-***********************************EVENTS SECTION
-***
-*/
+.bottom-left .slidertexttwo {
+    font: italic 4.5em 'Source Sans Pro', sans-serif;
+    color: white;
+    text-align: right;
+    text-wrap: normal;
+    text-shadow: 2px 2px 4px #000000;
+    padding-right: 8px;
+}
+/***===================SLIDER SECTION END========================***/
 
-/*
-***
-***********************************LOCATION SECTION
-***
-*/
 
-/*
-***
-***********************************BREADCRUMBS SECTION
-***
-*/
 
-/*
-***
-***********************************ABOUT SECTION
-***
-*/
+/***===================SERVICES SECTION BEGIN========================***/
+.services {
+    color: #fff;
+    background-color: #2a2a2a;
+}
+.services h4 {
+    padding: 15px;
+    margin: 50px 0px 50px 0px;
+}
+.services ul {
+    list-style-type: none;
+}
+.services ul li {
+    text-align: left;
+}
+.services h4:after {
+    background: none repeat scroll 0 0 #ffffff;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 1px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+/***===================SERVICES SECTION END========================***/
 
+
+/***===================EVENTS SECTION BEGIN========================***/
+.events {
+    margin: 50px 0px 50px 0px;
+    padding: 30px 0px 30px 0px;
+}
+/***===================EVENTS SECTION END========================***/
+
+/***===================LOCATION SECTION BEGIN========================***/
+
+/***===================LOCATION SECTION END========================***/
+
+/***===================BREADCRUMBS SECTION BEGIN========================***/
+
+/***===================BREADCRUMBS SECTION END========================***/
+
+/***===================ABOUT SECTION BEGIN========================***/
 .about {
     /*color: #efedef;*/
     /*background: #2196f3;*/
@@ -188,11 +200,35 @@ select:focus {
 .tabs .tab-2:last-child [type="radio"]:checked + div {
     margin-left: -100%; }
 
-/*
-***
-***********************************
-***
-*/
+
+/***===================ABOUT SECTION END========================***/
+
+/***===================FOOTER SECTION BEGIN========================***/
+.footer  {
+
+    margin: 50px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
+    color: #fff;
+    background-color: #2a2a2a;
+}
+
+.copyright{
+    padding-top: 50px;
+}
+
+.copyright p::before {
+    background: none repeat scroll 0 0 #ffffff;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 1px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+/***===================FOOTER SECTION END========================***/
+
+
 
 
 

@@ -6,36 +6,49 @@
         <div class="item " >
             <img src="{{asset('images/d.jpg')}}">
             <div class="bottom-left">
-                <h4  data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">Slide 1</h4>
-                <h6 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
-                    Cras a elementum dolor. Praesent aliquam sapien ac eros semper ullamcorper. Sed imperdiet enim at
-                    sodales suscipit. Aenean eget faucibus ipsum.
-                </h6>
 
+                <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
+                    Powerful
+                </div>
+                <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
+                    Sermons
+                </div>
             </div>
         </div>
         <!-- second slide-->
         <div class="item">
             <img src="{{asset('images/d.jpg')}}">
             <div class="bottom-left">
-                <h4  data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">Slide 2</h4>
-                <h6 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
-                    Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit. Nunc id dolor pulvinar, mollis orci vitae, molestie elit.
-                    Maecenas scelerisque ipsum nibh, id imperdiet nulla lobortis nec.
-                </h6>
+                <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
+                    Heart of
+                </div>
+                <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
+                    Worship
+                </div>
             </div>
         </div>
         <!-- third slide -->
         <div class="item">
             <img src="{{asset('images/d.jpg')}}">
             <div class="bottom-left">
-                <h4 data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">Slide 3</h4>
-                <h6 data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
-                    Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit. Nunc id dolor pulvinar, mollis orci vitae, molestie elit. Maecenas
-                    scelerisque ipsum nibh, id imperdiet nulla lobortis nec.
-                </h6>
+                <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
+                    Blast Youth
+                </div>
+                <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
+                     Ministry
+                </div>
+            </div>
+        </div>
+        <!-- fourth slide -->
+        <div class="item">
+            <img src="{{asset('images/d.jpg')}}">
+            <div class="bottom-left">
+                <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
+                    Dynamic Children
+                </div>
+                <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
+                                 Ministry
+                </div>
             </div>
         </div>
     </div>
@@ -43,37 +56,63 @@
 
 
     <!-- =========================== SERVICES BEGIN  =========================== -->
+<div class="bannertitle">
     <div class="row">
-        <div class="col-md-6">
-            <h3>Sunday services</h3>
-            <ul>
-                <li>Prayer Service : 7:00am - 8:00am</li>
-                <li>The Journey : 8:00am - 8:50am</li>
-                <li>Family Service : 9:00am - 12:00pm</li>
-                <li>Oasis of Grace Childrens Church : 9:00am - 12:00pm</li>
-
-            </ul>
-
-        </div>
-        <div class="col-md-6">
-            <h3>Other services</h3>
-            <ul>
-                <li>Blast Youth Service : Every fortnight 3:30pm - 6:00pm</li>
-                <li>Prayer BootCamp : Wednesdays 5:30pm - 7:30pm</li>
-                <li>Ladies Prayer Meeting: Tuesdays 5:00pm - 6:00pm</li>
-                <li>Throne Room Experience(TRE): 2nd Friday of the month 6:00pm - 8:00pm</li>
-            </ul>
+        <div class="col-md-12">
+            <h3 class="text-center">Our Services</h3>
         </div>
     </div>
+</div>
+
+    <section class="services">
+
+    <div class="container">
+
+        <div class="row ">
+                <div class="col-md-6 ">
+                    <h4 class="text-center">Sunday services</h4>
+                    <ul>
+                        <li>Prayer Service : 7:00am - 8:00am</li>
+                        <li>The Journey : 8:00am - 8:50am</li>
+                        <li>Family Service : 9:00am - 12:00pm</li>
+                        <li>Oasis of Grace Childrens Church : 9:00am - 12:00pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-center">Other services</h4>
+                    <ul>
+                        <li>Blast Youth Service : Every fortnight 3:30pm - 6:00pm</li>
+                        <li>Prayer BootCamp : Wednesdays 5:30pm - 7:30pm</li>
+                        <li>Ladies Prayer Meeting: Tuesdays 5:00pm - 6:00pm</li>
+                        <li>Throne Room Experience(TRE): &nbsp;<br> 2nd Friday of the month 6:00pm - 8:00pm</li>
+                    </ul>
+                </div>
+    </div>
+    </div>
+    </section>
     <!-- =========================== SERVICES END  =========================== -->
 
 
     <!-- =========================== UPCOMING EVENTS BEGIN  =========================== -->
-    <div class="row ">
-        <div class="col-md-12">
-            <div class="h3">Events</div>
+    <div class="bannertitle">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center">Events</h3>
+            </div>
         </div>
     </div>
+    <section class="events">
+        <div class="container">
+
+            <div class="row ">
+                <div class="col-md-12">
+                    <div>
+                        <p> Will be uploaded soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- =========================== UPCOMING EVENTS END  =========================== -->
 
