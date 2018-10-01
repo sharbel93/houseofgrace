@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'House of Grace Church - Eldoret') }}</title>
+    <title>{{ config('app.name', 'House of Grace Church - Eldoret') }} @yield('title')</title>
 
     <!-- Fonts -->
     {{--<link rel="dns-prefetch" href="https://fonts.gstatic.com">--}}

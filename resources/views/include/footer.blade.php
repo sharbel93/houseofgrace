@@ -70,11 +70,15 @@
         </div>
         <!-- =========================== FOOTER END =========================== -->
         <!-- =========================== COPYRIGHT START =========================== -->
-        <div class="copyright">
-            <p></p>
-        </div>
+
+
             <div class="row">
                 <div class="col-md-12 text-center">
+
+                    <div class="copyright">
+                        <p></p>
+                    </div>
+                    <small> P.O.Box 1675-30100 | Office line:  0701945418</small>
                     <p>
                     <small>
                     &copy; Copyright 2018 | House Of Grace Church Eldoret | All Rights Reserved

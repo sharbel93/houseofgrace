@@ -59,7 +59,7 @@
 <div class="bannertitle">
     <div class="row">
         <div class="col-md-12">
-            <h3 class="text-center">Our Services</h3>
+            <h3 class=" text-center"><span></span>OUR SERVICES</h3>
         </div>
     </div>
 </div>
@@ -69,22 +69,28 @@
     <div class="container">
 
         <div class="row ">
-                <div class="col-md-6 ">
-                    <h4 class="text-center">Sunday services</h4>
+                <div class="col-md-6 mb-2">
+                    <h4 class="text-center">SUNDAY SERVICES</h4>
                     <ul>
-                        <li>Prayer Service : 7:00am - 8:00am</li>
-                        <li>The Journey : 8:00am - 8:50am</li>
-                        <li>Family Service : 9:00am - 12:00pm</li>
-                        <li>Oasis of Grace Childrens Church : 9:00am - 12:00pm</li>
+                        <li><span>Prayer Service:</span> <span class="float-right mr-3">7:00am - 8:00am</span> </li>
+                        <li><span>The Journey :</span> <span class="float-right mr-3">8:00am - 8:50am</span></li>
+                        <li><span>Family Service :</span><span class="float-right mr-3"> 9:00am - 12:00pm</span></li>
+                        <li><span>Oasis of Grace Childrens Church :</span><span class="float-right mr-3">9:00am -
+                                12:00pm</span> </li>
                     </ul>
                 </div>
-                <div class="col-md-6">
-                    <h4 class="text-center">Other services</h4>
+                <div class="col-md-6 ">
+                    <h4 class="text-center">OTHER SERVICES</h4>
                     <ul>
-                        <li>Blast Youth Service : Every fortnight 3:30pm - 6:00pm</li>
-                        <li>Prayer BootCamp : Wednesdays 5:30pm - 7:30pm</li>
-                        <li>Ladies Prayer Meeting: Tuesdays 5:00pm - 6:00pm</li>
-                        <li>Throne Room Experience(TRE): &nbsp;<br> 2nd Friday of the month 6:00pm - 8:00pm</li>
+                        <li><span>Blast Youth Service :</span> <span class="float-right mr-3">Every fortnight 3:30pm -
+                                6:00pm</span></li>
+                        <li><span>Prayer BootCamp :</span> <span class="float-right mr-3">Wednesdays 5:30pm -
+                                7:30pm</span></li>
+                        <li><span>Ladies Prayer Meeting:</span> <span class="float-right mr-3">Tuesdays 5:00pm -
+                                6:00pm</span> </li>
+                        <li><span>Throne Room Experience(TRE):</span>  <span class="float-right mr-3">2nd Friday
+                            </span></li>
+                        <li><span class="float-right mr-3">Every month 6:00pm - 8:00pm</span></li>
                     </ul>
                 </div>
     </div>
@@ -97,13 +103,12 @@
     <div class="bannertitle">
         <div class="row">
             <div class="col-md-12">
-                <h3 class="text-center">Events</h3>
+                <h3 class="text-center">EVENTS</h3>
             </div>
         </div>
     </div>
     <section class="events">
         <div class="container">
-
             <div class="row ">
                 <div class="col-md-12">
                     <div>
@@ -146,11 +151,12 @@
             function setAnimation ( _elem, _InOut ) {
                 // Store all animationend event name in a string.
                 // cf animate.css documentation
-                var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                const animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend ' +
+                    'animationend';
 
                 _elem.each ( function () {
-                    var $elem = $(this);
-                    var $animationType = 'animated ' + $elem.data( 'animation-' + _InOut );
+                    const $elem = $(this);
+                    const $animationType = 'animated ' + $elem.data( 'animation-' + _InOut );
 
                     $elem.addClass($animationType).one(animationEndEvent, function () {
                         $elem.removeClass($animationType); // remove animate.css Class at the end of the animations
@@ -160,17 +166,17 @@
 
 // Fired before current slide change
             owl.on('change.owl.carousel', function(event) {
-                var $currentItem = $('.owl-item', owl).eq(event.item.index);
-                var $elemsToanim = $currentItem.find("[data-animation-out]");
+                const $currentItem = $('.owl-item', owl).eq(event.item.index);
+                const $elemsToanim = $currentItem.find("[data-animation-out]");
                 setAnimation ($elemsToanim, 'out');
             });
 
 // Fired after current slide has been changed
-            var round = 0;
+            const round = 0;
             owl.on('changed.owl.carousel', function(event) {
 
-                var $currentItem = $('.owl-item', owl).eq(event.item.index);
-                var $elemsToanim = $currentItem.find("[data-animation-in]");
+                const $currentItem = $('.owl-item', owl).eq(event.item.index);
+                const $elemsToanim = $currentItem.find("[data-animation-in]");
 
                 setAnimation ($elemsToanim, 'in');
             })
@@ -184,7 +190,7 @@
                         // console.log (round);
                     } else {
                         owl.trigger('stop.owl.autoplay');
-                        var owlData = owl.data('owl.carousel');
+                        const owlData = owl.data('owl.carousel');
                         owlData.settings.autoplay = false; //don't know if both are necessary
                         owlData.options.autoplay = false;
                         owl.trigger('refresh.owl.carousel');

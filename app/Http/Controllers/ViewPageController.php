@@ -43,4 +43,51 @@ class ViewPageController extends Controller
     public function getSeniorPastor() {
         return view('pages.seniorpastor');
     }
+
+    public function getManPower() {
+        return view('pages.manpower');
+    }
+
+    public function getWomenOfWorth() {
+        return view('pages.wow');
+    }
+
+    public function getBlastYouth() {
+        return view('pages.blast');
+    }
+
+    public function getOasisGrace() {
+        return view('pages.oasis');
+    }
+
+    public function getThroneRoom() {
+        return view('pages.throne');
+    }
+
+    public function getGraceGroups() {
+        return view('pages.gracegroup');
+    }
+
+    public function getFocusFamily() {
+        return view('pages.focusfamily');
+    }
+
+    public function getCareFollowUp() {
+        return view('pages.care');
+    }
+
+    public function getTheJourney() {
+        return view('pages.journey');
+    }
+
+    public function getLeaveandCleave() {
+        return view('pages.leaveandcleave');
+    }
+
+    public function getServetheLord() {
+        return view('pages.servethelord');
+    }
+
+
+
 }
