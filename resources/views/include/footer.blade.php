@@ -2,15 +2,24 @@
 <section class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <h4>Location</h4>
-                <p> <small>
-                    House of Grace Eldoret is located in Kapsoya, opposite The Noble Hotel, a few meters from the
-                    Nairobi – Eldoret Highway.
-                    </small>
-                </p>
+            <div class="col-md-12 col-lg-3">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                    <span>House Of Grace Church - Eldoret</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <h4>Location</h4>
+                        <p> <small>
+                                House of Grace Eldoret is located in Kapsoya, opposite The Noble Hotel, a few meters from the
+                                Nairobi – Eldoret Highway.
+                            </small>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-3">
+            <div class=" col-md-12 col-lg-3">
                 <h4>Our Vision</h4>
                 <p>
                     <small>
@@ -21,9 +30,9 @@
                     </small>
                 </p>
             </div>
-            <div class="col-md-3">
+            <div class=" col-md-12 col-lg-3">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-lg-12">
                         <h4>Our Mission</h4>
                         <p>
                             <small>
@@ -35,7 +44,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 col-lg-12">
                         <h4>Ministry Motto</h4>
                         <p>
                             <small>
@@ -45,7 +54,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class=" col-md-12 col-lg-3">
                 <div class="row">
                     <div class="col-md-12">
                         <h4>Ministry Slogan</h4>
@@ -57,8 +66,8 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-12">
+                <div class="row social-icons">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <h4>Connect With Us</h4>
                         <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
                         <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
@@ -73,7 +82,7 @@
 
 
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 col-lg-12 text-center">
 
                     <div class="copyright">
                         <p></p>
@@ -82,8 +91,10 @@
                     <p>
                     <small>
                     &copy; Copyright 2018 | House Of Grace Church Eldoret | All Rights Reserved
-                    </small>
+                    </small> <br><small>Developed by <a href="#">sharbel chris</a></small>
                     </p>
+
+
                 </div>
             </div>
 

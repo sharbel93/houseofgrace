@@ -2,18 +2,26 @@
 @section('content')
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
     <div class="container">
-        <div class="row">
-                <div class="col-md-6 link">
-                    <p>ABOUT US</p>
+        <div class="row breadcrumb-wrap " >
+
+            <div class="breadcrumb-text">
+                <div class="row">
+                    <div class="col-xs-12 col-12 col-sm-12 col-md-6 col-lg-6  link">
+                        <p>ABOUT US</p>
+                    </div>
+                    <div class="col-xs-12 col-12 col-sm-12 col-md-6 col-lg-6 ">
+                        <div class="breadcrumbstop">
+                            <ul id="breadcrumbs-two">
+                                <li><a href="{{url('/')}}">Home</a></li>
+                                <li><a href="" class="current"><small>About Us</small></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            <div class="col-md-6">
-                <div class="breadcrumbstop">
-                    <ul id="breadcrumbs-two">
-                        <li><a href="">Home</a></li>
-                        <li><a href="" class="current">About Us</a></li>
-                    </ul>
-                </div>
+
             </div>
+
+
         </div>
     </div>
     <!--=================================    BREADCRUMBS END     ===============================-->
@@ -22,26 +30,31 @@
     <!--=================================    ABOUT BEGIN     ===============================-->
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 about-carousel">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="{{asset('images/pic2.jpg')}}" alt="first pic">
+                            <img class="d-block w-100" src="{{asset('images/about.jpg')}}" alt="first pic">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="{{asset('images/pic3.jpg')}}" alt="Second pic">
+                            <img class="d-block w-100" src="{{asset('images/about3.jpg')}}" alt="Second pic">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="{{asset('images/about2.jpg')}}" alt="Second pic">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-8 about">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 about">
                 <div class="tabs">
                     <div class="tab-2">
                         <label for="tab2-1"> Church Profile</label>
                         <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
                         <div>
                             <p>
-                                House of Grace Eldoret was Launched on 16th January 2015 by the Senior Pastors Dickson
+                                <span>House of Grace Church Eldoret</span> was Launched on 16th January 2015 by the
+                                Senior Pastors
+                                         Dickson
                                 and Betty Waime. It started with a membership of 116 in attendance. Since then the church
                                 has grown in leaps and bounds to a congregation of over 300 members in the last three years of
                                 God’s faithfulness.
@@ -51,21 +64,26 @@
                                 We are engaged in outreaches through various ministries.
                                 We hold free medical camps, visit the sick in hospitals and medical centers,
                                 facilitate free counselling for members and those not members in whatever
-                                issue they are going through. We also have neighborhood outreaches (Anagkazo),
+                                issue they are going through. </p>
+                            <p>
+                                We also have neighborhood outreaches (Anagkazo),
                                 missions to Schools and Colleges and feeding programs to the less fortunate in the society.
-                                </p>
+
+                            </p>
 
                         </div>
                     </div>
                     <div class="tab-2">
                         <label for="tab2-2">Church Statements</label>
                         <input id="tab2-2" name="tabs-two" type="radio">
-                        <div>
+                        <div class="about-title">
                             <h6>VISION</h6>
                             <p>To transform the lives of its members and subsequently
                                 the society at large to be like Christ by teaching and training them to be
-                                witnesses of our Lord Jesus Christ,
-                                1 Cor15:10, “but by the grace of God I am who I am.”</p>
+                                witnesses of our Lord Jesus Christ, <br>
+                                <i>1 Cor 15:10, “but by the grace of God I am who I am
+                                    .”</i>
+                            </p>
                             <h6>MISSION</h6>
                             <p>
                                 To equip and prepare our members to be witnesses

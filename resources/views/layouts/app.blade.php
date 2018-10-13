@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+
     <!-- Animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
@@ -48,10 +49,20 @@
         <!-- Owl Carousel -->
         <script src="{{asset('js/jquery.min.js')}}"></script>
         <script src="{{asset('js/owl.carousel.min.js')}}"></script>
+        {{--<script src="{{asset('js/bigSlide.min.js')}}"></script>--}}
         @yield('scripts')
         {{--<script>--}}
-            {{--$(document).ready(function(){--}}
-                {{--$(".owl-carousel").owlCarousel();--}}
+            {{--jQuery(document).ready(function() {--}}
+                {{--jQuery('.toggle-nav').click(function(e) {--}}
+                    {{--jQuery(this).toggleClass('active');--}}
+                    {{--jQuery('.menu ul').toggleClass('active');--}}
+                    {{--e.preventDefault();--}}
+                {{--});--}}
+            {{--});--}}
+        {{--</script>--}}
+        {{--<script>--}}
+            {{--$(document).ready(function() {--}}
+                {{--$('.menu-link').bigSlide();--}}
             {{--});--}}
         {{--</script>--}}
 </body>

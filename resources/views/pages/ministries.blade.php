@@ -2,18 +2,26 @@
 @section('content')
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 link">
-                <p>MINISTRIES</p>
-            </div>
-            <div class="col-md-6">
-                <div class="breadcrumbstop ">
-                    <ul id="breadcrumbs-two">
-                        <li><a href="">Home</a></li>
-                        <li><a href="" class="current">Ministries</a></li>
-                    </ul>
+        <div class="row breadcrumb-wrap " >
+
+            <div class="breadcrumb-text">
+                <div class="row">
+                    <div class="col-xs-12 col-12 col-sm-12 col-md-6 link">
+                        <p>Ministries</p>
+                    </div>
+                    <div class="col-xs-12 col-12 col-sm-12 col-md-6">
+                        <div class="breadcrumbstop">
+                            <ul id="breadcrumbs-two">
+                                <li><a href="{{url('/')}}">Home</a></li>
+                                <li><a href="" class="current"><small>Ministries</small></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
             </div>
+
+
         </div>
     </div>
     <!--=================================    BREADCRUMBS END     ===============================-->
@@ -21,8 +29,9 @@
 
     <!--=================================    MINISTRIES BEGIN   ===============================-->
     <div class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
+        <div class="row ministry">
+            <h2>OUR MINISTRIES</h2>
+            <div class= " col-12 col-md-12 col-lg-12 col-sm-12 ">
     <div class="list-group">
         <a href="{{ route('man') }}" class="list-group-item list-group-item-action ">
            Man Power

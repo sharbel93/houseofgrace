@@ -1,96 +1,112 @@
 @extends('layouts.app')
 @section('content')
     <!-- =========================== SLIDER BEGIN  =========================== -->
-    <div class="owl-carousel owl-theme">
-        <!-- first slide -->
-        <div class="item " >
-            <img src="{{asset('images/d.jpg')}}">
-            <div class="bottom-left">
+    <div class="row home-slider">
+        <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xs-12">
+            <div class="owl-carousel owl-theme">
+                <!-- first slide -->
+                <div class="item " >
+                    <img src="{{asset('images/intro.jpg')}}" >
 
-                <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
-                    Powerful
                 </div>
-                <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
-                    Sermons
+                <!-- second slide -->
+                <div class="item " >
+                    <img src="{{asset('images/sermons2.jpg')}}"  >
+                    <div class="bottom-left">
+                        <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
+                            Powerful
+                        </div>
+                        <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
+                            Sermons
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- second slide-->
-        <div class="item">
-            <img src="{{asset('images/d.jpg')}}">
-            <div class="bottom-left">
-                <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
-                    Heart of
+                <!-- third slide-->
+                <div class="item">
+                    <img src="{{asset('images/worship.jpg')}}" >
+                    <div class="bottom-left">
+                        <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
+                            Heart of
+                        </div>
+                        <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
+                            Worship
+                        </div>
+                    </div>
                 </div>
-                <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
-                    Worship
+                <!-- fourth slide -->
+                <div class="item">
+                    <img src="{{asset('images/blast.jpg')}}" >
+                    <div class="bottom-left">
+                        <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
+                            Blast Youth
+                        </div>
+                        <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
+                            Ministry
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <!-- third slide -->
-        <div class="item">
-            <img src="{{asset('images/d.jpg')}}">
-            <div class="bottom-left">
-                <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
-                    Blast Youth
-                </div>
-                <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
-                     Ministry
-                </div>
-            </div>
-        </div>
-        <!-- fourth slide -->
-        <div class="item">
-            <img src="{{asset('images/d.jpg')}}">
-            <div class="bottom-left">
-                <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
-                    Dynamic Children
-                </div>
-                <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
-                                 Ministry
+                <!-- fifth slide -->
+                <div class="item">
+                    <img src="{{asset('images/children2.jpg')}}" >
+                    <div class="bottom-left">
+                        <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
+                            Dynamic Children
+                        </div>
+                        <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
+                            Ministry
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- =========================== SLIDER END  =========================== -->
 
 
     <!-- =========================== SERVICES BEGIN  =========================== -->
 <div class="bannertitle">
     <div class="row">
-        <div class="col-md-12">
-            <h3 class=" text-center"><span></span>OUR SERVICES</h3>
+        <div class="col-md-12 col-lg-12">
+            <hr class="hr-service">
         </div>
     </div>
 </div>
-
     <section class="services">
-
     <div class="container">
-
         <div class="row ">
-                <div class="col-md-6 mb-2">
+                <div class="col-12 col-sm-12 col-md-6 mb-2 col-lg-6">
                     <h4 class="text-center">SUNDAY SERVICES</h4>
-                    <ul>
-                        <li><span>Prayer Service:</span> <span class="float-right mr-3">7:00am - 8:00am</span> </li>
-                        <li><span>The Journey :</span> <span class="float-right mr-3">8:00am - 8:50am</span></li>
-                        <li><span>Family Service :</span><span class="float-right mr-3"> 9:00am - 12:00pm</span></li>
-                        <li><span>Oasis of Grace Childrens Church :</span><span class="float-right mr-3">9:00am -
-                                12:00pm</span> </li>
+                    <ul >
+                        <li> <span class="heading-list-span">Prayer Service :</span> &nbsp; <br>
+                            <small>Time: 7:00am - 8:00am</small> </li>
+                        <br>
+                        <li><span class="heading-list-span">The Journey : </span><br>&nbsp;
+                            <small> Time: 8:00am - 8:50am </small></li>
+                        <br>
+                        <li><span class="heading-list-span">Family Service : </span>&nbsp;<br>
+                            <small>Time:  9:00am - 12:00pm </small></li>
+                        <br>
+                        <li><span class="heading-list-span">Oasis of Grace Childrens Church : </span>&nbsp;<br>
+                            <small>Time: 9:00am - 12:00pm</small>  </li>
                     </ul>
                 </div>
-                <div class="col-md-6 ">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
                     <h4 class="text-center">OTHER SERVICES</h4>
                     <ul>
-                        <li><span>Blast Youth Service :</span> <span class="float-right mr-3">Every fortnight 3:30pm -
-                                6:00pm</span></li>
-                        <li><span>Prayer BootCamp :</span> <span class="float-right mr-3">Wednesdays 5:30pm -
-                                7:30pm</span></li>
-                        <li><span>Ladies Prayer Meeting:</span> <span class="float-right mr-3">Tuesdays 5:00pm -
-                                6:00pm</span> </li>
-                        <li><span>Throne Room Experience(TRE):</span>  <span class="float-right mr-3">2nd Friday
-                            </span></li>
-                        <li><span class="float-right mr-3">Every month 6:00pm - 8:00pm</span></li>
+                        <li><span class="heading-list-span">Blast Youth Service : </span>&nbsp;<br> <small> Every
+                                fortnight
+                                3:30pm -
+                                6:00pm</small></li>
+                        <br>
+                        <li><span class="heading-list-span">Prayer BootCamp : </span>&nbsp;<br><small> Wednesdays 5:30pm -
+                                7:30pm</small> </li>
+                        <br>
+                        <li><span class="heading-list-span">Ladies Prayer Meeting : </span><br>&nbsp;<small>Tuesdays 5:00pm -
+                                6:00pm </small>  </li>
+                        <br>
+                        <li><span class="heading-list-span">Throne Room Experience(TRE) : </span>&nbsp;<br><small>2nd Friday Every month 6:00pm - 8:00pm</small>
+                            </li>
                     </ul>
                 </div>
     </div>
@@ -102,15 +118,15 @@
     <!-- =========================== UPCOMING EVENTS BEGIN  =========================== -->
     <div class="bannertitle">
         <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-center">EVENTS</h3>
+            <div class="col-md-12 col-lg-12">
+                <hr class="hr-events">
             </div>
         </div>
     </div>
     <section class="events">
         <div class="container">
             <div class="row ">
-                <div class="col-md-12">
+                <div class="col-md-12 col-lg-12">
                     <div>
                         <p> Will be uploaded soon</p>
                     </div>
@@ -122,6 +138,8 @@
     <!-- =========================== UPCOMING EVENTS END  =========================== -->
 
     <!-- =========================== LOCATION GOOGLE MAPS BEGIN  =========================== -->
+    <section class="location">
+
     <div class="row">
         <div class="col-md-12">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15958.639785944462!2d35.297056!3d0
@@ -129,6 +147,7 @@
             !4v1537967383843" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
     </div>
+    </section>
     <!-- =========================== LOCATION GOOGLE MAPS END  =========================== -->
 @endsection
 @section('scripts')
@@ -172,7 +191,7 @@
             });
 
 // Fired after current slide has been changed
-            const round = 0;
+            let round = 0;
             owl.on('changed.owl.carousel', function(event) {
 
                 const $currentItem = $('.owl-item', owl).eq(event.item.index);
