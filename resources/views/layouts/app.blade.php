@@ -12,7 +12,7 @@
           content=" <strong>House of Grace Church - Eldoret<strong>  was Launched on 16th January 2015. It is located
            in Kapsoya, opposite The Noble Hotel,a few meters from the Nairobi – Eldoret Highway.">
     <meta name="keywords" content="house of grace eldoret, house of grace, church eldoret, house of grace church
-    eldoret, eldoret, church">
+    eldoret, eldoret, church , Kenya, house of grace eldoret kenya">
     <!-- Fonts -->
     {{--<link rel="dns-prefetch" href="https://fonts.gstatic.com">--}}
     {{--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">--}}
