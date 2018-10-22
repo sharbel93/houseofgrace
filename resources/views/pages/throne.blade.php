@@ -3,7 +3,7 @@
 @section('content')
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
 
-    <div class="container">
+
         <div class="row breadcrumb-wrap " >
 
             <div class="breadcrumb-text">
@@ -26,12 +26,20 @@
 
 
         </div>
-    </div>
 
 
     <!--=================================    BREADCRUMBS END     ===============================-->
-   <div class="container">
+    <div class="container ">
+        <div class="row ministry">
+            <h2>THRONE ROOM EXPERIENCE</h2>
+            <div class="col-md-12 col-lg-12 col-sm-12">
+                <p>
+                    <b>Throne room experience</b> is a worship experience that
+                    happens every second Friday of the month, led by our Praise and Worship team
+                    . Graced with different themes, this is a life changing platform that
+                    allows you to freely worship in truth and in spirit.</p>
 
-    <p>Throne Room Experience's page</p>
-   </div>
+            </div>
+        </div>
+    </div>
 @endsection

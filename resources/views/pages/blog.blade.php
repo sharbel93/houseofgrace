@@ -1,9 +1,10 @@
 @extends('layouts.app')
+@section('title', '| Blog')
 @section('content')
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
 
 
-    <div class="container">
+
         <div class="row breadcrumb-wrap " >
 
             <div class="breadcrumb-text">
@@ -25,7 +26,7 @@
 
 
         </div>
-    </div>
+
     <!--=================================    BREADCRUMBS END     ===============================-->
         <div class="container">
             <p>blogs's page</p>

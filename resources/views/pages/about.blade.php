@@ -1,7 +1,7 @@
 @extends('layouts.app')
+@section('title', '| About Us')
 @section('content')
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
-    <div class="container">
         <div class="row breadcrumb-wrap " >
 
             <div class="breadcrumb-text">
@@ -23,7 +23,7 @@
 
 
         </div>
-    </div>
+
     <!--=================================    BREADCRUMBS END     ===============================-->
 
 

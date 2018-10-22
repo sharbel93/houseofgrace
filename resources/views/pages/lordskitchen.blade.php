@@ -1,9 +1,10 @@
 @extends('layouts.app')
+@section('title', '| The Lords Kitchen')
 @section('content')
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
 
 
-    <div class="container">
+
         <div class="row breadcrumb-wrap " >
 
             <div class="breadcrumb-text">
@@ -25,12 +26,12 @@
 
 
         </div>
-    </div>
+
     <!--=================================    BREADCRUMBS END     ===============================-->
 
         <div class="container">
             <div class="row lord">
-                <h2>The Lord's Kitchen-Africa  <i>(More than a day’s meal)</i></h2>
+                <h2>The Lord's Kitchen-Africa <small><em>(More than a day’s meal)</em></small></h2>
                 <div class="col-md-12 col-lg-12 col-sm-12">
                     <p>
                      <i>
@@ -51,6 +52,15 @@
                         well structured discipleship program, financial empowerment program and an
                         investment plan that would improve and transform their lives. We are living to
                         the adage; MORE THAN A DAY’S MEAL.
+                    </p>
+                </div>
+            </div>
+            <div class="row lord">
+                <div class="col-md-8 offset-md-2">
+                    <p class="text-center">
+                        <em><b> "Life finds meaning when we connect with the needs of others."</b></em><br>
+                        Dickson Waime Senior Pastor<br>
+                        House Of Grace Eldoret.
                     </p>
                 </div>
             </div>

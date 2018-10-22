@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title', '| Home')
 @section('content')
     <!-- =========================== SLIDER BEGIN  =========================== -->
     <div class="row home-slider">
@@ -26,7 +27,7 @@
                     <img src="{{asset('images/worship.jpg')}}" >
                     <div class="bottom-left">
                         <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
-                            Heart of
+                            Hearty
                         </div>
                         <div class="slidertexttwo" data-animation-in="fadeInRight" data-animation-out="animate-out fadeOutLeft">
                             Worship
@@ -78,34 +79,34 @@
                 <div class="col-12 col-sm-12 col-md-6 mb-2 col-lg-6">
                     <h4 class="text-center">SUNDAY SERVICES</h4>
                     <ul >
-                        <li> <span class="heading-list-span">Prayer Service :</span> &nbsp; <br>
+                        <li> <span class="heading-list-span">Prayer Service </span> &nbsp; <br>
                             <small>Time: 7:00am - 8:00am</small> </li>
                         <br>
-                        <li><span class="heading-list-span">The Journey : </span><br>&nbsp;
+                        <li><span class="heading-list-span">The Journey  </span><br>&nbsp;
                             <small> Time: 8:00am - 8:50am </small></li>
                         <br>
-                        <li><span class="heading-list-span">Family Service : </span>&nbsp;<br>
+                        <li><span class="heading-list-span">Family Service  </span>&nbsp;<br>
                             <small>Time:  9:00am - 12:00pm </small></li>
                         <br>
-                        <li><span class="heading-list-span">Oasis of Grace Childrens Church : </span>&nbsp;<br>
+                        <li><span class="heading-list-span">Oasis of Grace Childrens Church </span>&nbsp;<br>
                             <small>Time: 9:00am - 12:00pm</small>  </li>
                     </ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
                     <h4 class="text-center">OTHER SERVICES</h4>
                     <ul>
-                        <li><span class="heading-list-span">Blast Youth Service : </span>&nbsp;<br> <small> Every
+                        <li><span class="heading-list-span">Blast Youth Service  </span>&nbsp;<br> <small> Every
                                 fortnight
                                 3:30pm -
                                 6:00pm</small></li>
                         <br>
-                        <li><span class="heading-list-span">Prayer BootCamp : </span>&nbsp;<br><small> Wednesdays 5:30pm -
+                        <li><span class="heading-list-span">Prayer BootCamp </span>&nbsp;<br><small> Wednesdays 5:30pm -
                                 7:30pm</small> </li>
                         <br>
-                        <li><span class="heading-list-span">Ladies Prayer Meeting : </span><br>&nbsp;<small>Tuesdays 5:00pm -
+                        <li><span class="heading-list-span">Ladies Prayer Meeting  </span><br>&nbsp;<small>Tuesdays 5:00pm -
                                 6:00pm </small>  </li>
                         <br>
-                        <li><span class="heading-list-span">Throne Room Experience(TRE) : </span>&nbsp;<br><small>2nd Friday Every month 6:00pm - 8:00pm</small>
+                        <li><span class="heading-list-span">Throne Room Experience(TRE)  </span>&nbsp;<br><small>2nd Friday Every month 6:00pm - 8:00pm</small>
                             </li>
                     </ul>
                 </div>

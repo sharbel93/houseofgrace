@@ -25,6 +25,7 @@ Route::get('/blog', 'ViewPageController@getBlog')->name('blog');
 Route::get('/contact', 'ViewPageController@getContact')->name('contact');
 Route::get('/Lords-kitchen', 'ViewPageController@getLordsKitchen')->name('lordskitchen');
 Route::get('/senior-pastor', 'ViewPageController@getSeniorPastor')->name('senior-pastor');
+Route::post('/contact_form', 'ViewPageController@getContactemail')->name('contactform');
 
 Route::prefix('ministries')->group(function() {
     Route::get('/', 'ViewPageController@getMinistries')->name('ministries');

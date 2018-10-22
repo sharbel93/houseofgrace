@@ -7,8 +7,12 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'House of Grace Church - Eldoret') }} @yield('title')</title>
-
+    <title>House of Grace Church - Eldoret @yield('title')</title>
+    <meta name="description"
+          content=" <strong>House of Grace Church - Eldoret<strong>  was Launched on 16th January 2015. It is located
+           in Kapsoya, opposite The Noble Hotel,a few meters from the Nairobi – Eldoret Highway.">
+    <meta name="keywords" content="house of grace eldoret, house of grace, church eldoret, house of grace church
+    eldoret, eldoret, church">
     <!-- Fonts -->
     {{--<link rel="dns-prefetch" href="https://fonts.gstatic.com">--}}
     {{--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">--}}
@@ -23,6 +27,9 @@
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+
+    {{--<link type="text/css" rel="stylesheet" href="{{ mix('css/app.css') }}">--}}
+    {{--<script src="{{ mix('js/app.js') }}"></script>--}}
 
     <!-- Animate.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">

@@ -69,8 +69,8 @@
                 <div class="row social-icons">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <h4>Connect With Us</h4>
-                        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
-                        <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="https://www.facebook.com/houseofgraceeldoret"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
                         <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
                 </div>
@@ -87,11 +87,11 @@
                     <div class="copyright">
                         <p></p>
                     </div>
-                    <small> P.O.Box 1675-30100 | Office line:  0701945418</small>
+                    <small> P.O.Box 1675-30100, Eldoret | Office line:  0701945418</small>
                     <p>
                     <small>
                     &copy; Copyright 2018 | House Of Grace Church Eldoret | All Rights Reserved
-                    </small> <br><small>Developed by <a href="#">sharbel chris</a></small>
+                    </small> <br><small>Developed by <a href="https://www.linkedin.com/in/chris-sharbel/">sharbel chris</a></small>
                     </p>
 
 

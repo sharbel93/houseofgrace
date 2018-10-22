@@ -4,7 +4,6 @@
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
 
 
-    <div class="container">
         <div class="row breadcrumb-wrap " >
 
             <div class="breadcrumb-text">
@@ -27,7 +26,7 @@
 
 
         </div>
-    </div>
+
 
     <!--=================================    BREADCRUMBS END     ===============================-->
     <div class="container">

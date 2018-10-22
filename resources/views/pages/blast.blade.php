@@ -2,9 +2,8 @@
 @section('title', '| Blast Youth Ministry')
 @section('content')
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
-    <div class="container">
-        <div class="row breadcrumb-wrap " >
 
+        <div class="row breadcrumb-wrap " >
             <div class="breadcrumb-text">
                 <div class="row">
                     <div class="col-xs-12 col-12 col-sm-12 col-md-6 link">
@@ -25,7 +24,6 @@
 
 
         </div>
-    </div>
 
     <!--=================================    BREADCRUMBS END     ===============================-->
   <div class="container">
