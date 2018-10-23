@@ -62,8 +62,8 @@
                                 <p>
 
                                 We are engaged in outreaches through various ministries.
-                                We hold free medical camps, visit the sick in hospitals and medical centers,
-                                facilitate free counselling for members and those not members in whatever
+                                We hold free medical camps, visit the sick in hospitals and Medical Centers,
+                                    and Facilitate free counselling for members and those not members in whatever
                                 issue they are going through. </p>
                             <p>
                                 We also have neighborhood outreaches (Anagkazo),

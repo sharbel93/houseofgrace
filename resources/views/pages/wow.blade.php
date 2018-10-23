@@ -33,7 +33,7 @@
             <div class="col-md-12 col-lg-12 col-sm-12">
                 <p>The <b>Woman of Worth</b>  is a Ministry to women from all walks of life.
                     The purpose is to build a woman in a wholistic way not just spiritually. </p>
-                <p>  This ministry started two years ago and so far we have reached out to women
+                <p>  Women of Worth, started in 2016 and so far we have reached out to women
                     through organizing breakfasts, business networking, conferences and hospital
                     outreach.</p>
             </div>

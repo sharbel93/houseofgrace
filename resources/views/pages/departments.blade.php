@@ -33,7 +33,7 @@
         <div class="row departments">
             <h2>OUR DEPARTMENTS</h2>
             <p>
-                At House Of Grace Church, <b>we believe in doing ministry as a team</b>.
+                At House Of Grace Church, <b>we believe in doing church as a team</b>.
                 Here are the teams that make ministry possible at House of Grace Church, Eldoret.
             </p>
        <div class="col-md-12 col-lg-12 col-sm-12">
@@ -148,6 +148,23 @@
                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
                        <div class="card-body">
                            Protocol and Security
+                       </div>
+                   </div>
+               </div>
+               <div class="card">
+                   <div class="card-header" id="headingEight">
+                       <h5 class="mb-0">
+                           <a class=" bg-transparent collapsed "
+                              data-toggle="collapse"
+                              data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                               Ushering
+                           </a>
+                       </h5>
+                   </div>
+                   <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                        data-parent="#accordionExample">
+                       <div class="card-body">
+                           Ushering
                        </div>
                    </div>
                </div>

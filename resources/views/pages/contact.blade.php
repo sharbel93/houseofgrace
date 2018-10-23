@@ -26,7 +26,15 @@
         </div>
 
     <!--=================================    BREADCRUMBS END     ===============================-->
+    @if(session()->has('success'))
+        <div class="alert alert-success">
+            {{--{{ session()->get('message') }}--}}
+            <h1>Message Successfully sent!</h1>
+        </div>
+    @endif
+
     <div class="row">
+
         <div class="col-md-12">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15958.639785944462!2d35.297056!3d0
             .51051!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x901065d104b128fe!2sHouse+Of+Grace!5e0!3m2!1sen!2ske
@@ -35,7 +43,9 @@
     </div>
 <div class="container">
 
+
         <div class="row contact">
+
             <div class="col-md-4 contact-list">
                 <ul>
                     <li><h6><b>Social Media </b></h6></li>
@@ -48,17 +58,19 @@
                     <li>Instagram <br>  <a href="#"><img src="{{asset
                     ('images/insta.png')}}" height="30" width="30" alt=""></a>
                     </li>
-                     <li class="mt-4"><h6><b>Donation/Tithe/Offering</b></h6></li>
+                     <li class="mt-4"><h6><b>Donation/Tithe & Offering</b></h6></li>
                     <li><img src="{{asset('/images/mpesa.png')}}" alt="" height="100" width="100">
-                        <br><b>PayBill: Account No: 843193</b></li>
+                        <br><b>PayBill Number: 843193</b></li>
+                    <li><b>Account Number: Purpose E.g Tithe</b></li>
+                    <li>Email Us to: <b>contact@houseofgraceeldoret.or.ke</b></li>
                     <li><b>P.O.Box 1675-30100, Eldoret</b></li>
-                    <li><b>Tel: +254701945418</b></li>
-                    <li></li>
+                    <li><b>Tel: +254-701-945-418</b></li>
+
                 </ul>
             </div>
             <div class="col-md-8">
                 <h2>Get In Touch</h2>
-                <form data-parsley-validate action="{{route('contactform') }}" method="POST">
+                <form  action="{{route('contactform') }}" method="POST">
                       {{csrf_field()}}
 
                     <div class="row">
@@ -117,3 +129,27 @@
 
 
 @endsection
+{{--@section('scripts')--}}
+    {{--<script>--}}
+                {{--@if(Session::has('message'))--}}
+        {{--var type = "{{ Session::get('alert-type', 'info') }}";--}}
+        {{--switch(type){--}}
+            {{--case 'info':--}}
+                {{--toastr.info("{{ Session::get('message') }}");--}}
+                {{--break;--}}
+
+            {{--case 'warning':--}}
+                {{--toastr.warning("{{ Session::get('message') }}");--}}
+                {{--break;--}}
+
+            {{--case 'success':--}}
+                {{--toastr.success("{{ Session::get('message') }}");--}}
+                {{--break;--}}
+
+            {{--case 'error':--}}
+                {{--toastr.error("{{ Session::get('message') }}");--}}
+                {{--break;--}}
+        {{--}--}}
+        {{--@endif--}}
+    {{--</script>--}}
+{{--@endsection--}}

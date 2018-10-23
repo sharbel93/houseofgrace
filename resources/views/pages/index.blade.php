@@ -80,16 +80,16 @@
                     <h4 class="text-center">SUNDAY SERVICES</h4>
                     <ul >
                         <li> <span class="heading-list-span">Prayer Service </span> &nbsp; <br>
-                            <small>Time: 7:00am - 8:00am</small> </li>
+                            <small>7:00am - 8:00am</small> </li>
                         <br>
                         <li><span class="heading-list-span">The Journey  </span><br>&nbsp;
-                            <small> Time: 8:00am - 8:50am </small></li>
+                            <small>  8:00am - 8:50am </small></li>
                         <br>
                         <li><span class="heading-list-span">Family Service  </span>&nbsp;<br>
-                            <small>Time:  9:00am - 12:00pm </small></li>
+                            <small>9:00am - 12:00pm </small></li>
                         <br>
                         <li><span class="heading-list-span">Oasis of Grace Childrens Church </span>&nbsp;<br>
-                            <small>Time: 9:00am - 12:00pm</small>  </li>
+                            <small>Sunday School</small>  </li>
                     </ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">

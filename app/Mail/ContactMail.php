@@ -2,11 +2,12 @@
 
 namespace App\Mail;
 
-use Illuminate\Http\Request;
+
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Http\Request;
 
 class ContactMail extends Mailable
 {
@@ -29,7 +30,7 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        $address = 'info@houseofgraceeldoret.or.ke';
+        $address = 'contact@houseofgraceeldoret.or.ke';
         $name = 'me';
         $subject = 'Contact Messages  ';
         return $this->view('emails.contact')

@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\ContactMail;
+
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
+use Mail;
+use App\Mail\ContactMail;
+use Session;
 
 class ViewPageController extends Controller
 {
@@ -90,7 +92,7 @@ class ViewPageController extends Controller
         return view('pages.servethelord');
     }
 
-    public function getContactemail(Request $request) {
+    public function getContactEmail(Request $request) {
 
         // validate data
         $this->validate($request, array(
@@ -109,11 +111,10 @@ class ViewPageController extends Controller
         $subject = $request->subject;
         $content = $request->message;
 
-//        dd($email,$content, $firstname,$lastname, $subject);
-
+        dd($email,$content, $firstname,$lastname, $subject);
 
         Mail::send(new ContactMail($request));
-        return redirect()->back();
+        return redirect()->route('contact')->with('success', true);
 
     }
 

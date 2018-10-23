@@ -25,8 +25,9 @@
                     <small>
                         To transform the lives of its members and subsequently
                         the society at large to be like Christ by teaching and training them
-                        to be witnesses of our Lord Jesus Christ, 1 Cor15:10,
-                        “but by the grace of God I am who I am.”
+                        to be witnesses of our Lord Jesus Christ,<br>
+                        <em>1 Cor 15:10, “but by the grace of God I am who I am.”
+                        </em>
                     </small>
                 </p>
             </div>

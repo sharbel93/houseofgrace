@@ -297,7 +297,7 @@
                             <table border="0" cellpadding="2" cellspacing="2">
                                 <tr >
                                     <p><span style="color: #4caf50; font-weight: bold;">From:</span>
-                                        <br>{{$firstname}} &nbsp; &nbsp; {{$lastname}}</p>
+                                        <br><h6>FirstName</h6>{{$firstname}} &nbsp; &nbsp; <h6>LastName</h6> {{$lastname}}</p>
                                     {{--<p><span style="color: #4caf50; font-weight: bold;">Email: </span>--}}
                                         {{--<br>{{$email}}</p>--}}
                                 </tr>

@@ -33,7 +33,7 @@
 
     <p>As <b>Blast Youth Ministry</b>,
         our main purpose is to win souls,
-        raise and help the young generation rediscover their God given purpose of life.
+        raise and help the young generation rediscover their God given purpose in life.
     </p>
       <p>  We do this though vibrant youth activities and power packed preachings in
           our Youth Services.</p>
