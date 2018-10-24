@@ -5,7 +5,7 @@
             <div class="col-md-12 col-lg-3">
                 <div class="row">
                     <div class="col-md-12 col-lg-12">
-                    <span>House Of Grace Church - Eldoret</span>
+                    <p><span>House Of Grace Church - Eldoret</span></p>
                     </div>
                 </div>
                 <div class="row">
@@ -70,9 +70,16 @@
                 <div class="row social-icons">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <h4>Connect With Us</h4>
-                        <a href="https://www.facebook.com/houseofgraceeldoret"><i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        <ul class="list-unstyled footer-link d-flex footer-social">
+                            <li><a href="#" class="p-2"><span class="fab fa-twitter"></span></a></li>
+                            <li><a href="https://www.facebook.com/houseofgraceeldoret" class="p-2"><span class="fab fa-facebook"></span></a></li>
+                            {{--<li><a href="#" class="p-2"><span class="fab fa-linkedin"></span></a></li>--}}
+                            <li><a href="#" class="p-2"><span class="fab fa-instagram"></span></a></li>
+                            {{--<li><a href="#" class="p-2"><span class="fab fa-google-plus "></span></a></li>--}}
+                        </ul>
+                        {{--<a href="https://www.facebook.com/houseofgraceeldoret"><i class="fab fa-facebook fa-2x"></i></a>--}}
+                        {{--<a href="#"><i class="fab fa-twitter fa-2x"></i></a>--}}
+                        {{--<a href="#"><i class="fab fa-instagram fa-2x"></i></a>--}}
                     </div>
                 </div>
 
@@ -91,7 +98,7 @@
                     <small> P.O.Box 1675-30100, Eldoret | Office line:  0701945418</small>
                     <p>
                     <small>
-                    &copy; Copyright 2018 | House Of Grace Church Eldoret | All Rights Reserved
+                    &copy; Copyright <script>document.write(new Date().getFullYear());</script> | House Of Grace Church Eldoret | All Rights Reserved
                     </small> <br><small>Developed by <a href="https://www.linkedin.com/in/chris-sharbel/">sharbel chris</a></small>
                     </p>
 

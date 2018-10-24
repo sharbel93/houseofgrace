@@ -16,7 +16,7 @@ body {
     -ms-overflow-style: scrollbar;
     -webkit-font-smoothing: antialiased;
     font-size: 1em;
-    line-height: 1.375em;
+    line-height: 1.475em;
 
 }
 
@@ -798,27 +798,69 @@ input[type=submit]:hover {
     /*margin: calc(20vh - 110px) auto;*/
 
 /*}*/
-.contact-list ul {
-    list-style-type: none;
-    position: relative;
-    left: 10px;
-    line-height: 1.9rem;
+/*.contact-list ul {*/
+    /*list-style-type: none;*/
+    /*position: relative;*/
+    /*left: 10px;*/
+    /*line-height: 1.9rem;*/
+/*}*/
+/*.contact-list{*/
+    /*top: 20px;*/
+/*}*/
+/*.contact-list h6 b:after {*/
+    /*background: none repeat scroll 0 0 #008ECC;*/
+    /*bottom: -10px;*/
+    /*content: "";*/
+    /*display: block;*/
+    /*height: 1px;*/
+    /*position: relative;*/
+    /*text-align: center;*/
+    /*width: 20%;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+.bottom-contact {
+    margin-top: 30px;
 }
-.contact-list{
-    top: 20px;
+.bottom-contact p {
+    font-size: 1.8em;
 }
-.contact-list h6 b:after {
-    background: none repeat scroll 0 0 #008ECC;
-    bottom: -10px;
-    content: "";
-    display: block;
-    height: 1px;
-    position: relative;
-    text-align: center;
-    width: 20%;
-    margin-bottom: 20px;
+.bottom-contact .footer-link{
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+.footer-social span {
+    margin-top: 3px;
+    font-size: 1.5em ;
 }
 
+.footer-social a {
+    line-height: 0;
+    border-radius: 50%;
+    margin: 5px 5px 5px 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.footer-social a:hover {
+    background: #008ECC;
+    border-color: #fff;
+    /*color: #fff;*/
+
+}
+
+.bottom-contact a {
+    color: #008ECC;
+    border-bottom: 1px solid transparent;
+}
+
+.bottom-contact a:hover {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 .contact h2:after {
     background: none repeat scroll 0 0 #008ECC;
     bottom: -10px;
@@ -834,18 +876,65 @@ input[type=submit]:hover {
 .contact h2 {
 
     position: relative;
-    left: 30px;
+    left: 15px;
 }
 
 .contact form {
-    padding: 20px;
-    margin: 10px;
+    padding: 0px;
+    margin: 0px;
 }
 .contact{
-    margin-top: 50px;
-    padding-top: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+.btn, .form-control {
+    outline: none;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
+.contact p:after {
+    background: none repeat scroll 0 0 #008ECC;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 1px;
+    position: relative;
+    text-align: center;
+    width: 20%;
+    margin-bottom: 20px;
+}
+.btn:focus, .btn:active, .form-control:focus, .form-control:active {
+    outline: none;
+}
+
+.form-control {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    height: 50px;
+    border-width: 2px;
+}
+
+textarea.form-control {
+    height: inherit;
+}
+
+.donations ul {
+    list-style-type: none;
+    line-height: 1.9rem;
+    padding: 0px;
+}
+
+.donations-title img  {
+    height: 120px;
+    width: 120px;
+}
+.below-contact ul {
+    list-style-type: none;
+    line-height: 1.9rem;
+    padding: 0px;
+    font-size: 1.2em;
+}
 /***===================CONTACT SECTION END========================***/
 /***===================FOOTER SECTION BEGIN========================***/
 .footer  {
@@ -875,12 +964,12 @@ input[type=submit]:hover {
     margin-bottom: 20px;
 }
 
-.social-icons a:hover {
-    color: whitesmoke;
-}
-.social-icons a {
-    border-radius: 50%;
-}
+/*.social-icons a:hover {*/
+    /*color: whitesmoke;*/
+/*}*/
+/*.social-icons a {*/
+    /*border-radius: 50%;*/
+/*}*/
 .copyright p::before {
     background: none repeat scroll 0 0 #008ECC;
     bottom: -10px;
@@ -891,29 +980,38 @@ input[type=submit]:hover {
     text-align: center;
     width: 100%;
 }
-.footer span {
+.footer p span {
     color: #008ECC;
     font-weight: bold;
+    font-size: .8em;
 
 }
-.footer small a:hover {
-    color: whitesmoke;
-    text-decoration: none;
-}
+/*.footer small a:hover {*/
+    /*color: whitesmoke;*/
+    /*text-decoration: none;*/
+/*}*/
 
-.social-icons a i{
-    opacity: 0.25;
-}
-.social-icons a:hover i,
-.social-icons a:focus i{
-    opacity: 0.6;
-}
+/*.social-icons a i{*/
+    /*opacity: 0.25;*/
+/*}*/
+/*.social-icons a:hover i,*/
+/*.social-icons a:focus i{*/
+    /*opacity: 0.6;*/
+/*}*/
 /*.contactbottom{*/
  /*background-color: #0000F0;*/
  /*top:  280px;*/
 /*}*/
+.social-icons a {
+    color: #fff;
+    border-bottom: 1px solid transparent;
 
+}
 
+.social-icons a:hover {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 /***===================FOOTER SECTION END========================***/
 
 
@@ -923,7 +1021,63 @@ input[type=submit]:hover {
 
  /*Small devices (landscape phones, 576px and up)*/
 @media screen and (max-device-width: 480px) and (orientation: portrait){
+    .contact p:after {
+        background: none repeat scroll 0 0 #008ECC;
+        bottom: -10px;
+        content: "";
+        display: block;
+        height: 1px;
+        position: relative;
+        text-align: center;
+        width: 30%;
+        left: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .donations-title img  {
+        height: 60px;
+        width: 60px;
+    }
+    .below-contact {
+        margin-left: 10px;
+    }
+.below-contact p {
+    font-size: 1.2em;
+}
+.below-contact ul {
+    font-size: .7em;
+    margin: 0px 0px 0px 10px;
+}
 
+.donations-title p {
+    font-size: 1.3em;
+    margin: 10px 0px 10px 5px;
+}
+
+    .donations ul {
+       margin: 0px;
+      padding: 0px;
+        font-size: .9em;
+    }
+    .row-sample {
+        margin-left: 4px;
+        padding: 0px;
+    }
+
+    .bottom-contact p span {
+        font-size: .8em;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .contact {
+        margin: 0px;
+        padding: 0px;
+    }
+    .social-icons ul  {
+    margin-left: 7px;
+    padding: 10px;
+}
     .contact h2 {
 margin-top: 20px;
         padding-top: 20px;
@@ -1248,6 +1402,33 @@ font-size: 14px;
 
  /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+    .contact  {
+
+      margin:20px 0px 0px 0px;
+        padding: 0px;
+    }
+    .bottom-contact p span {
+        font-size: .9em;
+    }
+.below-contact p span {
+    font-size: .6em;
+}
+
+.donations-title p span{
+    font-size: .8em;
+}
+    .donations-title img  {
+        height: 90px;
+        width: 90px;
+    }
+    .below-contact ul {
+
+        font-size: .9em;
+    }
+    .donations ul {
+     margin: 0px 0px 0px 30px;
+    }
+
     .breadcrumb-wrap {
         margin-top: 0px;
     }

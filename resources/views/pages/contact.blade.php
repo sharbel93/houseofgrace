@@ -42,76 +42,142 @@
         </div>
     </div>
 <div class="container">
+    <div class="row contact">
+        <h2>Get In Touch</h2>
+        <div class="col-md-12">
+            <form  action="{{route('contactform') }}" method="post">
+            {{csrf_field()}}
+                <div class="row mb-4">
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <input type="text" class="form-control" name="fullname" placeholder="Full Name" required>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <input type="text" class="form-control" name="email" placeholder="Email Address"required>
+                    </div>
+                    <div class="col-md-4 mb-md-0 mb-4">
+                        <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <textarea name="#" id="" class="form-control" name="message" placeholder="Write some words of encouragement" cols="30" rows="10" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="submit" class="btn btn-primary btn-block" value="Send Message">
+                    </div>
+                </div>
+            </form>
+            <div class="row bottom-contact">
+                <div class="col-md-6">
+                    <p><span>Connect with us</span></p>
+                    <ul class="list-unstyled footer-link d-flex footer-social">
+                        <li><a href="#" class="p-2"><span class="fab fa-twitter "></span></a></li>
+                        <li><a href="https://www.facebook.com/houseofgraceeldoret" class="p-2"><span class="fab fa-facebook "></span></a></li>
+                        {{--<li><a href="#" class="p-2"><span class="fab fa-linkedin "></span></a></li>--}}
+                        <li><a href="#" class="p-2"><span class="fab fa-instagram "></span></a></li>
+                        {{--<li><a href="#" class="p-2"><span class="fab fa-google-plus "></span></a></li>--}}
+                    </ul>
+                    <div class="below-contact">
+                        <p ><span>Send us your Query anytime!</span></p>
+                        <ul>
+                            <li> <i class="fas fa-at "></i> &nbsp; contact@houseofgraceeldoret.or.ke</li>
+                            <li><i class="fas fa-address-book "></i> &nbsp; P.O.Box 1675-30100, Eldoret</li>
+                            <li><i class="fas fa-phone "></i> &nbsp; +254701945418</li>
+                        </ul>
+                    </div>
 
+                </div>
+                <div class="col-md-6 donations-title">
 
-        <div class="row contact">
+                    <p><span >Donation | Tithe &amp; Offering</span></p>
+                    <div class="row row-sample">
+                        <div class="col-4 col-sm-5 col-md-3">  <img src="{{asset('/images/mpesa.png')}}" alt=""
+                                                                > </div>
+                        <div class="col-8 col-sm-7 col-md-9 donations">
+                            <ul>
+                                <li><b>PayBill Number: </b><br> 843193</li>
+                                <li><b>Account Number:</b> <br> Purpose E.g Tithe</li>
 
-            <div class="col-md-4 contact-list">
-                <ul>
-                    <li><h6><b>Social Media </b></h6></li>
-                    <li>FaceBook <br><a href="https://www.facebook.com/houseofgraceeldoret"><img src="{{asset
-                    ('images/fb.jpg')}}" height="40" width="50" alt="">House of Grace,Eldoret</a>
-                    </li>
-                    <li>Twitter <br> <a href="#"><img src="{{asset
-                    ('images/twitter.png')}}" height="30" width="30" alt=""></a>
-                    </li>
-                    <li>Instagram <br>  <a href="#"><img src="{{asset
-                    ('images/insta.png')}}" height="30" width="30" alt=""></a>
-                    </li>
-                     <li class="mt-4"><h6><b>Donation/Tithe & Offering</b></h6></li>
-                    <li><img src="{{asset('/images/mpesa.png')}}" alt="" height="100" width="100">
-                        <br><b>PayBill Number: 843193</b></li>
-                    <li><b>Account Number: Purpose E.g Tithe</b></li>
-                    <li>Email Us to: <b>contact@houseofgraceeldoret.or.ke</b></li>
-                    <li><b>P.O.Box 1675-30100, Eldoret</b></li>
-                    <li><b>Tel: +254-701-945-418</b></li>
-
-                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-                <h2>Get In Touch</h2>
-                <form  action="{{route('contactform') }}" method="POST">
-                      {{csrf_field()}}
+        </div>
+    </div>
 
-                    <div class="row">
-                            <div class="col-md-6">
-                                <label >First Name</label>
-                                <input type="text" name="firstname" placeholder="Your firstname.." required>
-                            </div>
-                            <div class="col-md-6">
-                                <label >Last Name</label>
-                                <input type="text"  name="lastname" placeholder="Your lastname.." required>
-                            </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label >Email</label>
-                            <input type="text"  name="email" placeholder="Your email.." required>
-                        </div>
-                        <div class="col-md-6">
-                            <label >Phone Number</label>
-                            <input type="text"  name="phone" placeholder="Your phone number.." required>
-                        </div>
 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <label >Subject</label>
-                            <input type="text"  name="subject" placeholder="Subject Matter.." required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" placeholder="Write something.."
-                                      style="height:200px" required></textarea>
+    {{--<div class="row contact">--}}
 
-                        </div>
-                    </div>
-                    <button type="submit"  class="btn-success" >Send Message</button>
+            {{--<div class="col-md-4 contact-list">--}}
+                {{--<ul>--}}
+                    {{--<li><h6><b>Social Media </b></h6></li>--}}
+                    {{--<li>FaceBook <br><a href="https://www.facebook.com/houseofgraceeldoret"><img src="{{asset--}}
+                    {{--('images/fb.jpg')}}" height="40" width="50" alt="">House of Grace,Eldoret</a>--}}
+                    {{--</li>--}}
+                    {{--<li>Twitter <br> <a href="#"><img src="{{asset--}}
+                    {{--('images/twitter.png')}}" height="30" width="30" alt=""></a>--}}
+                    {{--</li>--}}
+                    {{--<li>Instagram <br>  <a href="#"><img src="{{asset--}}
+                    {{--('images/insta.png')}}" height="30" width="30" alt=""></a>--}}
+                    {{--</li>--}}
+                     {{--<li class="mt-4"><h6><b>Donation/Tithe & Offering</b></h6></li>--}}
+                    {{--<li><img src="{{asset('/images/mpesa.png')}}" alt="" height="100" width="100">--}}
+                        {{--<br><b>PayBill Number: 843193</b></li>--}}
+                    {{--<li><b>Account Number: Purpose E.g Tithe</b></li>--}}
+                    {{--<li>Email Us to: <b>contact@houseofgraceeldoret.or.ke</b></li>--}}
+                    {{--<li><b>P.O.Box 1675-30100, Eldoret</b></li>--}}
+                    {{--<li><b>Tel: +254-701-945-418</b></li>--}}
+
+                {{--</ul>--}}
+            {{--</div>--}}
+            {{--<div class="col-md-8">--}}
+                {{--<h2>Get In Touch</h2>--}}
+                {{--<form  action="{{route('contactform') }}" method="POST">--}}
+                      {{--{{csrf_field()}}--}}
+
+                    {{--<div class="row">--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--<label >First Name</label>--}}
+                                {{--<input type="text" name="firstname" placeholder="Your firstname.." required>--}}
+                            {{--</div>--}}
+                            {{--<div class="col-md-6">--}}
+                                {{--<label >Last Name</label>--}}
+                                {{--<input type="text"  name="lastname" placeholder="Your lastname.." required>--}}
+                            {{--</div>--}}
+                    {{--</div>--}}
+
+                    {{--<div class="row">--}}
+                        {{--<div class="col-md-6">--}}
+                            {{--<label >Email</label>--}}
+                            {{--<input type="text"  name="email" placeholder="Your email.." required>--}}
+                        {{--</div>--}}
+                        {{--<div class="col-md-6">--}}
+                            {{--<label >Phone Number</label>--}}
+                            {{--<input type="text"  name="phone" placeholder="Your phone number.." required>--}}
+                        {{--</div>--}}
+
+                    {{--</div>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-md-12">--}}
+                            {{--<label >Subject</label>--}}
+                            {{--<input type="text"  name="subject" placeholder="Subject Matter.." required>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="row">--}}
+                        {{--<div class="col-md-12">--}}
+                            {{--<label for="message">Message</label>--}}
+                            {{--<textarea id="message" name="message" placeholder="Write something.."--}}
+                                      {{--style="height:200px" required></textarea>--}}
+
+                        {{--</div>--}}
+                    {{--</div>--}}
+                    {{--<button type="submit"  class="btn-success" >Send Message</button>--}}
                     {{--<input type="submit" value="submit" class="btn">--}}
-                </form>
+                {{--</form>--}}
                 {{--<form class="form">--}}
                     {{--<h2>CONTACT US</h2>--}}
                     {{--<p type="Name:"><input placeholder="Write your name here.."></input></p>--}}
@@ -123,8 +189,8 @@
                         {{--<span class="fa fa-envelope-o"></span> contact@company.com--}}
                     {{--</div>--}}
                 {{--</form>--}}
-            </div>
-        </div>
+            {{--</div>--}}
+        {{--</div>--}}
 </div>
 
 
