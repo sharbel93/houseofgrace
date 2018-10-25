@@ -286,26 +286,22 @@
             <div class="content">
 
                 <!-- START CENTERED WHITE CONTAINER -->
-                <span class="preheader">{{$subject}}</span>
+                {{--<span class="preheader">{{$subject}}</span>--}}
                 <table class="main">
 
                     <!-- START MAIN CONTENT AREA -->
                     <tr>
-                        <img class="align-right" src="{{ asset('/images/logo.jpg') }}" height="120"
+                        <img class="align-right" src="{{ asset('/images/logo.png') }}" height="120"
                              width="120" alt="logo">
                         <td class="wrapper">
                             <table border="0" cellpadding="2" cellspacing="2">
                                 <tr >
-                                    <p><span style="color: #4caf50; font-weight: bold;">From:</span>
-                                        <br><h6>FirstName</h6>{{$firstname}} &nbsp; &nbsp; <h6>LastName</h6> {{$lastname}}</p>
+                                    <p><span style="color: #4caf50; font-weight: bold;">From:</span>{{$fullname}} &nbsp; </p>
                                     {{--<p><span style="color: #4caf50; font-weight: bold;">Email: </span>--}}
                                         {{--<br>{{$email}}</p>--}}
                                 </tr>
                                 <tr>
-                                    <p><span style="color: #4caf50; font-weight: bold;">Phone number:</span> <br>{{$phone}}</p>
-                                </tr>
-                                <tr >
-                                    <p><span style="color:#4caf50; font-weight: bold;">Subject:</span> <br>{{$subject}}</p>
+                                    <p><span style="color: #4caf50; font-weight: bold;">Phone number:</span> {{$phone}}</p>
                                 </tr>
                                 <tr>
 

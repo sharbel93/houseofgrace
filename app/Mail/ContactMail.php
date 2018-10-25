@@ -30,18 +30,16 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        $address = 'contact@houseofgraceeldoret.or.ke';
+        $address = 'info@houseofgraceeldoret.or.ke';
         $name = 'me';
         $subject = 'Contact Messages  ';
         return $this->view('emails.contact')
             ->to($address, $name)
-            ->from($this->message->email, $this->message->firstname)
+            ->from($this->message->email, $this->message->fullname)
             ->subject($subject)
             ->with(
-                [ 'firstname' => $this->message->firstname,
-                    'lastname' => $this->message->lastname,
+                [  'fullname' => $this->message->fullname,
                     'phone' => $this->message->phone,
-                    'subject' => $this->message->subject,
                     'content' => $this->message->message
                 ]
             );

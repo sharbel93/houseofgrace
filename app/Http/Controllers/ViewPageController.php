@@ -96,22 +96,18 @@ class ViewPageController extends Controller
 
         // validate data
         $this->validate($request, array(
-            'firstname' => 'required|string|max:255',
-            'lastname' => 'required|string|max:255',
+            'fullname' => 'required|string|max:255',
             'email' => 'required|string|email|max:255',
-            'phone' => 'required|integer',
-            'subject' => 'required|string|max:20',
+            'phone' => 'required',
             'message' => 'required|string|max:500'
         ));
 
-        $firstname= $request->firstname;
-        $lastname= $request->lastname;
+        $fullname= $request->fullname;
         $email = $request->email;
         $phone = $request->phone;
-        $subject = $request->subject;
         $content = $request->message;
 
-        dd($email,$content, $firstname,$lastname, $subject);
+//        dd($fullname,$email , $phone, $content);
 
         Mail::send(new ContactMail($request));
         return redirect()->route('contact')->with('success', true);

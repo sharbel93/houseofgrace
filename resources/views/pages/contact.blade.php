@@ -26,12 +26,7 @@
         </div>
 
     <!--=================================    BREADCRUMBS END     ===============================-->
-    @if(session()->has('success'))
-        <div class="alert alert-success">
-            {{--{{ session()->get('message') }}--}}
-            <h1>Message Successfully sent!</h1>
-        </div>
-    @endif
+
 
     <div class="row">
 
@@ -42,6 +37,13 @@
         </div>
     </div>
 <div class="container">
+    @if(session()->has('success'))
+        <div class="alert alert-success alert-dismissable custom-success-box" style="margin: 15px;">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            <h5 class="text-center">Message Successfully sent!</h5>
+        </div>
+
+    @endif
     <div class="row contact">
         <h2>Get In Touch</h2>
         <div class="col-md-12">
@@ -49,23 +51,24 @@
             {{csrf_field()}}
                 <div class="row mb-4">
                     <div class="col-md-4 mb-md-0 mb-4">
-                        <input type="text" class="form-control" name="fullname" placeholder="Full Name" required>
+                        <input type="text"  name="fullname"   placeholder="Full Name" required="">
                     </div>
                     <div class="col-md-4 mb-md-0 mb-4">
-                        <input type="text" class="form-control" name="email" placeholder="Email Address"required>
+                        <input type="email"  name="email"  class="form-control" placeholder="Email Address"required="">
                     </div>
                     <div class="col-md-4 mb-md-0 mb-4">
-                        <input type="text" class="form-control" name="phone" placeholder="Phone" required>
+                        <input type="tel"  name="phone" class="form-control" placeholder="Phone" required="">
                     </div>
                 </div>
                 <div class="row mb-4">
                     <div class="col-md-12">
-                        <textarea name="#" id="" class="form-control" name="message" placeholder="Write some words of encouragement" cols="30" rows="10" required></textarea>
+    <textarea  name="message"  class="form-control" placeholder="Write some words of encouragement" cols="30" rows="10" required=""></textarea>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <input type="submit" class="btn btn-primary btn-block" value="Send Message">
+                        <button type="submit" class="btn btn-success btn-block">Send Message</button>
+                        {{--<input type="submit" class="btn btn-primary btn-block" value="Send Message">--}}
                     </div>
                 </div>
             </form>
@@ -82,7 +85,7 @@
                     <div class="below-contact">
                         <p ><span>Send us your Query anytime!</span></p>
                         <ul>
-                            <li> <i class="fas fa-at "></i> &nbsp; contact@houseofgraceeldoret.or.ke</li>
+                            <li> <i class="fas fa-at "></i> &nbsp; info@houseofgraceeldoret.or.ke</li>
                             <li><i class="fas fa-address-book "></i> &nbsp; P.O.Box 1675-30100, Eldoret</li>
                             <li><i class="fas fa-phone "></i> &nbsp; +254701945418</li>
                         </ul>
@@ -93,8 +96,9 @@
 
                     <p><span >Donation | Tithe &amp; Offering</span></p>
                     <div class="row row-sample">
-                        <div class="col-4 col-sm-5 col-md-3">  <img src="{{asset('/images/mpesa.png')}}" alt=""
-                                                                > </div>
+                        <div class="col-4 col-sm-5 col-md-3">
+                            <img src="{{asset('/images/mpesa.png')}}" alt="">
+                        </div>
                         <div class="col-8 col-sm-7 col-md-9 donations">
                             <ul>
                                 <li><b>PayBill Number: </b><br> 843193</li>
@@ -108,89 +112,6 @@
         </div>
     </div>
 
-
-
-    {{--<div class="row contact">--}}
-
-            {{--<div class="col-md-4 contact-list">--}}
-                {{--<ul>--}}
-                    {{--<li><h6><b>Social Media </b></h6></li>--}}
-                    {{--<li>FaceBook <br><a href="https://www.facebook.com/houseofgraceeldoret"><img src="{{asset--}}
-                    {{--('images/fb.jpg')}}" height="40" width="50" alt="">House of Grace,Eldoret</a>--}}
-                    {{--</li>--}}
-                    {{--<li>Twitter <br> <a href="#"><img src="{{asset--}}
-                    {{--('images/twitter.png')}}" height="30" width="30" alt=""></a>--}}
-                    {{--</li>--}}
-                    {{--<li>Instagram <br>  <a href="#"><img src="{{asset--}}
-                    {{--('images/insta.png')}}" height="30" width="30" alt=""></a>--}}
-                    {{--</li>--}}
-                     {{--<li class="mt-4"><h6><b>Donation/Tithe & Offering</b></h6></li>--}}
-                    {{--<li><img src="{{asset('/images/mpesa.png')}}" alt="" height="100" width="100">--}}
-                        {{--<br><b>PayBill Number: 843193</b></li>--}}
-                    {{--<li><b>Account Number: Purpose E.g Tithe</b></li>--}}
-                    {{--<li>Email Us to: <b>contact@houseofgraceeldoret.or.ke</b></li>--}}
-                    {{--<li><b>P.O.Box 1675-30100, Eldoret</b></li>--}}
-                    {{--<li><b>Tel: +254-701-945-418</b></li>--}}
-
-                {{--</ul>--}}
-            {{--</div>--}}
-            {{--<div class="col-md-8">--}}
-                {{--<h2>Get In Touch</h2>--}}
-                {{--<form  action="{{route('contactform') }}" method="POST">--}}
-                      {{--{{csrf_field()}}--}}
-
-                    {{--<div class="row">--}}
-                            {{--<div class="col-md-6">--}}
-                                {{--<label >First Name</label>--}}
-                                {{--<input type="text" name="firstname" placeholder="Your firstname.." required>--}}
-                            {{--</div>--}}
-                            {{--<div class="col-md-6">--}}
-                                {{--<label >Last Name</label>--}}
-                                {{--<input type="text"  name="lastname" placeholder="Your lastname.." required>--}}
-                            {{--</div>--}}
-                    {{--</div>--}}
-
-                    {{--<div class="row">--}}
-                        {{--<div class="col-md-6">--}}
-                            {{--<label >Email</label>--}}
-                            {{--<input type="text"  name="email" placeholder="Your email.." required>--}}
-                        {{--</div>--}}
-                        {{--<div class="col-md-6">--}}
-                            {{--<label >Phone Number</label>--}}
-                            {{--<input type="text"  name="phone" placeholder="Your phone number.." required>--}}
-                        {{--</div>--}}
-
-                    {{--</div>--}}
-                    {{--<div class="row">--}}
-                        {{--<div class="col-md-12">--}}
-                            {{--<label >Subject</label>--}}
-                            {{--<input type="text"  name="subject" placeholder="Subject Matter.." required>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<div class="row">--}}
-                        {{--<div class="col-md-12">--}}
-                            {{--<label for="message">Message</label>--}}
-                            {{--<textarea id="message" name="message" placeholder="Write something.."--}}
-                                      {{--style="height:200px" required></textarea>--}}
-
-                        {{--</div>--}}
-                    {{--</div>--}}
-                    {{--<button type="submit"  class="btn-success" >Send Message</button>--}}
-                    {{--<input type="submit" value="submit" class="btn">--}}
-                {{--</form>--}}
-                {{--<form class="form">--}}
-                    {{--<h2>CONTACT US</h2>--}}
-                    {{--<p type="Name:"><input placeholder="Write your name here.."></input></p>--}}
-                    {{--<p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>--}}
-                    {{--<p type="Message:"><input placeholder="What would you like to tell us.."></input></p>--}}
-                    {{--<button>Send Message</button>--}}
-                    {{--<div class="bottom-contact">--}}
-                        {{--<span class="fa fa-phone"></span>001 1023 567--}}
-                        {{--<span class="fa fa-envelope-o"></span> contact@company.com--}}
-                    {{--</div>--}}
-                {{--</form>--}}
-            {{--</div>--}}
-        {{--</div>--}}
 </div>
 
 
