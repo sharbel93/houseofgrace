@@ -71,11 +71,12 @@
             <div class="row ">
                 <div class="col-md-6 mb-3 element-animate">
                     <span class="section-heading">Upcoming Events</span>
-                    <h2><a href="#">We must walk in the middle of the road.</a></h2>
+                    <h2><a href="#">Fundraising</a></h2>
                     <div class="events-meta">
-                        <span class="mr-2"><span class="ion-clock mr-2"></span>Saturday 03/09/2018 09:30 AM</span>
-                        <span class="mr-2"><span class="ion-location mr-2"></span>St. Petersburg, US</span>
-                        <span class="mr-2"><span class="ion-person mr-2"></span>Pastor Luis Matthew</span>
+                        <span class="mr-2"><span class="far fa-calendar-alt mr-2"></span>Sunday 04/11/2018 09:00 AM</span>
+                        <span class="mr-2"><span class="fas fa-location-arrow mr-2"></span>House Of Grace Church,
+                            Eldoret</span>
+                        {{--<span class="mr-2"><span class="fas fa-user mr-2"></span>Pastor Luis Matthew</span>--}}
                     </div>
                 </div>
                 <div class="col-md-6 element-animate">
@@ -155,36 +156,41 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="event_post">
-                        <img src="{{asset('images/blog1.jpg')}}" alt="">
-                        <a href="#"><h2 class="event_title">Spreading Peace to world</h2></a>
+                        <img src="{{asset('images/pic.jpg')}}" alt="">
+                        <a href="#"><h2 class="event_title">Fundraising</h2></a>
                         <ul class="list_style sermons_category event_category">
-                            <li class="text-muted"><i class=" lnr lnr-user"></i>Saturday, 5th may, 2018</li>
-                            <li class="text-muted"><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
-                            <li class="text-muted"><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
+                            <li class="text-muted"><i class="far fa-calendar-alt mr-3"></i>Sunday, 4<sup>th</sup> November,
+                                2018</li>
+                            <li class="text-muted"><i class="fas fa-landmark mr-3"></i>House of Grace Church</li>
+                            <li class="text-muted"><i class="fas fa-location-arrow mr-3"></i>Opposite Noble Hotel,
+                                Eldoret,
+                                Kenya</li>
                         </ul>
                         <a href="#" class="btn_hover">View Details</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="event_post">
-                        <img src="{{asset('images/blog2.jpg')}}" alt="">
-                        <a href="#"><h2 class="event_title">Spread Happyness to world</h2></a>
+                        <img src="{{asset('images/pic.jpg')}}" alt="">
+                        <a href="#"><h2 class="event_title">Fundraising</h2></a>
                         <ul class="list_style sermons_category event_category">
-                            <li class="text-muted"><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
-                            <li class="text-muted"><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
-                            <li class="text-muted"><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
+                            <li class="text-muted"><i class="far fa-calendar-alt mr-3"></i>Sunday, 4<sup>th</sup> November,
+                                2018</li>
+                            <li class="text-muted"><i class="fas fa-landmark mr-3"></i>House of Grace Church</li>
+                            <li class="text-muted"><i class="fas fa-location-arrow mr-3"></i>Opposite Noble Hotel, Eldoret, Kenya</li>
                         </ul>
                         <a href="#" class="btn_hover">View Details</a>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="event_post">
-                        <img src="{{asset('images/blog3.jpg')}}" alt="">
-                        <a href="#"><h2 class="event_title">Spreading Light to world</h2></a>
+                        <img src="{{asset('images/pic.jpg')}}" alt="">
+                        <a href="#"><h2 class="event_title">Fundrasing</h2></a>
                         <ul class="list_style sermons_category event_category">
-                            <li class="text-muted"><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
-                            <li class="text-muted"><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
-                            <li class="text-muted"><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
+                            <li class="text-muted"><i class="far fa-calendar-alt mr-3"></i>Sunday, 4<sup>th</sup> November,
+                                2018</li>
+                            <li class="text-muted"><i class="fas fa-landmark mr-3"></i>House of Grace Church</li>
+                            <li class="text-muted"><i class="fas fa-location-arrow mr-3"></i>Opposite Noble Hotel, Eldoret, Kenya</li>
                         </ul>
                         <a href="#" class="btn_hover">View Details</a>
                     </div>
