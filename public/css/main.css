@@ -182,6 +182,100 @@ body {
 
 /***===================SLIDER SECTION END========================***/
 
+/***===================EVENT DATE AREA SECTION BEGIN========================***/
+
+.upcoming-events-highlight {
+    border-bottom: 1px solid #2e2e2e;
+    padding: 3em 0;
+    margin: 0px 0px 0px 0px;
+    background: #2a2a2a;
+    position: relative;
+    top: 0px;
+}
+
+.upcoming-events-highlight .section-heading {
+    background: #008ECC;
+    padding: 2px 15px;
+    display: inline-block;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-bottom: 15px;
+}
+
+.upcoming-events-highlight h2 {
+    font-size: 20px;
+    font-family: "Playfair Display", times, serif;
+}
+
+.upcoming-events-highlight h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+.upcoming-events-highlight h2 a:hover {
+    color: #008ECC;
+}
+
+.upcoming-events-highlight .events-meta {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.upcoming-events-highlight .counter-number-item {
+    background: #008ECC;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Playfair Display", times, serif;
+    color: #fff;
+    line-height: 1;
+}
+
+.upcoming-events-highlight #date-countdown {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.upcoming-events-highlight #date-countdown .countdown-block {
+    background: #008ECC;
+    color: #fff;
+    padding: 20px;
+    width: 20%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+}
+
+.upcoming-events-highlight #date-countdown .countdown-block:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    content: "";
+    height: 100%;
+    width: 1px;
+    right: 0;
+    background: #262626;
+}
+
+.upcoming-events-highlight #date-countdown .countdown-block:last-child:after {
+    display: none;
+}
+
+.upcoming-events-highlight #date-countdown .countdown-block .label {
+    color: #fff;
+    font-size: 24px;
+    display: block;
+}
+
+/***===================EVENT DATE AREA SECTION END========================***/
+
 
 
 /***===================SERVICES SECTION BEGIN========================***/
@@ -257,11 +351,6 @@ span.heading-list-span {
 
 
 /***===================EVENTS SECTION BEGIN========================***/
-.events {
-    text-align: center;
-
-}
-
 hr.hr-events {
     overflow: visible; /* For IE */
     padding: 0;
@@ -281,6 +370,100 @@ hr.hr-events:after {
     background: whitesmoke;
 
 }
+
+
+.event_title {
+    font-size: 24px;
+    line-height: 30px;
+    color: #222222;
+    font-weight: 600;
+    padding-top: 20px;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.event_title:hover {
+    color: #008ECC;
+}
+
+.event_post a:hover {
+    text-decoration: none;
+}
+.event_post img {
+    max-width: 100%;
+}
+
+.event_post .event_category {
+    padding-bottom: 20px;
+}
+
+.event_category li {
+    padding-bottom: 8px;
+}
+
+.event_category li i {
+    font-weight: 600;
+    color: #222222;
+}
+
+.list_style {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.section_gap .section-heading {
+    background: #008ECC;
+    padding: 2px 15px;
+    display: inline-block;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin: 15px 0px 15px 0px;
+}
+
+.event_blog_area {
+    margin: 30px 0px 40px 0px;
+}
+
+.btn_hover {
+    font-size: 14px;
+    line-height: 30px;
+    color: #2a2a2a;
+    font-weight: 500;
+    padding: 4px 35px;
+    display: inline-block;
+    border: 1px solid #eeeeee;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn_hover:hover {
+    background: #008ECC;
+    color: #fff;
+    text-decoration: none;
+}
+/*.ministries_info {*/
+    /*margin-bottom: -44px;*/
+/*}*/
+
+/*.ministries_info .event_post {*/
+    /*margin-bottom: 44px;*/
+/*}*/
+
+/*.ministries_info .event_post p {*/
+    /*padding-right: 50px;*/
+    /*padding-top: 10px;*/
+/*}*/
+
 /***===================EVENTS SECTION END========================***/
 
 /***===================LOCATION SECTION BEGIN========================***/
@@ -1397,13 +1580,34 @@ font-size: 14px;
         font-size: .8em;
         line-height: 1.45em;
     }
+
+    .event_post ul {
+        font-size: .8em;
+    }
+
+    .event_post h2 {
+        font-size: 1em;
+    }
+    .event_post .btn_hover {
+        font-size: .8em;
+        margin: 0px 0px 15px 0px;
+    }
 }
 
 
  /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    .contact  {
+    .event_post h2 {
+        font-size: .95em;
+    }
 
+    .event_post ul {
+        font-size: .8em;
+    }
+    .event_post .btn_hover {
+        font-size: .8em;
+    }
+    .contact  {
       margin:20px 0px 0px 0px;
         padding: 0px;
     }

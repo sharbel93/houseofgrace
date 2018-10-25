@@ -65,6 +65,27 @@
     <!-- =========================== SLIDER END  =========================== -->
 
 
+    <!-- =========================== EVENT DATE AREA BEGIN  =========================== -->
+    <section class="upcoming-events-highlight">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 mb-3 element-animate">
+                    <span class="section-heading">Upcoming Events</span>
+                    <h2><a href="#">We must walk in the middle of the road.</a></h2>
+                    <div class="events-meta">
+                        <span class="mr-2"><span class="ion-clock mr-2"></span>Saturday 03/09/2018 09:30 AM</span>
+                        <span class="mr-2"><span class="ion-location mr-2"></span>St. Petersburg, US</span>
+                        <span class="mr-2"><span class="ion-person mr-2"></span>Pastor Luis Matthew</span>
+                    </div>
+                </div>
+                <div class="col-md-6 element-animate">
+                    <div id="date-countdown"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========================== EVENT DATE AREA END  =========================== -->
+
     <!-- =========================== SERVICES BEGIN  =========================== -->
 <div class="bannertitle">
     <div class="row">
@@ -88,8 +109,8 @@
                         <li><span class="heading-list-span">Family Service  </span>&nbsp;<br>
                             <small>9:00am - 12:00pm </small></li>
                         <br>
-                        <li><span class="heading-list-span">Oasis of Grace Childrens Church </span>&nbsp;<br>
-                            <small>Sunday School</small>  </li>
+                        <li><span class="heading-list-span">Oasis of Grace Childrens Church </span><br>
+                            <small>10:00am - 12:00am</small>  </li>
                     </ul>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
@@ -124,12 +145,48 @@
             </div>
         </div>
     </div>
-    <section class="events">
+    <section class="event_blog_area section_gap">
         <div class="container">
-            <div class="row ">
-                <div class="col-md-12 col-lg-12">
-                    <div>
-                        <p> Will be uploaded soon</p>
+            <span class="section-heading">Upcoming Events</span>
+            {{--<div class="section_title text-center">--}}
+                {{--<h2>Upcoming Events</h2>--}}
+                {{--<p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast</p>--}}
+            {{--</div>--}}
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="event_post">
+                        <img src="{{asset('images/blog1.jpg')}}" alt="">
+                        <a href="#"><h2 class="event_title">Spreading Peace to world</h2></a>
+                        <ul class="list_style sermons_category event_category">
+                            <li class="text-muted"><i class=" lnr lnr-user"></i>Saturday, 5th may, 2018</li>
+                            <li class="text-muted"><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
+                            <li class="text-muted"><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
+                        </ul>
+                        <a href="#" class="btn_hover">View Details</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="event_post">
+                        <img src="{{asset('images/blog2.jpg')}}" alt="">
+                        <a href="#"><h2 class="event_title">Spread Happyness to world</h2></a>
+                        <ul class="list_style sermons_category event_category">
+                            <li class="text-muted"><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
+                            <li class="text-muted"><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
+                            <li class="text-muted"><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
+                        </ul>
+                        <a href="#" class="btn_hover">View Details</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="event_post">
+                        <img src="{{asset('images/blog3.jpg')}}" alt="">
+                        <a href="#"><h2 class="event_title">Spreading Light to world</h2></a>
+                        <ul class="list_style sermons_category event_category">
+                            <li class="text-muted"><i class="lnr lnr-user"></i>Saturday, 5th may, 2018</li>
+                            <li class="text-muted"><i class="lnr lnr-apartment"></i>Rocky beach Church</li>
+                            <li class="text-muted"><i class="lnr lnr-location"></i>Santa monica, Los Angeles, USA</li>
+                        </ul>
+                        <a href="#" class="btn_hover">View Details</a>
                     </div>
                 </div>
             </div>
@@ -219,5 +276,15 @@
             });
 
         });
+
+        $('#date-countdown').countdown('2018/11/04', function(event) {
+            var $this = $(this).html(event.strftime(''
+                + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
+                + '<span class="countdown-block"><span class="label">%d</span> days </span>'
+                + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
+                + '<span class="countdown-block"><span class="label">%M</span> min </span>'
+                + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
+        });
+
     </script>
 @endsection
