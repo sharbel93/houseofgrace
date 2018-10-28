@@ -1,23 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    {{--<!-- Global site tag (gtag.js) - Google Analytics -->--}}
-    {{--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128002808-1"></script>--}}
-    {{--<script>--}}
-        {{--window.dataLayer = window.dataLayer || [];--}}
-        {{--function gtag(){dataLayer.push(arguments);}--}}
-        {{--gtag('js', new Date());--}}
+    <!-- You can use open graph tags to customize link previews.
+     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+    <meta property="og:url"           content="https://www.houseofgraceeldoret.or.ke/" />
+    <meta property="og:type"          content="website" />
+    <meta property="og:title"         content="House Of Grace - Eldoret " />
+    <meta property="og:description"   content="<strong>House of Grace Church - Eldoret<strong>  was Launched on 16th January 2015. It is located
+           in Kapsoya, opposite The Noble Hotel,a few meters from the Nairobi – Eldoret Highway." />
+    <meta property="og:image"         content="https://www.houseofgraceeldoret.or.ke/images/logo.png" />
 
-        {{--gtag('config', 'UA-128002808-1');--}}
-    {{--</script>--}}
-
-    <!-- Google Tag Manager -->
-    {{--<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':--}}
-                {{--new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],--}}
-            {{--j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=--}}
-            {{--'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);--}}
-        {{--})(window,document,'script','dataLayer','GTM-5WDW9RG');</script>--}}
-    <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,  shrink-to-fit=no">
 
@@ -54,10 +46,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-{{--<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WDW9RG"--}}
-                  {{--height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>--}}
-<!-- End Google Tag Manager (noscript) -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
         <!-- =========================== HEADER BEGIN  =========================== -->
                  @include('include.header')
         <!-- =========================== HEADER END =========================== -->

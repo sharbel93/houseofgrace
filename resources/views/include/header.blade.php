@@ -13,7 +13,7 @@
                 </button>
                 <div class="collapse navbar-collapse navbar-custom-collapse ml-2 ml-lg-3" id="navbarTogglerDemo01">
 
-                    <ul class="navbar-nav  ">
+                    <ul class="navbar-nav ">
                         <li class="nav-item active ">
                             <a class="nav-link  " href="{{ url('/')  }}">Home <span class="sr-only">(current)
                                 </span></a>

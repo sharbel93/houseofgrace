@@ -7,7 +7,7 @@
             <div class="owl-carousel owl-theme">
                 <!-- first slide -->
                 <div class="item " >
-                    <img src="{{asset('images/intro.jpg')}}" >
+                    <img src="{{asset('images/intro_2.jpeg')}}" >
 
                 </div>
                 <!-- second slide -->
@@ -24,7 +24,7 @@
                 </div>
                 <!-- third slide-->
                 <div class="item">
-                    <img src="{{asset('images/worship.jpg')}}" >
+                    <img src="{{asset('images/praise.jpeg')}}" >
                     <div class="bottom-left">
                         <div class="slidertextone" data-animation-in="fadeInLeft" data-animation-out="animate-out fadeOutRight">
                             Hearty
@@ -227,7 +227,7 @@
                 nav:false,
                 autoplay: true,
                 rewind: true,
-                dots: false,
+                dots: true,
                 items: 1});
 
             // add animate.css class(es) to the elements to be animated

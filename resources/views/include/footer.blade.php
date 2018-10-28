@@ -70,13 +70,23 @@
                 <div class="row social-icons">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <h4>Connect With Us</h4>
-                        <ul class="list-unstyled footer-link d-flex footer-social">
-                            <li><a href="#" class="p-2"><span class="fab fa-twitter"></span></a></li>
-                            <li><a href="https://www.facebook.com/houseofgraceeldoret" class="p-2"><span class="fab fa-facebook"></span></a></li>
+                        {{--<ul class="list-unstyled footer-link d-flex footer-social">--}}
+                            {{--<li><a href="#" class="p-2"><span class="fab fa-twitter"></span></a></li>--}}
+                            {{--<li><a href="https://www.facebook.com/houseofgraceeldoret" class="p-2"><span class="fab fa-facebook"></span></a></li>--}}
                             {{--<li><a href="#" class="p-2"><span class="fab fa-linkedin"></span></a></li>--}}
-                            <li><a href="#" class="p-2"><span class="fab fa-instagram"></span></a></li>
+                            {{--<li><a href="#" class="p-2"><span class="fab fa-instagram"></span></a></li>--}}
                             {{--<li><a href="#" class="p-2"><span class="fab fa-google-plus "></span></a></li>--}}
-                        </ul>
+                        {{--</ul>--}}
+                       <span>Facebook </span> <br>
+                        <div class="fb">
+                            <div class="fb-like" data-href="https://www.facebook.com/houseofgraceeldoret"
+                                 data-width="160"  data-layout="standard" data-action="like"
+                                 data-size="small" data-show-faces="true" data-share="true"></div>
+
+                        </div>
+                        <br>
+                        <span>Twitter </span><br>
+                        <a href="https://twitter.com/HOGEldoret?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @HOGEldoret</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                         {{--<a href="https://www.facebook.com/houseofgraceeldoret"><i class="fab fa-facebook fa-2x"></i></a>--}}
                         {{--<a href="#"><i class="fab fa-twitter fa-2x"></i></a>--}}
                         {{--<a href="#"><i class="fab fa-instagram fa-2x"></i></a>--}}
