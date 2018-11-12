@@ -1,0 +1,934 @@
+
+/***===================FOOTER SECTION BEGIN========================***/
+.footer  {
+
+  margin: 50px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
+  color: #fff;
+  background-color: #2a2a2a;
+}
+.footer p {
+  font-size: 18px
+}
+
+.copyright{
+  padding-top: 50px;
+}
+
+.footer h4::after {
+  background: none repeat scroll 0 0 #008ECC;
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 1px;
+  position: relative;
+  text-align: center;
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+/*.social-icons a:hover {*/
+/*color: whitesmoke;*/
+/*}*/
+/*.social-icons a {*/
+/*border-radius: 50%;*/
+/*}*/
+.copyright p::before {
+  background: none repeat scroll 0 0 #008ECC;
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 1px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.footer p span {
+  color: #008ECC;
+  font-weight: bold;
+  font-size: .8em;
+
+}
+/*.footer small a:hover {*/
+/*color: whitesmoke;*/
+/*text-decoration: none;*/
+/*}*/
+
+/*.social-icons a i{*/
+/*opacity: 0.25;*/
+/*}*/
+/*.social-icons a:hover i,*/
+/*.social-icons a:focus i{*/
+/*opacity: 0.6;*/
+/*}*/
+/*.contactbottom{*/
+/*background-color: #0000F0;*/
+/*top:  280px;*/
+/*}*/
+.social-icons a {
+  color: #fff;
+  border-bottom: 1px solid transparent;
+
+}
+
+.social-icons a:hover {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.fb {
+  background-color: rgb(0, 142, 204);
+}
+/***===================FOOTER SECTION END========================***/
+
+//
+///***===================RESPONSIVE MEDIA QUERIES SECTION BEGIN========================***/
+///*Extra small devices (portrait phones, less than 576px)*/
+///*No media query for `xs` since this is the default in Bootstrap*/
+//
+///*Small devices (landscape phones, 576px and up)*/
+//@media screen and (max-device-width: 480px) and (orientation: portrait){
+//
+//  .team_item .team_img img{
+//    width: 100%;
+//  }
+//
+//  .team_item .team_img img {
+//    max-width: 100%;
+//    height: 300px;
+//    width: 300px;
+//  }
+//
+//  .contact p:after {
+//    background: none repeat scroll 0 0 #008ECC;
+//    bottom: -10px;
+//    content: "";
+//    display: block;
+//    height: 1px;
+//    position: relative;
+//    text-align: center;
+//    width: 30%;
+//    left: 10px;
+//    margin-bottom: 20px;
+//  }
+//
+//  .donations-title img  {
+//    height: 60px;
+//    width: 60px;
+//  }
+//  .below-contact {
+//    margin-left: 10px;
+//  }
+//  .below-contact p {
+//    font-size: 1.2em;
+//  }
+//  .below-contact ul {
+//    font-size: .7em;
+//    margin: 0px 0px 0px 10px;
+//  }
+//
+//  .donations-title p {
+//    font-size: 1.3em;
+//    margin: 10px 0px 10px 5px;
+//  }
+//
+//  .donations ul {
+//    margin: 0px;
+//    padding: 0px;
+//    font-size: .9em;
+//  }
+//  .row-sample {
+//    margin-left: 4px;
+//    padding: 0px;
+//  }
+//
+//  .bottom-contact p span {
+//    font-size: .8em;
+//    padding: 5px;
+//    margin: 5px;
+//  }
+//
+//  .contact {
+//    margin: 0px;
+//    padding: 0px;
+//  }
+//  .social-icons ul  {
+//    margin-left: 7px;
+//    padding: 10px;
+//  }
+//  .contact h2 {
+//    margin-top: 20px;
+//    padding-top: 20px;
+//  }
+//  .bannertitle  {
+//
+//    margin-top: 10px;
+//    margin-bottom: 10px;
+//    padding-top: 20px;
+//    padding-bottom: 20px;
+//  }
+//  .navbar-custom{
+//    margin: 0px;
+//    padding: 0px;
+//  }
+//  .navbar-custom img {
+//    position: relative;
+//    top: 10px;
+//    /*background: rgba(255, 255, 255, 0.4);*/
+//    background-color: white;
+//    height: 105px;
+//    width: 105px;
+//    border-radius: 50%;
+//    padding: 5px;
+//    left: -40px;
+//    margin-bottom: 10px;
+//    /*width: 15vw;*/
+//    /*-webkit-border-radius: 60px 50px 50px 50px;*/
+//    /*-moz-border-radius: 60px 50px 50px 50px;*/
+//    /*border-radius: 60px 50px 50px 50px;*/
+//  }
+//  .navbar-custom button {
+//    background-color: white ;
+//    position: relative;
+//    top: 10px;
+//  }
+//
+//  .navbar-custom-collapse {
+//    background-color: #008ECC;
+//    margin-bottom: 10px;
+//    position: relative;
+//    top: 10px;
+//    left: 5px;
+//  }
+//
+//  .navbar-custom ul li a:hover{
+//    /*background-color: #008ECC;*/
+//    /*background: rgba(100, 149, 237, 1);*/
+//    color: #fff!important;
+//    /*border-radius: 50px 50px 50px 50px;*/
+//    /*color: #008ECC!important;*/
+//    padding: 5px;
+//
+//  }
+//  .home-slider {
+//    position: relative;
+//    top: -20px;
+//    bottom: 0px;
+//  }
+//
+//  .owl-carousel .item {
+//    position: relative;
+//    display: block;
+//    height: 30vh;
+//  }
+//
+//  .item img {
+//    max-width: 100%;
+//    height: auto;
+//  }
+//
+//  .navbar-custom img {
+//    margin-top: 10px;
+//  }
+//
+//  /*img .responsive {*/
+//  /*width: 100%;*/
+//  /*max-height: 40%;*/
+//  /*}*/
+//
+//  .bottom-left {
+//    position: absolute;
+//    bottom: 20px;
+//    color: #fff;
+//    left: 15px;
+//    min-width: 45%;
+//    /*line-height: 20em;*/
+//    background: rgba(100, 149, 237, 0.6);
+//    border-radius: 50px 50px 50px 50px;
+//    /*background-color: #008ff0;*/
+//  }
+//
+//  .bottom-left .slidertextone {
+//    font: italic 2.0em 'Source Sans Pro', sans-serif;
+//    color: white;
+//    width: 100%;
+//    text-align: left;
+//    text-shadow: 2px 2px 4px #000000;
+//    bottom: -5px;
+//    position: relative;
+//  }
+//
+//  .bottom-left .slidertexttwo {
+//    font: italic 2.0em 'Source Sans Pro', sans-serif;
+//    color: white;
+//    text-align: right;
+//    text-shadow: 2px 2px 4px #000000;
+//    padding-right: 8px;
+//    bottom: 5px;
+//    position: relative;
+//  }
+//
+//  .services {
+//    color: #fff;
+//    background-color: #2a2a2a;
+//    padding-bottom: 50px;
+//    font-size: .9em;
+//
+//  }
+//  .services h4 {
+//    padding: 0px;
+//    margin: 40px 0px 20px 0px;
+//  }
+//  .services ul {
+//
+//    padding: 0px!important;
+//    list-style-type: none;
+//  }
+//  .services ul li {
+//    text-align: center;
+//  }
+//  .services h4:after {
+//    background: none repeat scroll 0 0 #008ECC;
+//    bottom: -10px;
+//    content: "";
+//    display: block;
+//    height: 1px;
+//    position: relative;
+//    text-align: center;
+//    width: 90%;
+//    margin: 0px 0px 10px 15px;
+//  }
+//  .services ul li::after {
+//    background: none repeat scroll 0 0 #f5f5f5;
+//    bottom: -15px;
+//    content: "";
+//    display: block;
+//    height: 1px;
+//    left: 18px;
+//    position: relative;
+//    text-align: center;
+//    width: 90%;
+//    margin-bottom: 10px;
+//    padding-right: 20px;
+//    padding-left: 20px;
+//
+//  }
+//
+//
+//  .footer  {
+//    text-align: center;
+//    padding: 30px 10px 0px 10px;
+//  }
+//  .footer h4 {
+//    text-align: left;
+//    left: 20px;
+//    position: relative;
+//  }
+//  .footer h4:after {
+//    background: none repeat scroll 0 0 #008ECC;
+//    bottom: -10px;
+//    content: "";
+//    display: block;
+//    height: 1px;
+//    position: relative;
+//    left: 0px;
+//    text-align: center;
+//    width: 20%;
+//    margin-bottom: 20px;
+//  }
+//
+//  .link {
+//    padding: 0px;
+//    position: relative;
+//    top: -10px;
+//  }
+//  .breadcrumbstop ul{
+//    margin: 0px 20px 30px 20px;
+//    padding: 20px;
+//    list-style: none;
+//    position: relative;
+//    left: 0px;
+//    top: -65px;
+//  }
+//
+//  #breadcrumbs-two{
+//    font-size: 14px;
+//    width: 90%;
+//    position: relative;
+//    top: -30px;
+//
+//  }
+//
+//  .departments {
+//    padding: 0px;
+//    margin: 0px;
+//  }
+//  .departments p {
+//    padding: 10px;
+//    font-size: .8em;
+//    margin-right: 10px;
+//  }
+//
+//  .departments a {
+//    font-size: .8em;
+//  }
+//
+//  .tabs {
+//    font-size: 14px;
+//    padding: 5px;
+//  }
+//
+//  .tabs [class^="tab"] label,
+//  .tabs [class*=" tab"] label {
+//    color: #000000;
+//    cursor: pointer;
+//    display: block;
+//    font-size: 1.0em;
+//    font-weight: 700;
+//    line-height: .7em;
+//    padding: 1rem 0;
+//    text-align: center; }
+//  .about{
+//    margin-top: 30px;
+//  }
+//
+//  .ministry {
+//    margin: 0px;
+//    padding: 0px;
+//  }
+//
+//  .ministry h2 {
+//    font-size: 15px;
+//  }
+//
+//  .ministry .list-group a{
+//
+//    font-size: .8em;
+//  }
+//
+//  .ministry p {
+//    font-size: .8em;
+//  }
+//
+//
+//
+//  .departments h2 {
+//    font-size: 14px;
+//  }
+//
+//  .departments p {
+//    position: relative;
+//    left: 20px;
+//    font-size: 12px;
+//  }
+//
+//  .departments a {
+//    color: #008ECC!important;
+//    font-weight: bold;
+//    font-size: 12px;
+//  }
+//
+//
+//  .programmes h2 {
+//    font-size: 14px;
+//  }
+//
+//
+//  .programmes .list-group a{
+//    background-color: transparent;
+//    font-weight: bold;
+//    font-size: .8em;
+//  }
+//
+//
+//  .programmes {
+//    margin: 0px;
+//    padding: 0px;
+//  }
+//  .lord h2 {
+//    font-size: 14px;
+//  }
+//
+//  /*.lord p {*/
+//  /*position: relative;*/
+//  /*left: 10px;*/
+//  /*font-size: 11px;*/
+//  /*}*/
+//
+//  .footer p {
+//    font-size: 16px;
+//    text-wrap: normal;
+//  }
+//
+//  .foot er span {
+//    font-size: 16px;
+//
+//  }
+//  .lord{
+//    margin: 0px;
+//    padding: 0px;
+//  }
+//
+//  .lord p {
+//    position: relative;
+//    left: 10px;
+//    font-size: .8em;
+//    line-height: 1.45em;
+//  }
+//
+//  .event_post ul {
+//    font-size: .8em;
+//  }
+//
+//  .event_post h2 {
+//    font-size: 1em;
+//  }
+//  .event_post .btn_hover {
+//    font-size: .8em;
+//    margin: 0px 0px 15px 0px;
+//  }
+//
+//  .blog_info{
+//    text-align: left !important;
+//    padding-top: 0px;
+//    padding-bottom: 10px;
+//  }
+//  .blog_meta li{
+//    display: inline-block;
+//    width: calc(95%/ 2);
+//  }
+//  .single-post .blog_info{
+//    padding-top: 30px;
+//    padding-bottom: 0px;
+//  }
+//  .single-post-area .social-links{
+//    padding-left: 0px;
+//    margin-bottom: 0px;
+//  }
+//
+//  .categories_post img{
+//    width: 100%;
+//    margin-bottom: 20px;
+//
+//  }
+//
+//
+//  /*.team_item .team_img img{*/
+//  /*width: 100%;*/
+//  /*}*/
+//}
+//
+//
+///*Medium devices (tablets, 768px and up)*/
+//@media (min-width: 768px) {
+//
+//  .event_post h2 {
+//    font-size: .95em;
+//  }
+//
+//  .event_post ul {
+//    font-size: .8em;
+//  }
+//  .event_post .btn_hover {
+//    font-size: .8em;
+//  }
+//  .contact  {
+//    margin:20px 0px 0px 0px;
+//    padding: 0px;
+//  }
+//  .bottom-contact p span {
+//    font-size: .9em;
+//  }
+//  .below-contact p span {
+//    font-size: .6em;
+//  }
+//
+//  .donations-title p span{
+//    font-size: .8em;
+//  }
+//  .donations-title img  {
+//    height: 90px;
+//    width: 90px;
+//  }
+//  .below-contact ul {
+//
+//    font-size: .9em;
+//  }
+//  .donations ul {
+//    margin: 0px 0px 0px 30px;
+//  }
+//
+//  .breadcrumb-wrap {
+//    margin-top: 0px;
+//  }
+//  .link {
+//    padding: 0px;
+//    position: relative;
+//    top: 40px;
+//  }
+//  .navbar-custom ul li a:hover{
+//    /*background-color: #008ECC;*/
+//    /*background: rgba(100, 149, 237, 1);*/
+//    color: #fff!important;
+//    /*border-radius: 50px 50px 50px 50px;*/
+//    /*color: #008ECC!important;*/
+//    padding: 5px;
+//
+//  }
+//
+//  .navbar-custom img {
+//    position: relative;
+//    top: 0px;
+//    /*background: rgba(255, 255, 255, 0.4);*/
+//    background-color: white;
+//    padding: 10px;
+//    height: 110px;
+//    width: 110px;
+//    border-radius: 50%;
+//    /*-webkit-border-radius: 60px 50px 50px 50px;*/
+//    /*-moz-border-radius: 60px 50px 50px 50px;*/
+//    /*border-radius: 60px 50px 50px 50px;*/
+//  }
+//
+//  .navbar-custom {
+//    position: relative;
+//    top: 0px;
+//    padding-bottom: 5px;
+//  }
+//  .navbar-custom button {
+//    background-color: white ;
+//  }
+//  .navbar-custom-collapse {
+//    background-color: #008ECC;
+//    margin-bottom: 0px;
+//    position: relative;
+//    top: 10px;
+//    left: 5px;
+//  }
+//
+//  .home-slider {
+//    position: relative;
+//    top: 0px;
+//  }
+//
+//  .owl-carousel .item {
+//    height: 55vh;
+//  }
+//
+//  .item img {
+//    max-width: 100%;
+//    height: auto;
+//  }
+//  .bottom-left {
+//    position: absolute;
+//    bottom: 80px;
+//    color: #fff;
+//    left: 15px;
+//    min-width: 42%;
+//    /*line-height: 20em;*/
+//    background: rgba(100, 149, 237, 0.6);
+//    border-radius: 50px 50px 50px 50px;
+//    /*background-color: #008ff0;*/
+//  }
+//
+//  .bottom-left .slidertextone {
+//    font: italic 3.5em 'Source Sans Pro', sans-serif;
+//    color: white;
+//    width: 100%;
+//    text-align: left;
+//    text-shadow: 2px 2px 4px #000000;
+//    bottom: -12px;
+//    position: relative;
+//  }
+//
+//  .bottom-left .slidertexttwo {
+//    font: italic 3.5em 'Source Sans Pro', sans-serif;
+//    color: white;
+//    text-align: right;
+//    text-shadow: 2px 2px 4px #000000;
+//    padding-right: 8px;
+//    bottom: 12px;
+//    position: relative;
+//  }
+//
+//  .breadcrumbstop ul{
+//    margin: 0px 20px 30px 20px;
+//    padding: 20px;
+//    list-style: none;
+//    position: absolute;
+//    left: -50px;
+//    top: 10px;
+//  }
+//
+//  .tabs {
+//    font-size: 14px;
+//    line-height: 1.7em;
+//    padding: 5px;
+//  }
+//
+//  .ministry h2 {
+//    font-size: 16px;
+//  }
+//
+//  .ministry .list-group a{
+//
+//    font-size: 13px;
+//  }
+//
+//  .ministry p {
+//    position: relative;
+//    left: 10px;
+//    font-size: 14px;
+//  }
+//
+//  .ministry h5 {
+//    position: relative;
+//    left: 10px;
+//  }
+//
+//
+//  .departments h2 {
+//    font-size: 16px;
+//  }
+//
+//  .departments p {
+//    position: relative;
+//    left: 20px;
+//    font-size: 14px;
+//  }
+//
+//  .departments a {
+//    color: #008ECC!important;
+//    font-weight: bold;
+//    font-size: 14px;
+//  }
+//
+//  .programmes h2 {
+//    font-size: 16px;
+//  }
+//
+//
+//  .programmes .list-group a{
+//    background-color: transparent;
+//    font-weight: bold;
+//    font-size: 14px;
+//  }
+//
+//  .lord h2 {
+//    font-size: 16px;
+//  }
+//
+//  .lord p {
+//    position: relative;
+//    left: 10px;
+//    font-size: 14px;
+//  }
+//
+//  .form {
+//    position: relative
+//  }
+//
+//  .blog_categorie_area .col-lg-4 + .col-lg-4{
+//    margin-top: 40px;
+//  }
+//  .categories_post img{
+//    width: 100%;
+//  }
+//
+//}
+//
+//
+///*Large devices (desktops, 992px and up)*/
+//@media (min-width: 992px) {
+//  .breadcrumb-wrap {
+//    margin-top: 0px;
+//  }
+//  .home-slider {
+//    position: relative;
+//    top: 0px;
+//  }
+//  .navbar-custom-collapse {
+//    padding: 10px;
+//    margin: 10px;
+//    position: relative;
+//    top: 0px;
+//    background-color: transparent;
+//    font-size: large;
+//  }
+//
+//  .owl-carousel .item {
+//    height: 85vh;
+//  }
+//  .item img {
+//    max-width: 100%;
+//    height: auto;
+//  }
+//  .bottom-left {
+//    position: absolute;
+//    bottom: 80px;
+//    color: #fff;
+//    left: 15px;
+//    min-width: 40%;
+//    /*line-height: 20em;*/
+//    background: rgba(100, 149, 237, 0.6);
+//    border-radius: 50px 50px 50px 50px;
+//    /*background-color: #008ff0;*/
+//  }
+//
+//  .bottom-left .slidertextone {
+//    font: italic 4.5em 'Source Sans Pro', sans-serif;
+//    color: white;
+//    width: 100%;
+//    text-align: left;
+//    text-shadow: 2px 2px 4px #000000;
+//    bottom: -20px;
+//    position: relative;
+//  }
+//
+//  .bottom-left .slidertexttwo {
+//    font: italic 4.5em 'Source Sans Pro', sans-serif;
+//    color: white;
+//    text-align: right;
+//    text-shadow: 2px 2px 4px #000000;
+//    padding-right: 8px;
+//    bottom: 20px;
+//    position: relative;
+//  }
+//  .navbar-custom-collapse {
+//    font-size: 0.8em;
+//    position: relative;
+//    left: 30px;
+//  }
+//
+//  .navbar-custom img {
+//    position: relative;
+//    top: 0px;
+//    /*background: rgba(255, 255, 255, 0.4);*/
+//    background-color: white;
+//    height: 115px;
+//    width: 115px;
+//    border-radius: 50%;
+//    padding: 10px;
+//    /*width: 15vw;*/
+//    /*-webkit-border-radius: 60px 50px 50px 50px;*/
+//    /*-moz-border-radius: 60px 50px 50px 50px;*/
+//    /*border-radius: 60px 50px 50px 50px;*/
+//  }
+//
+//  .navbar-custom {
+//    position: relative;
+//    top: 0px;
+//    padding-bottom: 5px;
+//  }
+//
+//
+//}
+//
+///*Extra large devices (large desktops, 1200px and up)*/
+//@media (min-width: 1200px) {
+//  .nav-custom{
+//    position: relative;
+//    left: 50px;
+//  }
+//
+//  .ministry p {
+//    font-size: 1.1em;
+//    line-height: 1.5em;
+//  }
+//
+//  .lord p {
+//    font-size: 1.2em;
+//    line-height: 1.35em;
+//  }
+//  .breadcrumb-wrap {
+//    margin-top: 0px;
+//  }
+//  .about p {
+//    font-size: 16px;
+//    line-height: 1.35em;
+//  }
+//
+//  .about p span {
+//    font-weight: bold;
+//    font-size: 20px;
+//    color: #008ECC;
+//  }
+//  .home-slider {
+//
+//    position: relative;
+//    top: 0px;
+//  }
+//
+//  .navbar-custom img {
+//    position: relative;
+//    top: 0px;
+//    /*background: rgba(255, 255, 255, 0.4);*/
+//    background-color: white;
+//    height: 115px;
+//    width: 115px;
+//    padding: 10px;
+//    border-radius: 50%;
+//    /*width: 15vw;*/
+//    /*-webkit-border-radius: 60px 50px 50px 50px;*/
+//    /*-moz-border-radius: 60px 50px 50px 50px;*/
+//    /*border-radius: 60px 50px 50px 50px;*/
+//  }
+//
+//  .owl-carousel .item {
+//    height: 90vh;
+//    display: block;
+//    position: relative;
+//    top: -95px;
+//  }
+//  .item img {
+//    max-width: 100%;
+//    height: auto;
+//  }
+//  .bottom-left {
+//    position: absolute;
+//    bottom: 100px;
+//    color: #fff;
+//    left: 50px;
+//    min-width: 30%;
+//    /*line-height: 20em;*/
+//    background: rgba(100, 149, 237, 0.6);
+//    border-radius: 50px 50px 50px 50px;
+//    /*background-color: #008ff0;*/
+//  }
+//
+//  .bottom-left .slidertextone {
+//    font: italic 5.5em 'Source Sans Pro', sans-serif;
+//    color: white;
+//    width: 100%;
+//    text-align: left;
+//    text-shadow: 2px 2px 4px #000000;
+//    bottom: -20px;
+//    position: relative;
+//  }
+//
+//  .bottom-left .slidertexttwo {
+//    font: italic 5.5em 'Source Sans Pro', sans-serif;
+//    color: white;
+//    text-align: right;
+//    text-shadow: 2px 2px 4px #000000;
+//    padding-right: 8px;
+//    bottom: 20px;
+//    position: relative;
+//  }
+//
+//  .navbar-custom-collapse {
+//    font-size: 1.25em;
+//    position: relative;
+//    left: 50px;
+//
+//  }
+//
+//
+//}
+//
+///***===================RESPONSIVE MEDIA QUERIES SECTION END========================***/
+//
+//
+//
+//
+//

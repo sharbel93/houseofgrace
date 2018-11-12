@@ -46,3 +46,16 @@ Route::prefix('programmes')->group(function() {
     Route::get('/leave-&-cleave', 'ViewPageController@getLeaveandCleave')->name('leave');
     Route::get('/serve-the-lord', 'ViewPageController@getServetheLord')->name('serve');
 });
+
+Route::group(['prefix' => 'manage', 'middleware' =>
+    ['auth','role:superadministrator|administrator|editor|author|contributor']], function() {
+    Route::get('/', 'ManageController@index');
+    Route::get('/dashboard', 'ManageController@dashboard')->name('admin.dashboard');
+    Route::resource('/users', 'UserController');
+    Route::resource('/permissions', 'PermissionController', ['except' =>
+        'destroy']);
+    Route::resource('/roles', 'RoleController', ['except' =>
+        'destroy']);
+    Route::resource('/posts', 'PostController');
+
+});

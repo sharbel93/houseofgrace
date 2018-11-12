@@ -206,9 +206,9 @@
 
     <div class="row">
         <div class="col-md-12">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15958.639785944462!2d35.297056!3d0
-            .51051!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x901065d104b128fe!2sHouse+Of+Grace!5e0!3m2!1sen!2ske
-            !4v1537967383843" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7979.320092881928!2d35.29712027301637!3d0.5103488738452574!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x901065d104b128fe!2sHouse+Of+Grace!5e0!3m2!1sen!2ske!4v1541514397576"
+                    width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
         </div>
     </div>
     </section>
