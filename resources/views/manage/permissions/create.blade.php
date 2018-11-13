@@ -33,14 +33,15 @@
                             Name (Display)
                         </label>
                         <p class="control">
-                            <input type="text" class="input" name="display_name" id="display_name">
+                            <input type="text" class="input" placeholder="Name (Display Name)"
+                                   name="display_name" id="display_name">
                         </p>
                     </div>
 
                     <div class="field" v-if="permissionType === 'basic'">
                         <label for="name" class="label">Slug</label>
                         <p class="control">
-                            <input type="text" class="input" name="name" id="name">
+                            <input type="text" class="input" placeholder="Slug" name="name" id="name">
                         </p>
                     </div>
 
