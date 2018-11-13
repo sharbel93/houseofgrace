@@ -18,11 +18,11 @@
         {{--@include('_includes.nav.main')--}}
 
         @include('manage.nav.nav')
-        <div class="all-content-wrapper">
-        <div id="app">
+
+        <div class="all-content-wrapper" id="app">
             @yield('content')
         </div>
-        </div>
+
         @include('partials.admin.layouts._footer')
 
 <!-- Scripts -->

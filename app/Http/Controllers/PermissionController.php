@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Permission;
+use Session;
 
 class PermissionController extends Controller
 {
@@ -38,7 +39,7 @@ class PermissionController extends Controller
         if($request->permissionType == 'basic') {
             $this->validate($request, [
                 'display_name' => 'required|max:255',
-                'name' => 'required|max:255|alpha_dash|unique:permission,name',
+                'name' => 'required|max:255|alpha_dash|unique:permissions,name',
                 'description' => 'sometimes|max:255'
             ]);
 
