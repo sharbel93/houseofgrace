@@ -11,6 +11,6 @@ class ManageController extends Controller
     }
 
     public function dashboard(){
-        return view('pages.admin.index');
+        return view('manage.dashboard');
     }
 }

@@ -2351,13 +2351,13 @@ ul.two-part-sp li{
 	white-space: nowrap;
 }
 .product-status-wrap th, .product-status-wrap td {
-    padding: 10px;
+    padding: 0px;
     text-align: left;
     font-size: 14px;
 	color:#303030;
 }
 .product-status-wrap table td {
-    padding: 9px 7px;
+    padding: 0px;
     border-top: 1px solid #e9ecef;
 	white-space: nowrap;
 }

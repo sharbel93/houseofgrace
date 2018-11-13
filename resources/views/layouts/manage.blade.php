@@ -7,19 +7,22 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <title>House Of Grace - MANAGEMENT</title>
-    @yield('styles')
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @include('partials.admin.layouts._head')
+    @yield('styles')
 </head>
 <body>
 
         {{--@include('_includes.nav.main')--}}
-        {{--@include('pages.admin.nav.nav')--}}
+
+        @include('manage.nav.nav')
+        <div class="all-content-wrapper">
         <div id="app">
             @yield('content')
         </div>
-
+        </div>
         @include('partials.admin.layouts._footer')
 
 <!-- Scripts -->

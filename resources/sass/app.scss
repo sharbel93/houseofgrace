@@ -10,7 +10,7 @@
 
 // Bulma
 @import '~bulma/bulma.sass';
-@import 'main';
+
 
 // bulma vue modules
 @import '~buefy/src/scss/buefy.scss';
@@ -19,5 +19,6 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 
-
-
+// custom
+@import 'main';
+@import 'helpers';
