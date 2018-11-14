@@ -7,47 +7,51 @@
         </div>
         <div class="left-custom-menu-adp-wrap comment-scrollbar">
             <nav class="sidebar-nav left-sidebar-menu-pro">
-                <ul class="metismenu" id="menu1">
+                <ul class="metismenu " id="menu1">
 
                     <li>
-                        <a title="Landing Page" href="#" class="{{Nav::isRoute('manage.dashboard')}}" aria-expanded="false"><span
+                        <a title="Dashboard" href="#" class="{{Nav::isRoute('manage.dashboard')}}"
+                           aria-expanded="false"><span
                                     class="educate-icon educate-home icon-wrap"
                                     aria-hidden="true"></span>
                             <span class="mini-click-non">Dashboard</span></a>
                     </li>
                     <li>
-                        <a title="Landing Page" href="#" aria-expanded="false"><span
+                        <a title="Blog Posts" href="#" aria-expanded="false"><span
                                     class="educate-icon educate-data-table icon-wrap"
                                     aria-hidden="true"></span>
                             <span class="mini-click-non">Blog Posts</span></a>
                     </li>
                     <li>
-                        <a title="Landing Page" href="{{route('users.index')}}" aria-expanded="false"><span
+                        <a title="Manage Users" href="{{route('users.index')}}" aria-expanded="false"><span
                                     class="educate-icon educate-apps icon-wrap {{Nav::isResource('users')}}"
                                     aria-hidden="true"></span>
                             <span class="mini-click-non">Manage Users</span></a>
                     </li>
                     <li>
-                        <a title="Landing Page" href="#" aria-expanded="false"><span
+                        <a title="Manage Events" href="#" aria-expanded="false"><span
                                     class="educate-icon educate-event icon-wrap sub-icon-mg"
                                     aria-hidden="true"></span>
-                            <span class="mini-click-non">Events</span></a>
+                            <span class="mini-click-non">Manage Events</span></a>
                     </li>
                     <li>
-                        <a title="Landing Page" href="" aria-expanded="false"><span
+                        <a title="Manage Photos" href="" aria-expanded="false"><span
                                     class="educate-icon educate-course icon-wrap"
                                     aria-hidden="true"></span>
-                            <span class="mini-click-non">Photos</span></a>
+                            <span class="mini-click-non">Manage Photos</span></a>
                     </li>
 
                     <li>
-                        <a class="has-arrow {{Nav::hasSegment(['roles','permissions'], 2)}}"  aria-expanded="false"><span
+                        <a  title="Roles &amp; Permissions"  class="has-arrow has-submenu {{Nav::hasSegment(['roles',
+                        'permissions'], 2)}}"
+                            aria-expanded="false"><span
                                     class="educate-icon educate-library icon-wrap "></span>
                             <span class="mini-click-non">Roles&amp;Permissions</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="All Students" class="{{Nav::isResource('roles')}}" href="{{route('roles.index')}}"><span
+                        <ul class="submenu-angle " aria-expanded="false">
+                            <li><a title="Roles" class="{{Nav::isResource('roles')}}" href="{{route('roles.index')
+                            }}"><span
                                             class="mini-sub-pro">Roles</span></a></li>
-                            <li><a title="Add Students" class="{{Nav::isResource('permissions')
+                            <li><a title="Permissions" class="{{Nav::isResource('permissions')
                                             }}" href="{{route('permissions.index')}}"><span
                                             class="mini-sub-pro ">Permissions</span></a>
                             </li>

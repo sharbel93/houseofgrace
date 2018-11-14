@@ -1,0 +1,14 @@
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.menu-list li ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.flex-container{
+  margin: 10px 25px;
+}
