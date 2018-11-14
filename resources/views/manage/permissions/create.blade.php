@@ -11,6 +11,12 @@
             <div class="column">
                 <h1 class="title">Create New Permission</h1>
             </div>
+          <div class="column">
+              <div class="is-pulled-right">
+                  <a href="{{route('permissions.index')}}" class="button is-primary"><i class="fa fa-eye
+                    m-r-10"></i>View Permission List</a>
+              </div>
+          </div>
         </div>
         <hr class="m-t-0">
 
@@ -29,10 +35,10 @@
 
                     <!-- BASIC PERMISSIONS -->
                     <div class="field" v-if="permissionType === 'basic'">
-                        <label for="display_name" class="label">
+                        <label for="display_name" class="label ">
                             Name (Display)
                         </label>
-                        <p class="control">
+                        <p class="control m-t-10" >
                             <input type="text" class="input" placeholder="Name (Display Name)"
                                    name="display_name" id="display_name">
                         </p>
@@ -40,14 +46,14 @@
 
                     <div class="field" v-if="permissionType === 'basic'">
                         <label for="name" class="label">Slug</label>
-                        <p class="control">
+                        <p class="control m-t-10">
                             <input type="text" class="input" placeholder="Slug" name="name" id="name">
                         </p>
                     </div>
 
                     <div class="field" v-if="permissionType === 'basic'">
                         <label for="description" class="label">Description</label>
-                        <p class="control">
+                        <p class="control m-t-10">
                             <input type="text" class="input" name="description" id="description"
                                    placeholder="Describe what this permission does">
                         </p>
@@ -56,8 +62,8 @@
                     <!-- CRUD PERMISSIONS -->
                     <div class="field" v-if="permissionType === 'crud'">
                         <label for="resource" class="label">Resource</label>
-                        <p class="control">
-                            <input type="text" class="input" name="resource" id="resource" v-model="resource"
+                        <p class="control m-t-10">
+                            <input type="text" class="input " name="resource" id="resource" v-model="resource"
                                    placeholder="The name of the resource">
                         </p>
                     </div>
