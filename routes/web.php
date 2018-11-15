@@ -57,5 +57,10 @@ Route::group(['prefix' => 'manage', 'middleware' =>
     Route::resource('/roles', 'RoleController', ['except' =>
         'destroy']);
     Route::resource('/posts', 'PostController');
+// Categories
+    Route::resource('/categories','CategoryController', ['except' =>'create']);
 
+//tags
+    Route::resource('/tags','TagController', ['except' =>'create']);
 });
+

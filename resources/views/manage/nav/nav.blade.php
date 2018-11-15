@@ -23,6 +23,18 @@
                             <span class="mini-click-non">Blog Posts</span></a>
                     </li>
                     <li>
+                        <a title="Blog Posts" href="{{ route('categories.index') }}" aria-expanded="false"><span
+                                    class="educate-icon educate-data-table icon-wrap"
+                                    aria-hidden="true"></span>
+                            <span class="mini-click-non">Categories</span></a>
+                    </li>
+                    <li>
+                        <a title="Blog Posts" href="{{ route('tags.index') }}" aria-expanded="false"><span
+                                    class="educate-icon educate-data-table icon-wrap"
+                                    aria-hidden="true"></span>
+                            <span class="mini-click-non">Tags</span></a>
+                    </li>
+                    <li>
                         <a title="Manage Users" href="{{route('users.index')}}" aria-expanded="false"><span
                                     class="educate-icon educate-apps icon-wrap {{Nav::isResource('users')}}"
                                     aria-hidden="true"></span>
