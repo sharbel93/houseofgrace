@@ -17,7 +17,7 @@
                             <span class="mini-click-non">Dashboard</span></a>
                     </li>
                     <li>
-                        <a title="Blog Posts" href="#" aria-expanded="false"><span
+                        <a title="Blog Posts" href="{{route('posts.index')}}" class="{{Nav::isResource('posts', 2)}}" aria-expanded="false"><span
                                     class="educate-icon educate-data-table icon-wrap"
                                     aria-hidden="true"></span>
                             <span class="mini-click-non">Blog Posts</span></a>

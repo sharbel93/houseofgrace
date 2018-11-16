@@ -15681,3 +15681,79 @@ label.panel-block:hover {
   margin: 10px 25px;
 }
 
+.widget-area {
+  min-height: 75px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+}
+
+.widget-area.author-widget .selected-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.widget-area.author-widget .selected-author img {
+  float: left;
+  border-radius: 25px;
+}
+
+.widget-area.author-widget .selected-author .author {
+  margin: auto 0 auto 10px;
+}
+
+.widget-area.author-widget .selected-author .author .subtitle {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.widget-area.post-status-widget .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.widget-area.post-status-widget .status .status-icon {
+  min-width: 50px;
+  margin-left: 10px;
+}
+
+.widget-area.post-status-widget .status .status-details {
+  margin-left: 10px;
+}
+
+.widget-area.post-status-widget .status .status-details h4 {
+  font-weight: 800;
+}
+
+.widget-area.post-status-widget .status .status-details p {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+
+.widget-area.publish-buttons-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.widget-area.publish-buttons-widget .primary-action-button,
+.widget-area.publish-buttons-widget .secondary-action-button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+  margin: 10px;
+}
+

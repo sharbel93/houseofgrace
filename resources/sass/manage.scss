@@ -12,3 +12,60 @@
 .flex-container{
   margin: 10px 25px;
 }
+
+.widget-area {
+  min-height: 75px;
+  padding: 10px;
+  border-bottom: 1px solid rgba(10, 10, 10, 0.1);
+  &.author-widget {
+    .selected-author{
+      display: flex;
+      align-items: flex-start;
+      img {
+        float: left;
+        border-radius: 25px;
+      }
+      .author{
+        margin: auto 0 auto 10px;
+        .subtitle {
+          font-weight: 300;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+
+  &.post-status-widget {
+    .status {
+      display:flex;
+      align-content: flex-start;
+      .status-icon {
+        min-width: 50px;
+        margin-left: 10px;
+        //.icon{
+        //  margin: 0 auto;
+        //}
+      }
+      .status-details{
+        margin-left: 10px;
+        h4 {
+          font-weight: 800;
+        }
+        p {
+          font-weight: 300;
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+  &.publish-buttons-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .primary-action-button, .secondary-action-button {
+      flex-grow: 1;
+      width: 100%;
+      margin: 10px;
+    }
+  }
+}

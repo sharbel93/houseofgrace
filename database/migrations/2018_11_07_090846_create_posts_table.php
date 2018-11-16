@@ -20,11 +20,11 @@ class CreatePostsTable extends Migration
             $table->integer('author_id')->unsigned();
             $table->integer('category_id')->nullable();
             $table->string('title');
-            $table->text('excerpt');
+//            $table->text('excerpt');
             $table->longText('content');
             $table->string('image')->nullable();
-            $table->integer('type')->unsigned()->default(1);
-            $table->bigInteger('comment_count')->unsigned();
+//            $table->integer('type')->unsigned()->default(1);
+//            $table->bigInteger('comment_count')->unsigned();
             $table->timestamps();
 
             $table->foreign('author_id')

@@ -7,6 +7,8 @@
 
 require('./bootstrap');
 
+// require('select2');
+// require('tinymce');
 window.Vue = require('vue');
 window.Slug = require('slug');
 Slug.defaults.mode = 'rfc3986';
@@ -19,9 +21,10 @@ Slug.defaults.mode = 'rfc3986';
 import Vue from 'vue';
 import Buefy from 'buefy';
 
+
 Vue.use(Buefy);
-
-
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('slugWidget', require('./components/slugWidget.vue'));
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 // require('./manage');
+//select2
