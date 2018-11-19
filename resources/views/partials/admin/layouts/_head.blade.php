@@ -41,6 +41,10 @@
     ============================================ -->
 <link rel="stylesheet" href="{{asset('admin/css/calendar/fullcalendar.min.css')}}">
 <link rel="stylesheet" href="{{asset('admin/css/calendar/fullcalendar.print.min.css')}}">
+<!-- cropper CSS
+      ============================================ -->
+{{--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropper/4.0.0/cropper.min.css" />--}}
+{{--<link rel="stylesheet" href="{{asset('admin/css/cropper/cropper.min.css')}}" />--}}
 <!-- style CSS
     ============================================ -->
 <link rel="stylesheet" href="{{asset('admin/style.css')}}">
@@ -50,7 +54,6 @@
 <!-- modernizr JS
     ============================================ -->
 <script src="{{asset('admin/js/vendor/modernizr-2.8.3.min.js')}}"></script>
-
 <!-- select2 JS
     ============================================ -->
 {{--<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />--}}

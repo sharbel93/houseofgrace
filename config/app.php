@@ -167,6 +167,8 @@ return [
         DevMarketer\EasyNav\EasyNavServiceProvider::class,
         DevMarketer\LaraFlash\LaraFlashServiceProvider::class,
         Barryvdh\Debugbar\ServiceProvider::class,
+        Intervention\Image\ImageServiceProvider::class,
+        Mews\Purifier\PurifierServiceProvider::class,
 
     ],
 
@@ -200,6 +202,7 @@ return [
         'File' => Illuminate\Support\Facades\File::class,
         'Gate' => Illuminate\Support\Facades\Gate::class,
         'Hash' => Illuminate\Support\Facades\Hash::class,
+        'Image' => Intervention\Image\Facades\Image::class,
         'Lang' => Illuminate\Support\Facades\Lang::class,
         'LaraFlash' => DevMarketer\LaraFlash\LaraFlashFacade::class,
         'Laratrust'   => Laratrust\LaratrustFacade::class,
@@ -208,6 +211,7 @@ return [
         'Nav' => DevMarketer\EasyNav\EasyNavFacade::class,
         'Notification' => Illuminate\Support\Facades\Notification::class,
         'Password' => Illuminate\Support\Facades\Password::class,
+        'Purifier' => Mews\Purifier\Facades\Purifier::class,
         'Queue' => Illuminate\Support\Facades\Queue::class,
         'Redirect' => Illuminate\Support\Facades\Redirect::class,
         'Redis' => Illuminate\Support\Facades\Redis::class,

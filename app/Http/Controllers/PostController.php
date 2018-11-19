@@ -9,6 +9,7 @@ use Storage;
 use File;
 use Image;
 use Auth;
+use Purifier;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -57,29 +58,41 @@ class PostController extends Controller
             'slug' => 'required|alpha_dash |min:5 |max: 255|unique:posts,slug',
             'category_id' => 'required|integer',
             'content'=> 'required',
-            'image' => 'sometimes'
+            'thumbnail' => 'sometimes|image'
         ));
+//            'inputImage' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+
 
         // stroe in the database
         $post = new Post;
         $post->title = $request->title;
         $post->slug = $request->slug;
         $post->category_id = $request->category_id;
-        $post->content = $request->content;
+        $post->content = Purifier::clean($request->content);
         $post->author_id = Auth::user()->id;
 
-        if (!$request->image == null) {
-            $data = $request->image;
-            list($type, $data) = explode(';', $data);
-            list(, $data)      = explode(',', $data);
-            $data = base64_decode($data);
-
-            $image_name = str_slug($request->title, $separator = '-').date('His').'.png';
-            $path = public_path() . "/images/posts/" . $image_name;
-            file_put_contents($path, $data);
-
-            $post->image = $image_name;
+//        if (!$request->thumbnail == null) {
+//            $data = $request->thumbnail;
+//            list($type, $data) = explode(';', $data);
+//            list(, $data)      = explode(',', $data);
+//            $data = base64_decode($data);
+//
+//            $image_name= str_slug($request->title, $separator = '-').date('His').'.png';
+//            $path = public_path() . "/blog/images/" . $image_name;
+//            file_put_contents($path, $data);
+//
+//            $post->image = $image_name;
+//        }
+        if( $request->hasFile('thumbnail') ) {
+            $post_thumbnail     = $request->file('thumbnail');
+            $filename           = str_slug($request->title, $separator = '-').date('His'). '.png';
+            $location =  public_path('/blog/images/' . $filename );
+            Image::make($post_thumbnail)->resize(800, 400)->save( $location );
+            // Set post-thumbnail url
+            $post->image = $filename;
         }
+
+//           dd($post->image);
         $post->save();
         $post->tags()->sync($request->tags, false);
 
@@ -148,26 +161,43 @@ class PostController extends Controller
         $post->title = $request->input('title');
         $post->slug = $request->input('slug');
         $post->category_id = $request->input('category_id');
-        $post->content = $request->input('content');
+        $post->content = Purifier::clean($request->input('content'));
         $post->author_id = Auth::user()->id;
 
-        if (!$request->image == null) {
-            $data = $request->image;
-            list($type, $data) = explode(';', $data);
-            list(, $data)      = explode(',', $data);
-            $data = base64_decode($data);
+//        if (!$request->image == null) {
+//            $data = $request->image;
+//            list($type, $data) = explode(';', $data);
+//            list(, $data)      = explode(',', $data);
+//            $data = base64_decode($data);
+//
+//            $image_name= str_slug($request->title, $separator = '-').date('His').'.png';
+//            $path = public_path() . "/images/posts/" . $image_name;
+//            file_put_contents($path, $data);
+//
+//            if(!$post->image == null){
+//                $oldFilename = $post->image;
+//                $filename1 = public_path().'/images/post/'.$oldFilename;
+//                \File::delete($filename1);
+//            }
+        // Check if file is present
+        if( $request->hasFile('post_thumbnail') ) {
+            $post_thumbnail     = $request->file('post_thumbnail');
+            $filename           = str_slug($request->title, $separator = '-').date('His'). '.png';
+            $location =  public_path('/blog/images/' . $filename );
+            Image::make($post_thumbnail)->resize(800, 400)->save( $location );
+            $oldFilename = $post->image;
 
-            $image_name= str_slug($request->title, $separator = '-').date('His').'.png';
-            $path = public_path() . "/images/posts/" . $image_name;
-            file_put_contents($path, $data);
 
-            if(!$post->image == null){
-                $oldFilename = $post->image;
-                $filename1 = public_path().'/images/post/'.$oldFilename;
-                \File::delete($filename1);
-            }
+            // Delete the old photo
+//            if(!$post->image == null){
+//                $oldFilename = $post->image;
+//                $filename1 = public_path().'/blog/images/'.$oldFilename;
+//                \File::delete($filename1);
+//            }
+            Storage::delete($oldFilename);
 
-            $post->image = $image_name;
+            // update database
+            $post->image = $filename;
         }
         $post->save();
         $post->tags()->sync($request->tags);

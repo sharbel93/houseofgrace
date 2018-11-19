@@ -1,14 +1,31 @@
 @extends('layouts.manage')
 
 @section('styles')
-
     {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=your_API_key"></script>--}}
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
+    {{--<script src="{{asset('admin/js/tinymce.min.js')}}"></script>--}}
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=ywgkbg9892vgo6omh0v00dd8vyu1ogqne2md5jipypd66uis"></script>
     <script>tinymce.init({ selector:'textarea',
             plugins: 'link code image'});</script>
+    <style type="text/css">
+        /* Limit image width to avoid overflow the container */
+        img {
+            max-width: 100%;
+            padding: 5px; /* This rule is very important, please do not ignore this! */
+        }
+
+        #canvas-three {
+            height: 250px;
+            width: 250px;
+            background-color: #f0f0f0f0;
+            cursor: default;
+            border: 1px solid gold ;;
+        }
+
+    </style>
 
 @endsection
 @section('content')
+
 
     <div class="product-status mg-b-15">
         <div class="container-fluid">
@@ -20,27 +37,30 @@
                                 <div class="column">
                                     <h1 class="title is-admin is-4">Add New Blog Post</h1>
                                 </div>
-                                <div class="column">
+                                {{--<div class="column">--}}
                                     {{--<a href="{{route('posts.create')}}" class="button is-primary is-pulled-right">--}}
                                     {{--<i class="fa fa-user-add m-r-10"></i> Create New User--}}
                                     {{--</a>--}}
-                                </div>
+                                {{--</div>--}}
                             </div>
                             <hr class="m-t-0">
 
-                            <form action="{{route('posts.store')}}" method="post">
+                            <form action="{{route('posts.store')}}" method="POST"  enctype="multipart/form-data" >
                                 {{ csrf_field()}}
                                 <div class="columns">
                                     <div class="column is-three-quarters-desktop is-three-quarters-tablet">
                                         <b-field>
-                                            <b-input  type="text" placeholder="Post Title" size="is-large" v-model="title"></b-input>
+                                            <b-input  type="text" placeholder="Post Title" size="is-large"
+                                                      name="title" id="title"
+                                                      v-model="title"></b-input>
                                         </b-field>
-
+                                        {{--<input type="hidden" name="author_ID" value="{{ Auth::id() }}" />--}}
                                         <slug-widget url="{{url('/')}}" subdirectory="blog" :title="title" @copied="slugCopied"
                                                      @slug-changed="updateSlug"></slug-widget>
-                                        <input type="hidden" v-model="slug" name="slug">
+                                        <input type="hidden" v-model="slug" name="slug" id="slug">
                                         <label class="label">Category </label>
-                                        <select  name="category_id" class="mb-2  field form-control"  value="{{ old('category_id') }}">
+                                        <select  name="category_id" id="category_id" class="mb-2 field
+                                        form-control"  value="{{ old('category_id') }}">
                                             <option value="">Choose Category</option>
                                             @foreach($categories as $category)
                                                 <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -48,36 +68,55 @@
                                         </select>
 
                                         <label class="label">Tags</label>
-                                        <select name="tags[]"  id="users" class="mb-2 field select-example form-control"
-                                                multiple="multiple">
+                                        <select name="tags[]"  id="users" class="mb-2  select-example form-control" multiple="multiple">
                                             @foreach($tags as $tag)
                                                 <option value="{{ $tag->id }}">{{ $tag->name }}</option>
                                             @endforeach
                                         </select>
+
                                         <b-field class="m-t-40">
-                                            <b-input type="textarea" rows="5"
-                                                     {{--minlength="10"--}}
-                                                     {{--maxlength="500"--}}
+                                            <b-input type="textarea" name="content" id="content" rows="5"
+                                                     minlength="10"
+                                                     maxlength="500"
                                                      placeholder="Compose your masterpiece ...">
                                             </b-input>
                                         </b-field>
-                                        <div class="col-md-6">
+                                        <input type="file" name="thumbnail" id="thumbnail" />
 
+                                        <!-- Basic Image cropper Start -->
+                                        {{--<div class="row">--}}
+                                            {{--<div class="col-md-12 ">--}}
 
-                                            <input type="file" id="fileImage-three"  class="form-control" accept="image/*"  />
-                                        </div>
+                                                {{--<div class="row">--}}
+                                                    {{--<label class="label-title">Thumbnail </label><br>--}}
+                                                    {{--<div class="col-md-4">--}}
+                                                        {{--<input type="file" id="fileImage-three"  class="form-control" accept="image/*"  />--}}
+                                                    {{--</div>--}}
+                                                    {{--<div class="col-md-4">--}}
+                                                        {{--<input type="button" class="btn btn-default btn-sm" id="btnCrop-three" value="Crop" />--}}
+                                                    {{--</div>--}}
+                                                    {{--<div class="col-md-4">--}}
+                                                        {{--<input type="button" class="btn btn-default btn-sm" id="btnRestore-three" value="Restore" />--}}
+                                                    {{--</div>--}}
 
-                                        <div class="col-md-6">
-                                            <div class="col-xs-6">
-                                                <input type="button" class="btn btn-default btn-sm" id="btnCrop-three" value="Crop" />
-                                            </div>
-                                            <div class="col-xs-6">
-                                                <input type="button" class="btn btn-default btn-sm" id="btnRestore-three" value="Restore" />
-                                            </div>
-                                        </div>
+                                                {{--</div>--}}
+                                                    {{--<br class="clearfix"><br>--}}
+                                                {{--<div class="row">--}}
+                                                    {{--<div class="col-md-6">--}}
+                                                        {{--<div>--}}
+                                                            {{--<canvas id="canvas-three">--}}
+                                                                {{--Your browser does not support the HTML5 canvas element.--}}
+                                                            {{--</canvas>--}}
+                                                        {{--</div>--}}
+                                                    {{--</div>--}}
+                                                    {{--<div class="col-md-6">--}}
+                                                        {{--<div class="col-md-6" id="result-three">  </div>--}}
+                                                    {{--</div>--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
 
-
-
+                                        {{--</div>--}}
+                                        <!-- Basic Image cropper End-->
                                     </div> <!-- end of .column.is-three-quarters -->
 
                                     <div class="column is-one-quarter-desktop is-narrow-tablet">
@@ -97,7 +136,7 @@
                                             <div class="post-status-widget widget-area">
                                                 <div class="status">
                                                     <div class="status-icon">
-                                                        {{--<b-icon  icon="clipboard" size="medium"></b-icon>--}}
+                                                        <b-icon  icon="clipboard" size="medium"></b-icon>
                                                         <i class="fas fa-clipboard-list fa-2x"></i>
                                                     </div>
                                                     <div class="status-details">
@@ -110,12 +149,13 @@
                                             </div>
 
                                             <div class="publish-buttons-widget widget-area">
-                                                <div class="secondary-action-button">
-                                                    <button class="button is-info is-outlined is-fullwidth">Save Draft</button>
+                                                {{--<div class="secondary-action-button">--}}
+                                                    {{--<button class="button is-info is-outlined is-fullwidth">Save Draft</button>--}}
 
-                                                </div>
+                                                {{--</div>--}}
                                                 <div class="primary-action-button">
-                                                    <button class="button is-primary is-fullwidth">Publish</button>
+                                                    <button type="submit" class="button is-primary
+                                                    is-fullwidth">Publish</button>
 
                                                 </div>
                                             </div>
@@ -127,11 +167,13 @@
                             </form>
 
                         </div> <!-- end of .container -->
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 @stop
 @section('scripts')
     {{--<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>--}}
@@ -164,5 +206,11 @@
     </script>
 
 
+    <!-- cropper JS
+      ============================================ -->
+    {{--<script src="{{asset('admin/js/cropper/cropper.min.js')}}"></script>--}}
+    {{--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cropper/2.3.3/cropper.js"></script>--}}
+
+    {{--<script src="{{asset('admin/js/cropper/cropper-actice.js')}}"></script>--}}
 
 @endsection

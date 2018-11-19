@@ -50,6 +50,10 @@
 <script src="{{asset('admin/js/calendar/moment.min.js')}}"></script>
 <script src="{{asset('admin/js/calendar/fullcalendar.min.js')}}"></script>
 <script src="{{asset('admin/js/calendar/fullcalendar-active.js')}}"></script>
+
+<!-- tab JS
+    ============================================ -->
+<script src="{{asset('admin/js/tab.js')}}"></script>
 <!-- plugins JS
     ============================================ -->
 <script src="{{asset('admin/js/plugins.js')}}"></script>
