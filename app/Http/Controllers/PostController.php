@@ -7,7 +7,7 @@ use App\Category;
 use App\Tag;
 use Storage;
 use File;
-use Image;
+use Intervention\Image\ImageManagerStatic as Image;
 use Auth;
 use Purifier;
 use Illuminate\Http\Request;
@@ -58,7 +58,7 @@ class PostController extends Controller
             'slug' => 'required|alpha_dash |min:5 |max: 255|unique:posts,slug',
             'category_id' => 'required|integer',
             'content'=> 'required',
-            'thumbnail' => 'sometimes|image'
+            'thumbnail' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ));
 //            'inputImage' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
 
@@ -85,9 +85,12 @@ class PostController extends Controller
 //        }
         if( $request->hasFile('thumbnail') ) {
             $post_thumbnail     = $request->file('thumbnail');
-            $filename           = str_slug($request->title, $separator = '-').date('His'). '.png';
+            $filename           = str_slug($request->title, $separator = '-').date('His'). '.jpg';
             $location =  public_path('/blog/images/' . $filename );
-            Image::make($post_thumbnail)->resize(800, 400)->save( $location );
+            Image::make($post_thumbnail)->resize(1200, null)->save($location);
+//            Image::make($post_thumbnail)->widen(1200)->save($location);
+//            $originalImage = Image::make($post_thumbnail);
+//            $originalImage->save( $location );
             // Set post-thumbnail url
             $post->image = $filename;
         }
@@ -110,7 +113,7 @@ class PostController extends Controller
     public function show($id)
     {
         $post = Post::find($id);
-        return view('posts.show')->withPost($post);
+        return view('manage.posts.show')->withPost($post);
     }
 
     /**
@@ -135,7 +138,7 @@ class PostController extends Controller
             $tagsArray[$tag->id] = $tag->name;
         }
 // return the view and pass in the var we previously created
-        return view('posts.edit')->withPost($post)->withCategories($cats)->withTags($tagsArray);
+        return view('manage.posts.edit')->withPost($post)->withCategories($cats)->withTags($tagsArray);
 
     }
 
@@ -148,16 +151,22 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $post = Post::find($id);
+//        $post = Post::find($id);
         $this->validate($request, array(
             'title' => 'required|max:255',
-            'slug' => 'required|alpha_dash |min:5 |max: 255|unique:posts,slug',
+            'slug' => "required|alpha_dash |min:5 |max: 255|unique:posts,slug, $id",
             'category_id' => 'required|integer',
             'content'=> 'required',
-            'image' => 'sometimes'
+            'thumbnail' => 'sometimes|image'
         ));
 
         // Save the data to the database
+//        $post->title = $request->title;
+//        $post->slug = $request->slug;
+//        $post->category_id = $request->category_id;
+//        $post->content = Purifier::clean($request->content);
+//        $post->author_id = Auth::user()->id;
+        $post = Post::findOrFail($id);
         $post->title = $request->input('title');
         $post->slug = $request->input('slug');
         $post->category_id = $request->input('category_id');
@@ -180,8 +189,8 @@ class PostController extends Controller
 //                \File::delete($filename1);
 //            }
         // Check if file is present
-        if( $request->hasFile('post_thumbnail') ) {
-            $post_thumbnail     = $request->file('post_thumbnail');
+        if( $request->hasFile('thumbnail') ) {
+            $post_thumbnail     = $request->file('thumbnail');
             $filename           = str_slug($request->title, $separator = '-').date('His'). '.png';
             $location =  public_path('/blog/images/' . $filename );
             Image::make($post_thumbnail)->resize(800, 400)->save( $location );
@@ -199,6 +208,9 @@ class PostController extends Controller
             // update database
             $post->image = $filename;
         }
+//        print_r( $post->title);
+//        die();
+//        dd( $request->thumbnail, $request->author_id, $request->content, $request->category_id,  $request->slug,  $request->title);
         $post->save();
         $post->tags()->sync($request->tags);
         return redirect()->route('posts.show', $post->id)->with('success', 'The blog post was successfully saved!');

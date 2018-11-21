@@ -60,7 +60,7 @@
                                         <input type="hidden" v-model="slug" name="slug" id="slug">
                                         <label class="label">Category </label>
                                         <select  name="category_id" id="category_id" class="mb-2 field
-                                        form-control"  value="{{ old('category_id') }}">
+                                        form-control" >
                                             <option value="">Choose Category</option>
                                             @foreach($categories as $category)
                                                 <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -83,40 +83,6 @@
                                         </b-field>
                                         <input type="file" name="thumbnail" id="thumbnail" />
 
-                                        <!-- Basic Image cropper Start -->
-                                        {{--<div class="row">--}}
-                                            {{--<div class="col-md-12 ">--}}
-
-                                                {{--<div class="row">--}}
-                                                    {{--<label class="label-title">Thumbnail </label><br>--}}
-                                                    {{--<div class="col-md-4">--}}
-                                                        {{--<input type="file" id="fileImage-three"  class="form-control" accept="image/*"  />--}}
-                                                    {{--</div>--}}
-                                                    {{--<div class="col-md-4">--}}
-                                                        {{--<input type="button" class="btn btn-default btn-sm" id="btnCrop-three" value="Crop" />--}}
-                                                    {{--</div>--}}
-                                                    {{--<div class="col-md-4">--}}
-                                                        {{--<input type="button" class="btn btn-default btn-sm" id="btnRestore-three" value="Restore" />--}}
-                                                    {{--</div>--}}
-
-                                                {{--</div>--}}
-                                                    {{--<br class="clearfix"><br>--}}
-                                                {{--<div class="row">--}}
-                                                    {{--<div class="col-md-6">--}}
-                                                        {{--<div>--}}
-                                                            {{--<canvas id="canvas-three">--}}
-                                                                {{--Your browser does not support the HTML5 canvas element.--}}
-                                                            {{--</canvas>--}}
-                                                        {{--</div>--}}
-                                                    {{--</div>--}}
-                                                    {{--<div class="col-md-6">--}}
-                                                        {{--<div class="col-md-6" id="result-three">  </div>--}}
-                                                    {{--</div>--}}
-                                                {{--</div>--}}
-                                            {{--</div>--}}
-
-                                        {{--</div>--}}
-                                        <!-- Basic Image cropper End-->
                                     </div> <!-- end of .column.is-three-quarters -->
 
                                     <div class="column is-one-quarter-desktop is-narrow-tablet">
