@@ -78,7 +78,7 @@ class PostController extends Controller
 //            $data = base64_decode($data);
 //
 //            $image_name= str_slug($request->title, $separator = '-').date('His').'.png';
-//            $path = public_path() . "/blog/images/" . $image_name;
+//            $path = public_path() . "/posts/images/" . $image_name;
 //            file_put_contents($path, $data);
 //
 //            $post->image = $image_name;
@@ -86,8 +86,8 @@ class PostController extends Controller
         if( $request->hasFile('thumbnail') ) {
             $post_thumbnail     = $request->file('thumbnail');
             $filename           = str_slug($request->title, $separator = '-').date('His'). '.jpg';
-            $location =  public_path('/blog/images/' . $filename );
-            Image::make($post_thumbnail)->resize(1200, null)->save($location);
+            $location =  public_path('/posts/images/' . $filename );
+            Image::make($post_thumbnail)->resize(800,400)->save($location);
 //            Image::make($post_thumbnail)->widen(1200)->save($location);
 //            $originalImage = Image::make($post_thumbnail);
 //            $originalImage->save( $location );
@@ -100,7 +100,7 @@ class PostController extends Controller
         $post->tags()->sync($request->tags, false);
 
         // redirect to another page
-        return redirect()->route('posts.show', $post->id)->with('success', 'The blog post was successfully saved!');
+        return redirect()->route('posts.show', $post->id)->with('success', 'The posts post was successfully saved!');
 
     }
 
@@ -192,7 +192,7 @@ class PostController extends Controller
         if( $request->hasFile('thumbnail') ) {
             $post_thumbnail     = $request->file('thumbnail');
             $filename           = str_slug($request->title, $separator = '-').date('His'). '.png';
-            $location =  public_path('/blog/images/' . $filename );
+            $location =  public_path('/posts/images/' . $filename );
             Image::make($post_thumbnail)->resize(800, 400)->save( $location );
             $oldFilename = $post->image;
 
@@ -200,7 +200,7 @@ class PostController extends Controller
             // Delete the old photo
 //            if(!$post->image == null){
 //                $oldFilename = $post->image;
-//                $filename1 = public_path().'/blog/images/'.$oldFilename;
+//                $filename1 = public_path().'/posts/images/'.$oldFilename;
 //                \File::delete($filename1);
 //            }
             Storage::delete($oldFilename);
@@ -213,7 +213,7 @@ class PostController extends Controller
 //        dd( $request->thumbnail, $request->author_id, $request->content, $request->category_id,  $request->slug,  $request->title);
         $post->save();
         $post->tags()->sync($request->tags);
-        return redirect()->route('posts.show', $post->id)->with('success', 'The blog post was successfully saved!');
+        return redirect()->route('posts.show', $post->id)->with('success', 'The posts post was successfully saved!');
     }
 
     /**
@@ -229,7 +229,7 @@ class PostController extends Controller
         $imagename = public_path().'/images/posts/'.$post->image;
         \File::delete($imagename);
         $post->delete();
-        return redirect()->route('posts.index')->with('success', 'The blog post was successfully Deleted!');
+        return redirect()->route('posts.index')->with('success', 'The posts post was successfully Deleted!');
 
     }
 

@@ -45,7 +45,7 @@
                                                 <td>
                                                     <ul class="list-inline">
                                                         <li>
-                                                            <img src="{{ asset('blog/images/'.$post->image) }}"
+                                                            <img src="{{ asset('posts/images/'.$post->image) }}"
                                                                  width="80" class=" img-responsive" alt="image" />
                                                         </li>
 

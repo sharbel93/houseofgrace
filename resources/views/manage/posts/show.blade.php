@@ -7,9 +7,11 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="product-status-wrap drp-lst">
                         <div class="row">
+
                             <div class="col-md-8">
 
-                                <img src="{{ asset('blog/images/'.$post->image) }}"  >
+
+                                <img src="{{ asset('posts/images/'.$post->image) }}"  >
                                 <h1>{{ $post->title }}</h1>
                                 <p class="lead"> {!! $post->content !!}</p>
 

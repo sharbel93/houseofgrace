@@ -21,7 +21,28 @@ Auth::routes();
 Route::get('/', 'ViewPageController@getIndex');
 Route::get('/about', 'ViewPageController@getAbout')->name('about');
 Route::get('/departments', 'ViewPageController@getDepartments')->name('departments');
-Route::get('/blog', 'ViewPageController@getBlog')->name('blog');
+// Blog
+Route::prefix('blog')->group(function() {
+    Route::get('/', 'BlogController@getIndex')->name('blog');
+    Route::get('/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])->where('slug', '[\w\d\-\_]+');
+
+});
+
+
+// Comments
+Route::prefix('comments')->group(function() {
+    Route::post('/{post_id}', ['uses' => 'CommentsController@store', 'as' => 'comments.store']);
+    Route::get('/{id}/edit', ['uses' => 'CommentsController@edit', 'as' => 'comments.edit']);
+    Route::put('/{id}', ['uses' => 'CommentsController@update', 'as' => 'comments.update']);
+    Route::delete('/{id}', ['uses' => 'CommentsController@destroy', 'as' => 'comments.destroy']);
+    Route::get('/{id}/delete', ['uses' => 'CommentsController@delete', 'as' => 'comments.delete']);
+});
+//Route::post('comments/{post_id}', ['uses' => 'CommentsController@store', 'as' => 'comments.store']);
+//Route::get('comments/{id}/edit', ['uses' => 'CommentsController@edit', 'as' => 'comments.edit']);
+//Route::put('comments/{id}', ['uses' => 'CommentsController@update', 'as' => 'comments.update']);
+//Route::delete('comments/{id}', ['uses' => 'CommentsController@destroy', 'as' => 'comments.destroy']);
+//Route::get('comments/{id}/delete', ['uses' => 'CommentsController@delete', 'as' => 'comments.delete']);
+
 Route::get('/contact', 'ViewPageController@getContact')->name('contact');
 Route::get('/Lords-kitchen', 'ViewPageController@getLordsKitchen')->name('lordskitchen');
 Route::get('/senior-pastor', 'ViewPageController@getSeniorPastor')->name('senior-pastor');

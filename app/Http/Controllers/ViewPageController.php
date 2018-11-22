@@ -27,10 +27,10 @@ class ViewPageController extends Controller
         return view('pages.departments');
     }
 
-
-    public function getBlog() {
-        return view('pages.blog');
-    }
+//
+//    public function getBlog() {
+//        return view('pages.posts.index');
+//    }
 
     public function getProgrammes() {
         return view('pages.programmes');
