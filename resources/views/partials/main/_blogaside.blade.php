@@ -14,8 +14,7 @@
     {{--@endphp--}}
     @foreach($populars as $popular)
         <div class="media post_item">
-            <img src="{{asset('posts/images/'.$popular->image)}}"  width="50" height="50"
-                 alt="post">
+            <img src="{{asset('posts/images/'.$popular->image)}}"  width="50" height="50" alt="">
             <div class="media-body">
                 <a href="blog-details.html"><h3>{{$popular->title}}</h3></a>
                 <p> {{count($popular->comments)}} comments</p>

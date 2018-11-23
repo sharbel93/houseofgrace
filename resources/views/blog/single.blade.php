@@ -63,9 +63,11 @@
                         <div class="col-lg-6 col-md-6 col-12 nav-left flex-row d-flex justify-content-start align-items-center">
                           @if(isset($previous))
                                 <div class="thumb">
-                                    <a href="{{url('blog/'.$previous->slug)}}"><img class="img-fluid" height="60" width="60" src="{{asset
-                                    ('posts/images/'.$previous->image)
-                                    }}" alt=""></a>
+                                    <a href="{{url('blog/'.$previous->slug)}}">
+                                        <img class="img-fluid" height="60" width="60" src="{{asset('posts/images/'.$previous->image)  }}" alt="">
+
+
+                                    </a>
                                 </div>
                                 <div class="arrow">
                                     <a href="{{url('blog/'.$previous->slug)}}"><span class="lnr text-white lnr-arrow-left"></span></a>
@@ -86,133 +88,68 @@
                                     <a href="{{url('blog/'.$next->slug)}}"><span class="lnr text-white lnr-arrow-right"></span></a>
                                 </div>
                                 <div class="thumb">
-                                    <a href="{{url('blog/'.$next->slug)}}"><img class="img-fluid" height="60" width="60"
-                                                                    src="{{asset
-                                    ('posts/images/'
-                                    .$next->image)}}"
-                                                     alt=""></a>
+                                    <a href="{{url('blog/'.$next->slug)}}">
+
+                                        <img class="img-fluid" height="60" width="60" src="{{asset('posts/images/'.$next->image)}}" alt=""></a>
                                 </div>
                             @endif
                         </div>
                     </div>
                 </div>
                 <div class="comments-area">
-                    <h4>05 Comments</h4>
-                    <div class="comment-list">
-                        <div class="single-comment justify-content-between d-flex">
-                            <div class="user justify-content-between d-flex">
-                                <div class="thumb">
-                                    <img src="{{asset('images/c1.jpg')}}" alt="">
+                    <h4> <i class="fas fa-1x fa-comments"></i>{{ $post->comments()->count() }} Comments</h4>
+                    @foreach($post->comments as $comment )
+                        <div class="comment-list">
+                            <div class="single-comment justify-content-between d-flex">
+                                <div class="user justify-content-between d-flex">
+                                    <div class="thumb">
+                                        <img src="{{ "https://www.gravatar.com/avatar/". md5(strtolower(trim($comment->email)))."?s=50&d=wavatar" }}" alt="">
+                                    </div>
+                                    <div class="desc">
+                                        <h5><a href="#">{{ $comment->name }}</a></h5>
+                                        <p class="date">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
+                                        <p class="comment">
+                                            {{ $comment->comment }}
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="desc">
-                                    <h5><a href="#">Emilly Blunt</a></h5>
-                                    <p class="date">December 4, 2017 at 3:12 pm </p>
-                                    <p class="comment">
-                                        Never say goodbye till the end comes!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="reply-btn">
-                                <a href="" class="btn-reply text-uppercase">reply</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-list left-padding">
-                        <div class="single-comment justify-content-between d-flex">
-                            <div class="user justify-content-between d-flex">
-                                <div class="thumb">
-                                    <img src="{{asset('images/c2.jpg')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <h5><a href="#">Elsie Cunningham</a></h5>
-                                    <p class="date">December 4, 2017 at 3:12 pm </p>
-                                    <p class="comment">
-                                        Never say goodbye till the end comes!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="reply-btn">
-                                <a href="" class="btn-reply text-uppercase">reply</a>
+                                {{--<div class="reply-btn">--}}
+                                    {{--<a href="" class="btn-reply text-uppercase">reply</a>--}}
+                                {{--</div>--}}
                             </div>
                         </div>
-                    </div>
-                    <div class="comment-list left-padding">
-                        <div class="single-comment justify-content-between d-flex">
-                            <div class="user justify-content-between d-flex">
-                                <div class="thumb">
-                                    <img src="{{asset('images/c3.jpg')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <h5><a href="#">Annie Stephens</a></h5>
-                                    <p class="date">December 4, 2017 at 3:12 pm </p>
-                                    <p class="comment">
-                                        Never say goodbye till the end comes!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="reply-btn">
-                                <a href="" class="btn-reply text-uppercase">reply</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-list">
-                        <div class="single-comment justify-content-between d-flex">
-                            <div class="user justify-content-between d-flex">
-                                <div class="thumb">
-                                    <img src="{{asset('images/c4.jpg')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <h5><a href="#">Maria Luna</a></h5>
-                                    <p class="date">December 4, 2017 at 3:12 pm </p>
-                                    <p class="comment">
-                                        Never say goodbye till the end comes!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="reply-btn">
-                                <a href="" class="btn-reply text-uppercase">reply</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-list">
-                        <div class="single-comment justify-content-between d-flex">
-                            <div class="user justify-content-between d-flex">
-                                <div class="thumb">
-                                    <img src="{{asset('images/c5.jpg')}}" alt="">
-                                </div>
-                                <div class="desc">
-                                    <h5><a href="#">Ina Hayes</a></h5>
-                                    <p class="date">December 4, 2017 at 3:12 pm </p>
-                                    <p class="comment">
-                                        Never say goodbye till the end comes!
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="reply-btn">
-                                <a href="" class="btn-reply text-uppercase">reply</a>
-                            </div>
-                        </div>
-                    </div>
+
+                    @endforeach
                 </div>
                 <div class="comment-form">
                     <h4>Leave a Reply</h4>
-                    <form>
-                        <div class="form-group form-inline">
-                            <div class="form-group col-lg-6 col-md-6 name">
-                                <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
-                            </div>
-                            <div class="form-group col-lg-6 col-md-6 email">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-                        </div>
-                        <a href="#" class="primary-btn button_hover">Post Comment</a>
-                    </form>
+                        {{ Form::open(['route' => ['comments.store', $post->id], 'method' => 'POST']) }}
+                   <div class="row">
+                       <div class="form-group form-inline">
+                           <div class="form-group col-lg-6 col-md-6 name">
+                               {{ Form::label('name', 'Enter Name:') }}
+                               {{ Form::text('name',null, ['class' => 'form-control ', 'placeholder' => 'Enter
+                               Name', ]) }}
+
+                           </div>
+                           <div class="form-group col-lg-6 col-md-6 email">
+                               {{ Form::label('email', 'Email:') }}
+                               {{ Form::text('email',null, ['class' => 'form-control', 'placeholder' => 'Enter
+                               Email']) }}
+                           </div>
+                       </div>
+
+                       <div class="form-group col-lg-12 col-md-12">
+                           {{ Form::label('comment', 'Comment:', ['class' => 'float-left']) }}
+                           {{ Form::textarea('comment',null,['class' => 'form-control mb-10', 'rows' => '5']) }}
+                       </div>
+
+                       {{ Form::submit('Post Comment', ['class' => 'btn btn-success btn-block my-3']) }}
+
+                   </div>
+
+                        {{ Form::close() }}
+
                 </div>
             </div>
             <div class="col-lg-4">
