@@ -2361,9 +2361,9 @@ ul.two-part-sp li{
     border-top: 1px solid #e9ecef;
 	white-space: nowrap;
 }
-.product-status-wrap img {
-    width: 60px;
-}
+/*.product-status-wrap img {*/
+    /*width: 60px;*/
+/*}*/
 .product-status-wrap .pd-setting {
     border: none;
     color: #fff;

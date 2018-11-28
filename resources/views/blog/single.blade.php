@@ -107,7 +107,9 @@
                                     </div>
                                     <div class="desc">
                                         <h5><a href="#">{{ $comment->name }}</a></h5>
-                                        <p class="date">{{ date('F nS, Y - g:iA', strtotime($comment->created_at)) }}</p>
+                                        <p class="date">{{date('M jS, Y - G:iA',strtotime('+3 hour',strtotime
+                                        ($comment->created_at)))}}
+                                        </p>
                                         <p class="comment">
                                             {{ $comment->comment }}
                                         </p>
