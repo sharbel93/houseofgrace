@@ -87,32 +87,32 @@
 
                                     <div class="column is-one-quarter-desktop is-narrow-tablet">
                                         <div class="card card-widget">
-                                            <div class="author-widget widget-area">
-                                                <div class="selected-author">
-                                                    <img src="https://placehold.it/50x50" alt="image">
-                                                    <div class="author">
-                                                        <h4>By: Sharbel Chris</h4>
-                                                        <p class="subtitle">
-                                                            (shaan)
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            {{--<div class="author-widget widget-area">--}}
+                                                {{--<div class="selected-author">--}}
+                                                    {{--<img src="https://placehold.it/50x50" alt="image">--}}
+                                                    {{--<div class="author">--}}
+                                                        {{--<h4>By: Sharbel Chris</h4>--}}
+                                                        {{--<p class="subtitle">--}}
+                                                            {{--(shaan)--}}
+                                                        {{--</p>--}}
+                                                    {{--</div>--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
 
-                                            <div class="post-status-widget widget-area">
-                                                <div class="status">
-                                                    <div class="status-icon">
-                                                        <b-icon  icon="clipboard" size="medium"></b-icon>
-                                                        <i class="fas fa-clipboard-list fa-2x"></i>
-                                                    </div>
-                                                    <div class="status-details">
-                                                        <h4> <span class="status-emphasis">Draft</span>Saved</h4>
-                                                        <p>A Few Minutes Ago </p>
-                                                    </div>
+                                            {{--<div class="post-status-widget widget-area">--}}
+                                                {{--<div class="status">--}}
+                                                    {{--<div class="status-icon">--}}
+                                                        {{--<b-icon  icon="clipboard" size="medium"></b-icon>--}}
+                                                        {{--<i class="fas fa-clipboard-list fa-2x"></i>--}}
+                                                    {{--</div>--}}
+                                                    {{--<div class="status-details">--}}
+                                                        {{--<h4> <span class="status-emphasis">Draft</span>Saved</h4>--}}
+                                                        {{--<p>A Few Minutes Ago </p>--}}
+                                                    {{--</div>--}}
 
-                                                </div>
+                                                {{--</div>--}}
 
-                                            </div>
+                                            {{--</div>--}}
 
                                             <div class="publish-buttons-widget widget-area">
                                                 {{--<div class="secondary-action-button">--}}

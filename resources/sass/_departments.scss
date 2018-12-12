@@ -1,0 +1,35 @@
+.departments{
+  margin: 20px;
+  padding: 20px;
+  h2{
+    padding: 15px;
+    margin: 12px;
+    color: #008ECC;
+    font-weight: bold;
+    font-size: 1.8em;
+    &:after{
+      background: none repeat scroll 0 0 #2a2a2a;
+      bottom: -10px;
+      content: "";
+      display: block;
+      height: 1px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  a{
+    color: #008ECC!important;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  b{
+    color: #008ECC;
+  }
+  p{
+    position: relative;
+    left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}

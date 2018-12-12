@@ -1,0 +1,36 @@
+.lord{
+  margin: 20px;
+  padding: 20px;
+  h2{
+    padding: 15px;
+    margin: 12px;
+    color: #008ECC;
+    font-size: 1.8em;
+    font-weight: bold;
+    &:after{
+      background: none repeat scroll 0 0 #2a2a2a;
+      bottom: -10px;
+      content: "";
+      display: block;
+      height: 1px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  b{
+    color: #008ECC;
+  }
+  p{
+    position: relative;
+    left: 10px;
+    font-size: 1.14em;
+  }
+
+  .row_content{
+    border: 1px solid rgba(42, 42, 42, 0.1);
+    padding-bottom: 20px;
+    border-radius: 1%;
+    margin-top: 40px;
+  }
+}

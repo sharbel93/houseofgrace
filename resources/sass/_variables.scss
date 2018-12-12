@@ -1,11 +1,11 @@
 $fa-font-path: "../fonts" !default;
 // Body
-$body-bg: #f8fafc;
+$body-bg: #fff;
 
 // Typography
-$font-family-sans-serif: "Nunito", sans-serif;
-$font-size-base: 0.9rem;
-$line-height-base: 1.6;
+//$font-family-sans-serif: "Nunito", sans-serif;
+//$font-size-base: 0.9rem;
+//$line-height-base: 1.6;
 
 // Colors
 $blue: #3490dc;
@@ -18,36 +18,39 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+/*Color Variables*/
+$dark: #2a2a2a;
+$dark_blue: #008ECC;
 
 /*font Variables*/
 $pop: 'Poppins', sans-serif;
 
 
 /*Color Variables*/
-$dark: #222222;
-$light_blue: #00c8e6;
+//$dark: #222222;
+//$light_blue: #00c8e6;
 
 
 /*=================== fonts ====================*/
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+//@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
 // Mixins
-@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
-  transition: $property $duration $animate $delay;
-}
-
-// Placeholder Mixins
-
-@mixin placeholder {
-  &.placeholder { @content; }
-  &:-moz-placeholder { @content; }
-  &::-moz-placeholder { @content; }
-  &::-webkit-input-placeholder { @content; }
-}
-
-.col-md-offset-right-1,.col-lg-offset-right-1{
-  margin-right: 8.33333333%;
-}
+//@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+//  transition: $property $duration $animate $delay;
+//}
+//
+//// Placeholder Mixins
+//
+//@mixin placeholder {
+//  &.placeholder { @content; }
+//  &:-moz-placeholder { @content; }
+//  &::-moz-placeholder { @content; }
+//  &::-webkit-input-placeholder { @content; }
+//}
+//
+//.col-md-offset-right-1,.col-lg-offset-right-1{
+//  margin-right: 8.33333333%;
+//}
 // Font family link
 
 

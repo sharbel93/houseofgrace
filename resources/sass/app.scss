@@ -1,7 +1,7 @@
 
 // Fonts
 //@import url('https://fonts.googleapis.com/css?family=Nunito');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Noto+Sans+SC:300|Questrial');
 // Variables
 @import 'variables';
 
@@ -18,6 +18,8 @@
 // fontawesome
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
+// animate
+@import '~animate.css/animate.min.css';
 
 // custom
 @import 'main';

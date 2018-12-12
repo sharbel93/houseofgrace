@@ -27,13 +27,6 @@
     {{--<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">--}}
 
     <!-- Styles -->
-    <!-- Fontawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    {{--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">--}}
-
-        {{--<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">--}}
-
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
@@ -43,20 +36,17 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    {{--<script src="{{ mix('js/app.js') }}"></script>--}}
-
-    <!-- Animate.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="//platform-api.sharethis.com/js/sharethis.js#property=5c10b7c81c98570011922822&product=inline-share-buttons"></script>
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+{{--<div id="fb-root"></div>--}}
+{{--<script>(function(d, s, id) {--}}
+        {{--var js, fjs = d.getElementsByTagName(s)[0];--}}
+        {{--if (d.getElementById(id)) return;--}}
+        {{--js = d.createElement(s); js.id = id;--}}
+        {{--js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';--}}
+        {{--fjs.parentNode.insertBefore(js, fjs);--}}
+    {{--}(document, 'script', 'facebook-jssdk'));</script>--}}
         <!-- =========================== HEADER BEGIN  =========================== -->
                  @include('include.header')
         <!-- =========================== HEADER END =========================== -->

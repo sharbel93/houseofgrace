@@ -1,36 +1,27 @@
 @extends('layouts.app')
 @section('title', '| Departments')
 @section('content')
+
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
+    <section class="breadcrumb_area br_image">
+        <div class="container">
+            <div class="page-cover text-center">
+                <h2 class="page-cover-title">Departments</h2>
+                <ol class="breadcrumb">
+                    <li><a href="{{url('/')}}">Home</a></li>
+                    <li class="active"> &srarr;&nbsp;Departments</li>
 
-
-        <div class="row breadcrumb-wrap " >
-
-            <div class="breadcrumb-text">
-                <div class="row">
-                    <div class="col-xs-12 col-12 col-sm-12 col-md-6 link">
-                        <p>DEPARTMENTS</p>
-                    </div>
-                    <div class="col-xs-12 col-12 col-sm-12 col-md-6">
-                        <div class="breadcrumbstop">
-                            <ul id="breadcrumbs-two">
-                                <li><a href="{{url('/')}}">Home</a></li>
-                                <li><a href="" class="current"><small>Departments</small></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+                </ol>
             </div>
-
-
         </div>
-
+    </section>
     <!--=================================    BREADCRUMBS END     ===============================-->
+
+<section class=" departments">
 
     <div class="container ">
 
-        <div class="row departments">
+        <div class="row ">
             <h2>OUR DEPARTMENTS</h2>
             <p>
                 At House Of Grace Church, <b>we believe in doing church as a team</b>.
@@ -172,4 +163,5 @@
        </div>
         </div>
     </div>
+</section>
 @endsection

@@ -1,36 +1,25 @@
 @extends('layouts.app')
 @section('title', '| Ministries')
 @section('content')
+
     <!--=================================    BREADCRUMBS BEGIN     ===============================-->
-
-        <div class="row breadcrumb-wrap " >
-
-            <div class="breadcrumb-text">
-                <div class="row">
-                    <div class="col-xs-12 col-12 col-sm-12 col-md-6 link">
-                        <p>Ministries</p>
-                    </div>
-                    <div class="col-xs-12 col-12 col-sm-12 col-md-6">
-                        <div class="breadcrumbstop">
-                            <ul id="breadcrumbs-two">
-                                <li><a href="{{url('/')}}">Home</a></li>
-                                <li><a href="" class="current"><small>Ministries</small></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
+    <section class="breadcrumb_area br_image">
+        <div class="container">
+            <div class="page-cover text-center">
+                <h2 class="page-cover-title">Ministries</h2>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">&nbsp;&srarr;&nbsp;Ministries</li>
+                </ol>
             </div>
-
-
         </div>
-
+    </section>
     <!--=================================    BREADCRUMBS END     ===============================-->
-
-
     <!--=================================    MINISTRIES BEGIN   ===============================-->
+   <section class="ministry">
+
     <div class="container">
-        <div class="row ministry">
+        <div class="row ">
             <h2>OUR MINISTRIES</h2>
             <div class= " col-12 col-md-12 col-lg-12 col-sm-12 ">
     <div class="list-group">
@@ -49,6 +38,7 @@
             </div>
         </div>
     </div>
+   </section>
     <!--=================================    MINISTRIES END     ===============================-->
 
 @endsection

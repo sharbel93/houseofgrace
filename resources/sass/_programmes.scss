@@ -1,0 +1,70 @@
+.programmes{
+  margin: 20px;
+  padding: 20px;
+  h2{
+    padding: 15px;
+    margin: 12px;
+    color: #008ECC;
+    font-size: 1.8em;
+    font-weight: bold;
+    &:after{
+      background: none repeat scroll 0 0 #2a2a2a;
+      bottom: -10px;
+      content: "";
+      display: block;
+      height: 1px;
+      position: relative;
+      text-align: center;
+      width: 100%;
+    }
+  }
+  .list-group{
+    a{
+      background-color: transparent;
+      font-weight: bold;
+      font-size: 16px;
+      &:hover{
+        background-color: #008ECC;
+        color: #f9f9ff;
+      }
+    }
+  }
+
+  .btn_left{
+    margin-top: 80px;
+  }
+
+  .btn_right{
+    margin-top: 80px;
+    a{
+      float:right;
+    }
+  }
+
+
+  @media (max-width: 576px) {
+    .btn_left{
+      margin-top: 0;
+      padding: 20px 30px 20px 0px;
+      text-align: right;
+
+    }
+    .btn_right{
+      margin-top: 0;
+      padding: 20px 30px 20px 20px;
+
+      //position: relative;
+      //bottom: 0px;
+      //right: 0px;
+      //margin-bottom: 20px;
+      //font-size: .6em;
+    }
+  }
+
+  .row_content{
+    border: 1px solid rgba(42, 42, 42, 0.1);
+    padding-bottom: 20px;
+    border-radius: 1%;
+    margin-top: 40px;
+  }
+}

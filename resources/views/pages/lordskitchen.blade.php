@@ -1,36 +1,22 @@
 @extends('layouts.app')
 @section('title', '| The Lords Kitchen')
 @section('content')
-    <!--=================================    BREADCRUMBS BEGIN     ===============================-->
-
-
-
-        <div class="row breadcrumb-wrap " >
-
-            <div class="breadcrumb-text">
-                <div class="row">
-                    <div class="col-xs-12 col-12 col-sm-12 col-md-6 link">
-                        <p>The Lord's Kitchen</p>
-                    </div>
-                    <div class="col-xs-12 col-12 col-sm-12 col-md-6">
-                        <div class="breadcrumbstop">
-                            <ul id="breadcrumbs-two">
-                                <li><a href="{{url('/')}}">Home</a></li>
-                                <li><a href="" class="current"><small>The Lord's Kitchen</small></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-    <!--=================================    BREADCRUMBS END     ===============================-->
-
+  <!--=================================    BREADCRUMBS BEGIN     ===============================-->
+    <section class="breadcrumb_area br_image">
         <div class="container">
-            <div class="row lord">
+            <div class="page-cover text-center">
+                <h2 class="page-cover-title">The Lord's kitchen</h2>
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">&nbsp;&srarr;&nbsp;The Lord's Kitchen</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+    <!--=================================    BREADCRUMBS END     ===============================-->
+<section class="lord">
+        <div class="container">
+            <div class="row row_content">
                 <h2>The Lord's Kitchen-Africa <small><em>(More than a day’s meal)</em></small></h2>
                 <div class="col-md-12 col-lg-12 col-sm-12">
                     <p>
@@ -65,6 +51,7 @@
                 </div>
             </div>
         </div>
+</section>
 
 
 @endsection

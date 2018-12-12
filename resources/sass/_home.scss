@@ -1,0 +1,546 @@
+// Slider section
+.home-slider{
+  .owl-carousel{
+  .item{
+    height: 90vh;
+    display: block;
+    position: relative;
+    top: -95px;
+    vertical-align: middle;
+    text-align: center;
+    img{
+      height: auto;
+      max-width: 100%;
+    }
+  }
+    @media (max-width: 576px) {
+      .item{
+        height: 28vh;
+        top: 0px;
+      }
+    }
+    @media (min-width: 576px) {
+      .item{
+        height: 35vh;
+        top: 0px;
+      }
+    }
+    @media (min-width: 768px) {
+      .item{
+        height: 48vh;
+        top: 0px;
+      }
+    }
+
+
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+      .item{
+        height: 60vh;
+        top: 0px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .item{
+        height: 90vh;
+        top: 0px;
+      }
+
+  }
+
+    .owl-dots{
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    right: 200px;
+    .owl-dot{
+      &.active{
+          background-color: #008ECC;
+      }
+    span{
+      background-color: #fff;
+    &:hover{
+      background-color: #008ECC;
+    }
+    }
+    }
+  }
+
+    @media (max-width: 576px) {
+          .owl-dots{
+            position: absolute;
+            bottom: 0;
+            left: 80px;
+            right: 80px;
+          }
+    }
+
+  }
+.bottom-left{
+  position: absolute;
+  bottom: 80px;
+  color: #fff;
+  left: 150px;
+  right:150px;
+  width: auto;
+  .animated  {
+  -webkit-animation-duration : 2s  ;
+  animation-duration : 2s  ;
+
+  -webkit-animation-delay : 100ms  ;
+  animation-delay : 100ms  ;
+  }
+  .animate-out {
+  -webkit-animation-delay : 0ms  ;
+  animation-delay : 0ms  ;
+  }
+  .slidertextone{
+    font: italic 7.5em 'Source Sans Pro', sans-serif;
+    color: white;
+    width: 100%;
+    text-shadow: 5px 5px 10px #000000;
+    right: 0;
+    left:0;
+    bottom: -20px;
+    position: relative;
+  }
+
+  .slidertexttwo{
+    font: italic 7.5em 'Source Sans Pro', sans-serif;
+    color: white;
+    text-shadow: 5px 5px 10px #000000;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    position: relative;
+  }
+
+  @media (max-width: 576px) {
+    .slidertextone{
+      font-size: 2.7em;
+      bottom: 0px;
+    }
+    .slidertexttwo{
+      font-size: 2.7em;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .slidertextone{
+      font-size: 3.7em;
+      bottom: -4px;
+    }
+    .slidertexttwo{
+      font-size: 3.7em;
+    }
+  }
+  @media (min-width: 768px) {
+    .slidertextone{
+      font-size: 3.7em;
+      bottom: -4px;
+    }
+    .slidertexttwo{
+      font-size: 3.7em;
+    }
+  }
+
+
+  /*Large devices (desktops, 992px and up)*/
+  @media (min-width: 992px) {
+    .slidertextone{
+      font-size: 5.7em;
+    }
+    .slidertexttwo{
+      font-size: 5.7em;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .slidertextone{
+      font: italic 7.5em 'Source Sans Pro', sans-serif;
+    }
+    .slidertexttwo{
+      font: italic 7.5em 'Source Sans Pro', sans-serif;
+    }
+  }
+
+}
+  @media (min-width: 576px) {
+    .bottom-left{
+      position: absolute;
+      bottom: 80px;
+      color: #fff;
+      left: 60px;
+      right:60px;
+      width: auto;
+    }
+  }
+
+
+  @media (max-width: 576px) {
+   .bottom-left{
+     position: absolute;
+     bottom: 80px;
+     color: #fff;
+     left: 40px;
+     right:40px;
+     width: auto;
+   }
+  }
+  @media (max-width: 576px) {
+    .col-12,.col-md-12,.col-sm-12,.col-lg-12,.col-xs-12{
+      padding: 0;
+    }
+  }
+  @media (min-width: 576px) {
+    .col-12,.col-md-12,.col-sm-12,.col-lg-12,.col-xs-12{
+      padding: 0;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .col-12,.col-md-12,.col-sm-12,.col-lg-12,.col-xs-12{
+      padding: 0;
+    }
+  }
+
+}
+
+////////////////////// Event Date Area ////////////////////////////
+
+.upcoming-events-highlight {
+  border-bottom: 1px solid #2e2e2e;
+  padding: 3em 0;
+  margin: 0px 0px 0px 0px;
+  background: #f9f9ff;
+  position: relative;
+  top: 0px;
+  .section-heading{
+    background: #008ECC;
+    padding: 2px 15px;
+    display: inline-block;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-bottom: 15px;
+  }
+  h2{
+    font-size: 20px;
+    font-family: "Playfair Display", times, serif;
+    a{
+      color: #008ECC;
+      text-decoration: none;
+      &:hover{
+        color: #2a2a2a;
+      }
+    }
+  }
+  .events-meta{
+    color: rgba(42, 42, 42, 0.5);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+  .counter-number-item{
+    background: rgba(0, 142, 204, 0.5);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+
+    font-family: "Playfair Display", times, serif;
+    color: #fff;
+    line-height: 1;
+  }
+  #date-countdown{
+    border-radius: 4px;
+    overflow: hidden;
+    .countdown-block{
+      background: #008ECC;
+      color: #fff;
+      padding: 20px;
+      width: 20%;
+      float: left;
+      text-align: center;
+      text-transform: uppercase;
+      position: relative;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px;
+      &:after{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        content: "";
+        height: 100%;
+        width: 1px;
+        right: 0;
+        background: #262626;
+      }
+      &:last-child{
+      &:after{
+        display: none;
+      }
+      }
+      .label{
+        color: #fff;
+        font-size: 24px;
+        display: block;
+      }
+    }
+  }
+}
+
+////////////////////// Services Area ////////////////////////////
+.bannertitle{
+  margin:40px 0px 40px 0px;
+  padding:40px 0px 40px 0px;
+  .hr-service{
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    &:after{
+      content: "OUR SERVICES";
+      display: inline-block;
+      position: relative;
+      top: -0.7em;
+      font-size: 1.5em;
+      padding: 0 0.25em;
+      background: #fff;
+    }
+  }
+}
+
+.services{
+  .container{
+    color: #fff;
+    background-color: #008ECC;
+    //background-color:  rgba(0, 142, 204, 0.5);
+    border-radius: 4px;
+    padding: 0px 18px 20px 18px;
+  }
+  h4{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    //&:after{
+    //  background: none repeat scroll 0 0 #008ECC;
+    //  bottom: -10px;
+    //  content: "";
+    //  display: block;
+    //  height: 1px;
+    //  position: relative;
+    //  text-align: center;
+    //  width: 100%;
+    //}
+  }
+  ul{
+    list-style-type: none;
+  li{
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #f9f9ff;
+    //background:rgba(42, 42, 42, 0.5);
+
+
+    //&:after{
+    //  background: none repeat scroll 0 0 #f5f5f5;
+    //  bottom: -15px;
+    //  content: "";
+    //  display: block;
+    //  height: 1px;
+    //  right: 12px;
+    //  position: relative;
+    //  text-align: center;
+    //  width: 100%;
+    //  margin-bottom: 10px;
+    //
+    //}
+
+    span{
+      font-size: 1.915em;
+      font-family: 'Questrial', sans-serif;
+      color: #2a2a2a;
+      font-weight: bold;
+    }
+
+    small{
+      font-size: 1.15em;
+      color: #fff;
+    }
+
+
+    @media (max-width: 576px) {
+      span{
+        font-size: 1.415em;
+      }
+
+    }
+
+    @media (min-width: 576px) {
+      span{
+        font-size: 1.215em;
+      }
+      small{
+        font-size: .8em;
+        color: #fff;
+      }
+    }
+
+    @media (min-width: 768px) {
+      span{
+        font-size: 1.215em;
+      }
+      small{
+        font-size: .8em;
+        color: #fff;
+      }
+    }
+
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+      span{
+        font-size: 1.615em;
+      }
+      small{
+        font-size: 1.1em;
+        color: #fff;
+      }
+    }
+
+
+  }
+  }
+
+}
+
+
+////////////////////// Events Area ////////////////////////////
+.bannertitle{
+  margin:40px 0px 40px 0px;
+  padding:40px 0px 40px 0px;
+
+  .hr-events{
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+    &:after{
+      content: "EVENTS";
+      display: inline-block;
+      position: relative;
+      top: -0.7em;
+      font-size: 1.5em;
+      padding: 0 0.25em;
+      background: #fff;
+    }
+  }
+}
+
+.section_gap{
+  .container{
+    //padding: 12px;
+    margin-bottom: 15px;
+  }
+  .section-heading{
+    background: #008ECC;
+    padding: 2px 15px;
+    display: inline-block;
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin: 15px 0px 15px 0px;
+  }
+
+  .event_post{
+    border-radius: 4%;
+    padding: 10px;
+    //border-top: 1px solid #008ECC;
+    .a{
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    img{
+      max-width: 100%;
+
+      //border-radius: 8%;
+    }
+    .event_category{
+      padding-bottom: 20px;
+      li{
+        padding-bottom: 8px;
+
+        i{
+          font-weight: 600;
+          color: #222222;
+        }
+      }
+      @media (min-width: 768px) {
+      li{
+        font-size: .8em;
+      }
+      }
+    }
+    .btn_hover{
+      &:hover{
+        background: #008ECC;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .event_title{
+      font-size: 24px;
+      line-height: 30px;
+      color: #222222;
+      font-weight: 600;
+      padding-top: 20px;
+      -webkit-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+      transition: all 0.3s linear;
+      &:hover{
+        color: #008ECC;
+      }
+    }
+  }
+
+}
+
+/////////////banner section
+.banner_area{
+  margin: 40px 0 40px 0;
+  img{
+    height: 90vh;
+    width: 80vw;
+    @media (max-width: 576px) {
+      height: 35vh;
+      width: 90vw;
+    }
+    /*Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) {
+      height: 60vh;
+      width: 90vw;
+    }
+
+    /*Large devices (desktops, 992px and up)*/
+    @media (min-width: 992px) {
+      height: 70vh;
+      width: 90vw;
+    }
+
+    /*Extra large devices (large desktops, 1200px and up)*/
+    @media (min-width: 1200px) {
+      height: 90vh;
+      width: 80vw;
+    }
+
+  }
+}

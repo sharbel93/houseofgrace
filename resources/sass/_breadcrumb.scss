@@ -1,0 +1,56 @@
+/*=========== breadcrumb_area css =============*/
+.breadcrumb_area{
+  position: relative;
+  padding: 110px 0px 90px;
+  background: #04091e;
+  z-index: 1;
+  overflow: hidden;
+
+}
+.br_image{
+  background: -webkit-linear-gradient(left, rgba(4, 9, 30, .80), rgba(4, 9, 30, .80)), url("/images/bread1.jpg");
+  background: -o-linear-gradient(left, rgba(4, 9, 30, .80), rgba(4, 9, 30, .80)), url("/images/bread1.jpg");
+  background: linear-gradient(to right, rgba(4, 9, 30, .80), rgba(4, 9, 30, .80)), url("/images/bread1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.page-cover-title{
+  display: block;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 700;
+  color: #fff;
+}
+.breadcrumb {
+  text-align: center;
+  background: transparent;
+  padding: 0px;
+  display: inline-block;
+  li {
+    display: inline-block;
+    color: #fff;
+    a {
+      color: #fff;
+      &:hover{
+        color: #008ECC;
+      }
+    }
+    .active{
+      padding-left: 0px;
+    }
+    & + li {
+      &:before{
+        content: "";
+        //content: "\2192";
+        //font-family: 'Linearicons-Free';
+        //font-size: 14px;
+        //font-weight: 600;
+        //vertical-align: middle;
+        //margin: 0px 10px 0px 0px;
+      }
+    }
+  }
+
+}
+

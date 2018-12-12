@@ -25,7 +25,8 @@ Route::get('/departments', 'ViewPageController@getDepartments')->name('departmen
 Route::prefix('blog')->group(function() {
     Route::get('/', 'BlogController@getIndex')->name('blog');
     Route::get('/{slug}', ['as' => 'blog.single', 'uses' => 'BlogController@getSingle'])->where('slug', '[\w\d\-\_]+');
-
+    Route::get('/category/{category}','BlogController@getCategories')->name('category');
+    Route::get('/tag/{tag}','BlogController@getTag')->name('tag');
 });
 
 

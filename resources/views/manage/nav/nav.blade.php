@@ -2,8 +2,9 @@
 <div class="left-sidebar-pro">
     <nav id="sidebar" class="">
         <div class="sidebar-header">
-            <a href="index.html"><img class="main-logo" src="{{asset('admin/img/logo/logo.png')}}" alt=""/></a>
-            <strong><a href="index.html"><img src="{{asset('admin/img/logo/logosn.png')}}" alt=""/></a></strong>
+            <a href="/">
+                <img class="main-logo" src="{{ asset('images/logo.png') }}" alt="House of Grace - Eldoret"></a>
+            <strong><a href="#"><img src="{{asset('admin/img/logo/logosn.png')}}" alt=""/></a></strong>
         </div>
         <div class="left-custom-menu-adp-wrap comment-scrollbar">
             <nav class="sidebar-nav left-sidebar-menu-pro">
@@ -81,7 +82,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="logo-pro">
-                    <a href="index.html"><img class="main-logo" src="{{asset('admin/img/logo/logo.png')}}" alt=""/></a>
+                    <a href="#"><img class="main-logo" src="{{asset('admin/img/logo/logo.png')}}" alt=""/></a>
                 </div>
             </div>
         </div>
@@ -135,10 +136,19 @@
                                                     <li><a href="#"><span
                                                                     class="edu-icon edu-settings author-log-ic"></span>Settings</a>
                                                     </li>
-                                                    <li><a href="#"><span
-                                                                    class="edu-icon edu-locked author-log-ic"></span>Log
-                                                            Out</a>
+                                                    <li>
+                                                        <a  href="{{ route('logout') }}"
+                                                           onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><span
+                                                                    class="edu-icon edu-locked author-log-ic"></span>
+                                                            {{ __('Logout') }}
+                                                        </a>
+
+                                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                            @csrf
+                                                        </form>
                                                     </li>
+
                                                 </ul>
                                             </li>
                                         </ul>
@@ -159,19 +169,22 @@
                             <nav id="dropdown">
                                 <ul class="mobile-menu-nav">
 
-                                    <li><a href="events.html">DashBoard</a></li>
-                                    <li><a href="events.html">Blog Posts</a></li>
-                                    <li><a href="events.html">Manage Users</a></li>
-                                    <li><a href="events.html">Events</a></li>
-                                    <li><a href="events.html">Photos</a></li>
+                                    <li><a href="">DashBoard</a></li>
+                                    <li><a href="{{route('posts.index')}}">Blog Posts</a></li>
+                                    <li><a href="{{ route('categories.index') }}">Categories</a></li>
+                                    <li><a href="{{ route('tags.index') }}">Tags</a></li>
+                                    <li><a href="{{route('users.index')}}">Manage Users</a></li>
+                                    <li><a href="">Manage Events</a></li>
+                                    <li><a href="">Manage Photos</a></li>
                                     <li><a data-toggle="collapse" data-target="#demoevent" href="#">Roles &amp;
                                             Permissions
                                             <span
                                                     class="admin-project-icon edu-icon edu-down-arrow"></span></a>
                                         <ul id="demoevent" class="collapse dropdown-header-top">
-                                            <li><a href="all-professors.html">Roles</a>
+                                            <li><a href="{{route('roles.index')
+                            }}">Roles</a>
                                             </li>
-                                            <li><a href="add-professor.html">Permissions</a>
+                                            <li><a href="{{route('permissions.index')}}">Permissions</a>
                                             </li>
                                         </ul>
                                     </li>
