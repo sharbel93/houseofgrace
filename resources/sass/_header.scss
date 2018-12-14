@@ -25,19 +25,10 @@
       .navbar-toggler{
         right: 0;
         position: absolute;
-        top: 50px;
+        top: 20px;
         margin-right: 20px;
       }
-      .navbar-nav{
-        position: absolute;
-        background-color: #fff;
-        display: -webkit-box;
-        font-size: .485em;
-        padding: .8em .8em .8em 0em;
-        //left: -4px;
-        z-index: 1;
-        transition: all 0.2s linear;
-      }
+
     }
     @media (min-width: 576px) {
       img{
@@ -51,15 +42,7 @@
         top: 30px;
         margin-right: 20px;
       }
-      .navbar-nav{
-        position: absolute;
-        background-color: #fff;
-        display: -webkit-box;
-        font-size: .9em;
-        padding: .8em;
-        z-index: 1;
-        transition: all 0.2s linear;
-      }
+
     }
 
     @media (min-width: 768px) {
@@ -126,6 +109,8 @@
 
     .nav{
       .nav-item{
+        text-align:center;
+
         .nav-link{
           font: 500 12px/70px 'Questrial', sans-serif; // add font
           text-transform: uppercase;
@@ -147,14 +132,10 @@
           }
         }
 
+        @media (min-width: 320px) and (max-width: 576px) {
 
-        @media (max-width: 576px) {
-          .nav-link{
-            font-size: 1.22em;
-            margin: 0 0 0 15px;
-            padding: 0 0 0 0px;
-          }
         }
+
         /*Large devices (desktops, 992px and up)*/
         @media (min-width: 992px) {
             .nav-link{
@@ -211,6 +192,12 @@
         width:30px;
         height:30px;
         text-align:center;
+
+        @media (min-width: 320px) and (max-width: 576px) {
+          padding: 0px;
+          width: 22px;
+          height: 28px;
+        }
         &:hover{
           background:$dark_blue;
           color:#fff!important;
@@ -226,19 +213,33 @@
       line-height:30px;
       background: #f9f9ff;
       color:#777;
+      @media (max-width: 576px) {
+       font-size: 0.7em;
+      }
       &:hover{
         background:$dark_blue;
         color:#fff;
       }
       &:last-child{
               padding: 0px 15px 0px 15px;
+        @media (max-width: 576px) {
+          padding: 0px 5px 0px 0px;
+        }
 
              }
       &:first-child{
         padding: 0px 15px 0px 15px;
+        @media (max-width: 576px) {
+          padding: 0px 5px 0px 0px;
+        }
+
       }
       &:nth-child(even){
         padding: 0px 15px 0px 15px;
+        @media (max-width: 576px) {
+          padding: 0px 5px 0px 0px;
+        }
+
       }
     }
   }

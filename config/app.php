@@ -166,7 +166,7 @@ return [
         Laratrust\LaratrustServiceProvider::class,
         DevMarketer\EasyNav\EasyNavServiceProvider::class,
         DevMarketer\LaraFlash\LaraFlashServiceProvider::class,
-        Barryvdh\Debugbar\ServiceProvider::class,
+//        Barryvdh\Debugbar\ServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Mews\Purifier\PurifierServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
