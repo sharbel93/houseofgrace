@@ -86,3 +86,9 @@ Route::group(['prefix' => 'manage', 'middleware' =>
     Route::resource('/tags','TagController', ['except' =>'create']);
 });
 
+// file upload
+Route::get('/files/{type}/{id?}', 'FileController@index');
+Route::get('/files/add', 'FileController@store');
+Route::get('/files/edit/{id}', 'FileController@edit');
+Route::get('/files/delete/{id}', 'FileController@destroy');
+

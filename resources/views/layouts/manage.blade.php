@@ -19,7 +19,9 @@
 
         @include('manage.nav.nav')
 
+
         <div class="all-content-wrapper" id="app">
+            @include('partials.admin.layouts._messages')
             @yield('content')
         </div>
 
