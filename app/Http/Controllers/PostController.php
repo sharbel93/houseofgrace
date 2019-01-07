@@ -10,6 +10,7 @@ use File;
 use Intervention\Image\ImageManagerStatic as Image;
 use Auth;
 use Purifier;
+use Session;
 use Illuminate\Http\Request;
 
 class PostController extends Controller

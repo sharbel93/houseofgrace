@@ -12,8 +12,7 @@
                         <li><a href="https://www.instagram.com/houseofgraceeldoret/"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-sm-8 col-8
-                col-xs-8 ">
+                <div class="col-sm-8 col-8 col-xs-8 ">
                     <div class="top_btn d-flex justify-content-end">
                         <a href="{{ route('senior-pastor') }}">Senior Pastor</a>
                         <a href="{{ route('blog') }}">Blog</a>
