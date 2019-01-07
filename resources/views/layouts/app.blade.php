@@ -37,6 +37,15 @@
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="//platform-api.sharethis.com/js/sharethis.js#property=5c10b7c81c98570011922822&product=inline-share-buttons"></script>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128002808-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-128002808-1');
+</script>
 </head>
 <body>
 {{--<div id="fb-root"></div>--}}
