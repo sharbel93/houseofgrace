@@ -3,16 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Category;
 use Session;
-class CategoryController extends Controller
+use App\Event;
+class EventController extends Controller
 {
-//
-//    public function __construct()
-//    {
-//        $this->middleware('auth');
-//    }
-
+    public function __construct()
+    {
+        $this->middleware('role:superadministrator|administrator|editor|author|contributor');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -20,8 +18,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $categories = Category::all();
-        return view('manage.categories.index')->withCategories($categories);
+        $event = Event::all();
+        return view('manage.events.index')->withEvents($event);
     }
 
     /**
@@ -42,17 +40,7 @@ class CategoryController extends Controller
      */
     public function store(Request $request)
     {
-        $this->validate($request, array(
-            'name' => 'required|max:255|unique:categories,name'
-        ));
-
-        $category = new Category();
-        $category->name = $request->name;
-        $category->save();
-
-        return redirect()->route('categories.index')->with('success', 'added successfully!');
-
-
+        //
     }
 
     /**
@@ -86,16 +74,7 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-
-        $category = Category::findOrFail($id);
-        $this->validate($request, array(
-            'category'=>'required|max:15|unique:categories,name',
-        ));
-        $category->name = $request->name;
-        $category->save();
-
-
-        return redirect()->route('categories.index', $category->id);
+        //
     }
 
     /**

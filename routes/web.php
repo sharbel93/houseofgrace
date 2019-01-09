@@ -79,6 +79,10 @@ Route::group(['prefix' => 'manage', 'middleware' =>
     Route::resource('/roles', 'RoleController', ['except' =>
         'destroy']);
     Route::resource('/posts', 'PostController');
+    Route::resource('/photos', 'PhotoController');
+    Route::resource('/events', 'EventController');
+    Route::resource('/sermon', 'SermonController');
+    Route::resource('/daily', 'DailyController');
 // Categories
     Route::resource('/categories','CategoryController', ['except' =>'create']);
 
@@ -86,9 +90,9 @@ Route::group(['prefix' => 'manage', 'middleware' =>
     Route::resource('/tags','TagController', ['except' =>'create']);
 });
 
-// file upload
-Route::get('/files/{type}/{id?}', 'FileController@index');
-Route::get('/files/add', 'FileController@store');
-Route::get('/files/edit/{id}', 'FileController@edit');
-Route::get('/files/delete/{id}', 'FileController@destroy');
+//// file upload
+//Route::get('/files/{type}/{id?}', 'FileController@index');
+//Route::get('/files/add', 'FileController@store');
+//Route::get('/files/edit/{id}', 'FileController@edit');
+//Route::get('/files/delete/{id}', 'FileController@destroy');
 

@@ -22,6 +22,7 @@
 
         <div class="all-content-wrapper" id="app">
             @include('partials.admin.layouts._messages')
+            {{--@include('partials.notification.toast')--}}
             @yield('content')
         </div>
 

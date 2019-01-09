@@ -10,6 +10,7 @@ use File;
 use Intervention\Image\ImageManagerStatic as Image;
 use Auth;
 use Purifier;
+use LaraFlash;
 use Session;
 use Illuminate\Http\Request;
 
@@ -45,6 +46,8 @@ class PostController extends Controller
         return view('manage.posts.create')->withCategories($categories)->withTags($tags);
     }
 
+
+
     /**
      * Store a newly created resource in storage.
      *
@@ -59,7 +62,7 @@ class PostController extends Controller
             'slug' => 'required|alpha_dash |min:5 |max: 255|unique:posts,slug',
             'category_id' => 'required|integer',
             'content'=> 'required',
-            'thumbnail' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+            'thumbnail' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ));
 //            'inputImage' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
 
@@ -139,7 +142,8 @@ class PostController extends Controller
             $tagsArray[$tag->id] = $tag->name;
         }
 // return the view and pass in the var we previously created
-        return view('manage.posts.edit')->withPost($post)->withCategories($cats)->withTags($tagsArray);
+        return view('manage.posts.edit')->withPost($post)->withCategories($cats)->withTags($tagsArray)->with
+            ('success', 'Edited successfully!');
 
     }
 

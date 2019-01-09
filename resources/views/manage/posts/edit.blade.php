@@ -2,10 +2,10 @@
 @section('styles')
     {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=your_API_key"></script>--}}
     {{--<script src="{{asset('admin/js/tinymce.min.js')}}"></script>--}}
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=ywgkbg9892vgo6omh0v00dd8vyu1ogqne2md5jipypd66uis"></script>
-    <script>tinymce.init({ selector:'textarea',
-            plugins: 'link code image'});</script>
-
+    {{--<script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=ywgkbg9892vgo6omh0v00dd8vyu1ogqne2md5jipypd66uis"></script>--}}
+    {{--<script>tinymce.init({ selector:'textarea',--}}
+            {{--plugins: 'link code image'});</script>--}}
+    <link rel="stylesheet" href="{{asset('/js/summernote.css')}}">
 @endsection
 @section('content')
 
@@ -36,6 +36,8 @@
 
                                 {{ Form::label('thumbnail', 'Update Feature',['class' => 'mb-2 my-2']) }}
                                 {{ Form::file('thumbnail') }}
+                                <img src="{{ asset('/posts/images/'.$post->image) }}" alt="image">
+                                <br>
 
                                 {{ Form::label('content', 'Body:', ['class' => 'form-spacing-top']) }}
                                 {{ Form::textarea('content',null, ['class' => 'form-control']) }}
@@ -99,9 +101,11 @@
                 // placeholder : 'Please select a tag',
                 tags: true
             });
+
+            $('#content').summernote();
         });
     </script>
-
+    <script src="{{asset('/js/summernote.min.js')}}"></script>
 
     <!-- cropper JS
       ============================================ -->

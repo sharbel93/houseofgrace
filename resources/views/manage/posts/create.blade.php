@@ -76,6 +76,7 @@
                                 </div>
                                 <div class="row">
 
+
                                     <h5 class="m-t-30">Tags</h5>
                                     <select name="tags[]"  id="users" class="mb-2  select-example form-control" multiple="multiple">
                                         @foreach($tags as $tag)
@@ -96,6 +97,7 @@
                                 </div>
                                 <div class="row ">
                                     <h5 class="m-t-30">Upload Image</h5>
+                                    <img src="/" alt="">
                                     <input class="m-t-30" type="file" name="thumbnail" id="thumbnail" />
                                 </div>
                                 <div class="row">
@@ -103,24 +105,6 @@
                                     <button type="submit" class="button m-t-30 is-primary
                                                     is-fullwidth">Publish</button>
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                      <!-- end of .column.is-three-quarters -->
 
                                     {{--<div class="column is-one-quarter-desktop is-narrow-tablet">--}}
@@ -165,10 +149,6 @@
                                             {{--</div>--}}
                                         {{--</div>--}}
                                     {{--</div><!-- end of .column.is-one-quarters -->--}}
-
-
-
-
                             </form>
                             </div>
 

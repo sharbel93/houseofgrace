@@ -42,16 +42,22 @@
                             <span class="mini-click-non">Manage Users</span></a>
                     </li>
                     <li>
-                        <a title="Manage Events" href="#" aria-expanded="false"><span
+                        <a title="Manage Events" href="{{route('events.index')}}" aria-expanded="false"><span
                                     class="educate-icon educate-event icon-wrap sub-icon-mg"
                                     aria-hidden="true"></span>
                             <span class="mini-click-non">Manage Events</span></a>
                     </li>
                     <li>
-                        <a title="Manage Photos" href="" aria-expanded="false"><span
+                        <a title="Manage Photos" href="{{route('photos.index')}}" aria-expanded="false"><span
                                     class="educate-icon educate-course icon-wrap"
                                     aria-hidden="true"></span>
                             <span class="mini-click-non">Manage Photos</span></a>
+                    </li>
+                    <li>
+                        <a title="Manage Photos" href="{{route('sermon.index')}}" aria-expanded="false"><span
+                                    class="educate-icon educate-course icon-wrap"
+                                    aria-hidden="true"></span>
+                            <span class="mini-click-non">Manage Sermon</span></a>
                     </li>
 
                     <li>

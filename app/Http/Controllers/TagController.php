@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Tag;
 
+use Session;
 class TagController extends Controller
 {
 //    public function __construct()
@@ -20,6 +21,7 @@ class TagController extends Controller
     public function index()
     {
         $tags = Tag::all();
+
         return view('manage.tags.index')->withTags($tags);
     }
 
@@ -50,7 +52,6 @@ class TagController extends Controller
         $tag->save();
 
         return redirect()->route('tags.index')->with('success','New Tag was successfully created!');
-
     }
 
     /**

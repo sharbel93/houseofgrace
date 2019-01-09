@@ -60,7 +60,7 @@
                  @include('include.header')
         <!-- =========================== HEADER END =========================== -->
           <div id="app">
-
+              {{--@include('partials.notification.toast')--}}
         @yield('content')
           </div>
 
