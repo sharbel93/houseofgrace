@@ -20,7 +20,7 @@ class SermonController extends Controller
     public function index()
     {
         $sermon = Sermon::all();
-        return view('manage.sermon.index')->withSermons($sermon);
+        return view('manage.sermons.index')->withSermons($sermon);
     }
 
     /**

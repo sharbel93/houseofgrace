@@ -57,7 +57,13 @@
                         <a title="Manage Photos" href="{{route('sermon.index')}}" aria-expanded="false"><span
                                     class="educate-icon educate-course icon-wrap"
                                     aria-hidden="true"></span>
-                            <span class="mini-click-non">Manage Sermon</span></a>
+                            <span class="mini-click-non">Manage Sermons</span></a>
+                    </li>
+                    <li>
+                        <a title="Manage Photos" href="{{route('daily.index')}}" aria-expanded="false"><span
+                                    class="educate-icon educate-course icon-wrap"
+                                    aria-hidden="true"></span>
+                            <span class="mini-click-non">Daily Inspiration </span></a>
                     </li>
 
                     <li>
@@ -65,7 +71,7 @@
                         'permissions'], 2)}}"
                             aria-expanded="false"><span
                                     class="educate-icon educate-library icon-wrap "></span>
-                            <span class="mini-click-non">Roles&amp;Permissions</span></a>
+                            <span class="mini-click-non m-r-15">Roles&amp;Permissions </span></a>
                         <ul class="submenu-angle " aria-expanded="false">
                             <li><a title="Roles" class="{{Nav::isResource('roles')}}" href="{{route('roles.index')
                             }}"><span

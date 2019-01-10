@@ -57,7 +57,7 @@ class PostController extends Controller
     public function store(Request $request)
     {
         // validate the data
-        $this->validate($request, array(
+$this->validate($request, array(
             'title' => 'required|max:255',
             'slug' => 'required|alpha_dash |min:5 |max: 255|unique:posts,slug',
             'category_id' => 'required|integer',
@@ -95,7 +95,7 @@ class PostController extends Controller
 //            Image::make($post_thumbnail)->widen(1200)->save($location);
 //            $originalImage = Image::make($post_thumbnail);
 //            $originalImage->save( $location );
-            // Set post-thumbnail url
+//               Set post-thumbnail url
             $post->image = $filename;
         }
 
