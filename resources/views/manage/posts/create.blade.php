@@ -189,7 +189,28 @@
                 tags: true,
             });
 
-            $('#content').summernote();
+            $('#content').summernote(
+                {
+                    height: 180,
+                    placeholder: 'write your inspiration here ...',
+                    toolbar: [
+                        ['style', ['style','bold', 'italic', 'underline', 'clear']],
+                        ['font', ['fontname','strikethrough', 'superscript', 'subscript']],
+                        ['height', ['height']],
+                        ['fontsize', ['fontsize']],
+                        ['color', ['color']],
+                        ['para', ['','ul', 'ol', 'paragraph', ]],
+                        ['insert',[ 'link', 'video', 'table', 'hr']],
+                        ['misc',['fullscreen', 'codeview', 'undo', 'redo', 'help']]
+                    ],
+                    popover: {
+                        link: [
+                            ['link', ['linkDialogShow', 'unlink']]
+                        ]
+                    }
+
+                }
+            );
         });
     </script>
     <script src="{{asset('/js/summernote.min.js')}}"></script>

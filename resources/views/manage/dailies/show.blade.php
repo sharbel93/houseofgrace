@@ -34,7 +34,7 @@
                                       </div>
                                   </div>
                                   <footer class="card-footer">
-                                      <p class="cardd-footer-item m-l-10 m-t-10">By: {{ $daily->by }}</p>
+                                      <p class="card-footer-item m-l-10 m-t-10">By: {{ $daily->by }}</p>
 
                                   </footer>
                               </div>

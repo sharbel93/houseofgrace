@@ -88,7 +88,7 @@ class DailyController extends Controller
     public function edit($id)
     {
         $daily = Daily::find($id);
-        return view('manage.dailies.edit')->withDaily($daily)->with('Edited successfully!');
+        return view('manage.dailies.edit')->withDaily($daily)->with('success','Edited successfully!');
     }
 
     /**

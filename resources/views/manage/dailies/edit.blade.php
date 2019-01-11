@@ -12,7 +12,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="product-status-wrap drp-lst">
                         <div class="container-fluid">
-                            <div class="col-md-6">
+                            <div class="col-md-6 ">
                                 <h2>Daily Inspiration</h2>
                             </div>
                             <div class="col-md-6 ">
@@ -28,24 +28,27 @@
                                 ) !!}
 
 
-                                        {{ Form::label('title', 'Title') }}
+                                        {{ Form::label('title', 'Title', ['class' => 'm-t-15']) }}
                                         {{ Form::text('title', null, ['class' => 'form-control form-control-lg'] ,
                                         ['placeholder' => '.form-control-lg']) }}
-                                {{ Form::label('by', 'By') }}
+                                {{ Form::label('by', 'By', ['class' => 'm-t-15']) }}
                                         {{ Form::text('by', null, ['class' => 'form-control form-control-lg'] ,
                                         ['placeholder' => '.form-control-lg']) }}
 
 
 
-                                        {{ Form::label('content', 'Message Content', ['class' => 'form-spacing-top']) }}
+                                        {{ Form::label('content', 'Message Content', ['class' => 'form-spacing-top
+                                        m-t-15
+                                        ']) }}
                                         {{ Form::textarea('content',null, ['class' => 'form-control']) }}
-                                {{ Form::submit('Save Changes', ['class' => ' m-t-15 btn btn-success btn-block']) }}
+                                {{ Form::submit('Save Changes', ['class' => ' m-t-20 btn btn-success btn-block']) }}
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+        </div>
+    </div>
 @stop
 @section('scripts')
     <script>
@@ -54,7 +57,7 @@
             $('#content').summernote({
                 height: 180,
                 toolbar: [
-                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['style', ['style','bold', 'italic', 'underline', 'clear']],
                     ['font', ['fontname','strikethrough', 'superscript', 'subscript']],
                     ['height', ['height']],
                     ['fontsize', ['fontsize']],
@@ -76,6 +79,6 @@
 
     </script>
     <script src="{{asset('/js/summernote.min.js')}}"></script>
-@endsection
+ @endsection
 
 

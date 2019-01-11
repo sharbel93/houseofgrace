@@ -62,14 +62,13 @@
                 height: 180,
                 placeholder: 'write your inspiration here ...',
                 toolbar: [
-                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['style', ['style','bold', 'italic', 'underline', 'clear']],
                     ['font', ['fontname','strikethrough', 'superscript', 'subscript']],
                     ['height', ['height']],
                     ['fontsize', ['fontsize']],
                     ['color', ['color']],
-                    ['para', ['ul', 'ol', 'paragraph', ]],
+                    ['para', ['','ul', 'ol', 'paragraph', ]],
                     ['insert',[ 'link', 'video', 'table', 'hr']],
-                    ['formatH6'],
                     ['misc',['fullscreen', 'codeview', 'undo', 'redo', 'help']]
                 ],
                 popover: {
