@@ -7,8 +7,18 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="product-status-wrap drp-lst">
                         <div class="row">
+                            <div class="col-md-6 col-sm-4 col-xs-4">
+                                <h1 >  Show Post</h1>
+                            </div>
+                            <div class="col-md-6 col-sm-8 col-xs-8">
+                                <a href="{{route('posts.index')}}" class="button is-primary is-pulled-right">
+                                    <i class="fa fa-user-add m-r-10"></i> All Posts
+                                </a>
+                            </div>
+                        </div>
+                        <div class="row">
 
-                            <div class="col-md-8">
+                            <div class="col-md-12">
 
 
                                 <img src="{{ asset('posts/images/'.$post->image) }}" height="400" width="800"  >

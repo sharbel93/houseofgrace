@@ -11,9 +11,20 @@
 
     <div class="product-status mg-b-15">
         <div class="container-fluid">
+
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="product-status-wrap drp-lst">
+                        <div class="row m-b-20">
+                            <div class="col-md-6 col-sm-4 col-xs-4">
+                                <h1 >  Edit Post</h1>
+                            </div>
+                            <div class="col-md-6 col-sm-8 col-xs-8">
+                                <a href="{{route('posts.index')}}" class="button is-primary is-pulled-right">
+                                    <i class="fa fa-user-add m-r-10"></i> All Posts
+                                </a>
+                            </div>
+                        </div>
                         {!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'PUT', 'files' =>
                         true] ) !!}
                         <div class="row">
@@ -102,7 +113,28 @@
                 tags: true
             });
 
-            $('#content').summernote();
+            $('#content').summernote(
+                {
+                    height: 180,
+                    placeholder: 'write your inspiration here ...',
+                    toolbar: [
+                        ['style', ['style','bold', 'italic', 'underline', 'clear']],
+                        ['font', ['fontname','strikethrough', 'superscript', 'subscript']],
+                        ['height', ['height']],
+                        ['fontsize', ['fontsize']],
+                        ['color', ['color']],
+                        ['para', ['','ul', 'ol', 'paragraph', ]],
+                        ['insert',[ 'link', 'video', 'table', 'hr']],
+                        ['misc',['fullscreen', 'codeview', 'undo', 'redo', 'help']]
+                    ],
+                    popover: {
+                        link: [
+                            ['link', ['linkDialogShow', 'unlink']]
+                        ]
+                    }
+
+                }
+            );
         });
     </script>
     <script src="{{asset('/js/summernote.min.js')}}"></script>

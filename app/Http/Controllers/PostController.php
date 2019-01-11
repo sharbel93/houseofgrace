@@ -162,7 +162,7 @@ $this->validate($request, array(
             'slug' => "required|alpha_dash |min:5 |max: 255|unique:posts,slug, $id",
             'category_id' => 'required|integer',
             'content'=> 'required',
-            'thumbnail' => 'sometimes|image'
+            'thumbnail' => 'required|image'
         ));
 
         // Save the data to the database
@@ -203,12 +203,12 @@ $this->validate($request, array(
 
 
             // Delete the old photo
-//            if(!$post->image == null){
-//                $oldFilename = $post->image;
-//                $filename1 = public_path().'/posts/images/'.$oldFilename;
-//                \File::delete($filename1);
-//            }
-            Storage::delete($oldFilename);
+            if(!$post->image == null){
+                $oldFilename = $post->image;
+                $filename1 = public_path().'/posts/images/'.$oldFilename;
+                \File::delete($filename1);
+            }
+//            Storage::delete($oldFilename);
 
             // update database
             $post->image = $filename;

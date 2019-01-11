@@ -14,30 +14,64 @@
                     <div class="product-status-wrap drp-lst">
                         <div class="container-fluid">
                             <div class="col-md-6">
-                                <h2>Daily Inspiration</h2>
+                                <h2>Create Event</h2>
                             </div>
                             <div class="col-md-6 ">
-                                <a href="{{route('daily.create')}}" class=" m-r-10 button is-primary is-pulled-right ">Create
-                                    Dailies</a>
-                                <a href="{{route('daily.create')}}" class=" m-r-10 button is-primary is-pulled-right
-">Create
-                                    Dailies</a>
+
+                                <a href="{{route('events.index')}}" class=" m-r-10 button is-primary is-pulled-right
+">All
+                                    Events</a>
 
                             </div>
                             <div class="col-md-12">
 
-                                <form>
-                                    <div class="form-group">
-                                        <label for="title">Title</label>
-                                        <input type="text" class="form-control" id="title" name="title" placeholder="Title">
+                                <form action="{{ route('events.store') }}" method="post" enctype="multipart/form-data" >
+                                    {{ csrf_field()}}
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="title">Event Title</label>
+                                            <input type="text" class="form-control" id="title" name="title" placeholder="Event Title">
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="by">By</label>
-                                        <input type="text" class="form-control" id="by" name="by"
-                                               placeholder="Author's name">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="venue">Event Venue</label>
+                                            <input type="text" class="form-control" id=" venue" name="venue"
+                                                   placeholder="Event Venue">
+                                        </div>
                                     </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="location">Event Location</label>
+                                            <input type="text" class="form-control" id="location" name="location"
+                                                   placeholder="Event Location">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label for="created">Event Date</label>
+                                            <input type="date" class="form-control" id="created" name="created"
+                                            >
+                                        </div>
+                                    </div>
+                                   <div class="col-md-4">
+                                       <div class="form-group">
+                                           <label for="by">By</label>
+                                           <input type="text" class="form-control" id="by" name="by"
+                                                  placeholder="Author's name">
+                                       </div>
+                                   </div>
+
+
                                     <div class="form-group">
-                                        <label for="content">Message Content</label>
+                                        <label for="thumbnail">Upload Image</label>
+                                        <input type="file" class="form-control" id="thumbnail" name="thumbnail"
+                                               >
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="content">Event Content</label>
                                         <textarea type="text" class="form-control" id="content" name="content"
                                         ></textarea>
                                     </div>

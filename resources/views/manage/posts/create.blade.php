@@ -96,7 +96,7 @@
                                     </b-field>
                                 </div>
                                 <div class="row ">
-                                    <h5 class="m-t-30">Upload Image</h5>
+                                    <h5 class="m-t-30">Upload Image </h5>
                                     <img src="/" alt="">
                                     <input class="m-t-30" type="file" name="thumbnail" id="thumbnail" />
                                 </div>

@@ -20,7 +20,7 @@ class SermonController extends Controller
      */
     public function index()
     {
-        $sermons = Sermon::all();
+        $sermons = Sermon::orderBy('created','ASC')->get();
         return view('manage.sermons.index')->withSermons($sermons);
     }
 

@@ -36,7 +36,7 @@
                                             <th scope="row">{{ $sermon->id }}</th>
                                             <td>{{ $sermon->title }}</td>
                                             <td>{{ $sermon->preacher }}</td>
-                                            <td> {{ $sermon->created }}</td>
+                                            <td> {{ date('M j, Y', strtotime($sermon->created )) }}</td>
                                             <td>{{ substr(strip_tags($sermon->content),0 , 50 ) }} {{ strlen
                                                 (strip_tags
                                                 ($sermon->content)) > 50 ? "..." : "" }}</td>

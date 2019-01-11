@@ -23,29 +23,42 @@
                                    <thead>
                                    <tr>
                                        <th scope="col">#</th>
-                                       <th scope="col">First</th>
-                                       <th scope="col">Last</th>
-                                       <th scope="col">Handle</th>
+                                       <th scope="col">title</th>
+                                       <th scope="col">venue</th>
+                                       <th scope="col">location</th>
+                                       <th scope="col">thumbnail</th>
+                                       <th scope="col">content</th>
+                                       <th scope="col">time</th>
+                                       <th scope="col">manage</th>
                                    </tr>
                                    </thead>
                                    <tbody>
-                                   <tr>
-                                       <th scope="row">1</th>
-                                       <td>Mark</td>
-                                       <td>Otto</td>
-                                       <td>@mdo</td>
-                                   </tr>
-                                   <tr>
-                                       <th scope="row">2</th>
-                                       <td>Jacob</td>
-                                       <td>Thornton</td>
-                                       <td>@fat</td>
-                                   </tr>
-                                   <tr>
-                                       <th scope="row">3</th>
-                                       <td colspan="2">Larry the Bird</td>
-                                       <td>@twitter</td>
-                                   </tr>
+
+                                   @foreach($events as $event)
+                                       <tr>
+                                           <th scope="row">1</th>
+                                           <td>{{ $event->title }}</td>
+                                           <td>{{ $event->venue }} </td>
+                                           <td>{{ $event->location }}</td>
+                                           <td><ul class="list-inline">
+                                                   <li>
+                                                       <img src="{{ asset('events/images/'.$event->thumbnail) }}"
+                                                            width="80" class=" img-responsive" alt="image" />
+                                                   </li>
+
+                                               </ul></td>
+                                           <td>{{ substr(strip_tags($event->content),0 , 50 ) }} {{ strlen
+                                                (strip_tags
+                                                ($event->content)) > 50 ? "..." : "" }}</td>
+                                           <td>{{ date('M j, Y', strtotime($event->created )) }}</td>
+
+                                           <td><a href="{{ route('events.show', $event->id) }}" class="btn
+                                                btn-info btn-sm btn-outline-info ">View</a>
+                                               <a href="{{ route('events.edit',$event->id) }}" class="btn btn-primary btn-sm">Edit</a>
+                                           </td>
+                                       </tr>
+                                   @endforeach
+
                                    </tbody>
                                </table>
 
