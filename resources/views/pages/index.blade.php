@@ -1,8 +1,10 @@
 @extends('layouts.app')
 @section('title', '| Home')
 @section('content')
-    <!-- =========================== SLIDER BEGIN  =========================== -->
+
+      <!-- =========================== SLIDER BEGIN  =========================== -->
     <section class="home-slider">
+
         <div class="row ">
             <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xs-12">
                 <div class="owl-carousel owl-theme">
@@ -97,9 +99,21 @@
         </div>
     </section>
     <!-- =========================== EVENT DATE AREA END  =========================== -->
+      <!-- =========================== YEAR THEME BEGIN  =========================== -->
+      <section>
+          <div class="container theme_yr">
+              <div class="row">
+                  <div class="col-md-12">
+                      <p><span class="badge badge-info">2019 Year Theme</span></p>
+                      <p class="yr">Grow Deep to spread wide</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <!-- =========================== YEAR THEME END  =========================== -->
 
 
-    <!-- =========================== SERVICES BEGIN  =========================== -->
+      <!-- =========================== SERVICES BEGIN  =========================== -->
     <div class="bannertitle">
         <div class="row">
             <div class="col-md-12 col-lg-12">
@@ -245,6 +259,18 @@
         </div>
     </section>
 
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    Our Sermons
+                </div>
+                <div class="col-md-6">
+                   Our Events
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- =========================== UPCOMING EVENTS END  =========================== -->
 
     <!-- =========================== LOCATION GOOGLE MAPS BEGIN  =========================== -->

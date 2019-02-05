@@ -14,23 +14,6 @@ input[type=text], input[type=email], input[type=tel],select, textarea {
     margin-bottom: 16px; /* Bottom margin */
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
-/*html,*/
-/*body {*/
-    /*font-family: 'Montserrat', sans-serif;*/
-    /*!*font-family: 'Source Sans Pro', sans-serif;*!*/
-/*//overflow-x: hidden;*/
-    /*color: #000;*/
-    /*background-color: whitesmoke;*/
-/*//-ms-overflow-style: scrollbar;*/
-/*//-webkit-font-smoothing: antialiased;*/
-    /*font-size: 1em;*/
-    /*line-height: 1.475em;*/
-    /*overflow-y: hidden!important;*/
-/*//max-width: 100%;*/
-/*//  padding: 0;*/
-/*//  margin: 0;*/
-/*}*/
-
 
 /***===================RESPONSIVE MEDIA QUERIES SECTION BEGIN========================***/
 

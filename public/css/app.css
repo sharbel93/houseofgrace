@@ -14311,7 +14311,7 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link {
-  font: 500 12px/70px "Questrial", sans-serif;
+  font: 500 8px/10px "Questrial", sans-serif;
   text-transform: uppercase;
   color: #2a2a2a;
   padding: 0px;
@@ -14740,6 +14740,42 @@ button:focus {
   .home-slider .col-lg-12,
   .home-slider .col-xs-12 {
     padding: 0;
+  }
+}
+
+section .theme_yr {
+  background: url("/../images/imageb.jpg") center;
+}
+
+section .yr {
+  font-family: "Playfair Display SC", serif;
+  font-size: 8em;
+  text-align: center;
+  color: white;
+  text-shadow: 5px 5px 10px #000000;
+}
+
+@media (min-width: 320px) {
+  section .yr {
+    font-size: 1.8em;
+  }
+}
+
+@media (min-width: 576px) {
+  section .yr {
+    font-size: 2.8em;
+  }
+}
+
+@media (min-width: 768px) {
+  section .yr {
+    font-size: 3.8em;
+  }
+}
+
+@media (min-width: 992px) {
+  section .yr {
+    font-size: 5em;
   }
 }
 

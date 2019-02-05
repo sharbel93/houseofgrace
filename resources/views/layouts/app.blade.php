@@ -34,7 +34,7 @@
     <!-- Bootstrap CSS
         ============================================ -->
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="//platform-api.sharethis.com/js/sharethis.js#property=5c10b7c81c98570011922822&product=inline-share-buttons"></script>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->

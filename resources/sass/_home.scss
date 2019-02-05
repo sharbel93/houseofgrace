@@ -210,6 +210,36 @@
 
 }
 
+////////////////theme//////////
+
+section{
+  .theme_yr{
+  background: url("/../images/imageb.jpg") center ;
+
+  }
+  .yr{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 8em;
+    text-align: center;
+    color: white;
+    text-shadow: 5px 5px 10px #000000;
+    @media (min-width: 320px) {
+      font-size: 1.8em;
+    }
+    @media (min-width: 576px) {
+      font-size: 2.8em;
+    }
+    @media (min-width: 768px) {
+      font-size: 3.8em;
+    }
+    @media (min-width: 992px) {
+      font-size: 5em;
+    }
+
+
+
+  }
+}
 ////////////////////// Event Date Area ////////////////////////////
 
 .upcoming-events-highlight {
