@@ -20,10 +20,12 @@ Slug.defaults.mode = 'rfc3986';
  */
 import Vue from 'vue';
 import Buefy from 'buefy';
-
+// import Slug from 'slug';
+// window.Slug = require('slug');
+// Slug.defaults.mode = 'rfc3986';
 
 Vue.use(Buefy);
-Vue.component('slugWidget', require('./components/slugWidget.vue'));
+Vue.component('slugWidget', require('./components/slugWidget.vue').default);
 // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
 // require('./manage');

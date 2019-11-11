@@ -47,7 +47,8 @@ class EventController extends Controller
             'title' => 'required|max:255',
             'venue' => 'required|max:255',
             'location' => 'required|max:255',
-            'thumbnail' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+            'thumbnail' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'content' => 'required'
         ));
 
         $event = new Event;

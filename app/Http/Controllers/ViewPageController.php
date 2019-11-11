@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Event;
 use Illuminate\Http\Request;
 use Mail;
 use App\Mail\ContactMail;
@@ -12,7 +13,8 @@ class ViewPageController extends Controller
 {
     //different view pages of the website
     public function getIndex() {
-        return view('pages.index');
+        $eventss = Event::orderBy('id', 'desc')->take(3);
+        return view('pages.index')->withEvents($events);
     }
 
     public function getAbout() {

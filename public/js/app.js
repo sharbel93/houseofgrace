@@ -59181,9 +59181,12 @@ Slug.defaults.mode = 'rfc3986';
  */
 
 
+ // import Slug from 'slug';
+// window.Slug = require('slug');
+// Slug.defaults.mode = 'rfc3986';
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(buefy__WEBPACK_IMPORTED_MODULE_1___default.a);
-vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('slugWidget', __webpack_require__(/*! ./components/slugWidget.vue */ "./resources/js/components/slugWidget.vue")); // Vue.component('example-component', require('./components/ExampleComponent.vue'));
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('slugWidget', __webpack_require__(/*! ./components/slugWidget.vue */ "./resources/js/components/slugWidget.vue").default); // Vue.component('example-component', require('./components/ExampleComponent.vue'));
 // require('./manage');
 //select2
 
@@ -59353,8 +59356,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\Dev\Projects\Laravel\HouseofGrace\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\Dev\Projects\Laravel\HouseofGrace\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/cosa-uzumaki/Documents/LARAVEL/houseofgrace/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/cosa-uzumaki/Documents/LARAVEL/houseofgrace/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
