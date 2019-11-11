@@ -108,13 +108,14 @@
             <div class="row ">
                 <div class="col-md-6 mb-3 element-animate">
                     <span class="section-heading">Upcoming Events</span>
-                    <h2><a href="#">CrossOver Service 2019</a></h2>
+                    <h2 class="text-capitalize"><a href="#">{{$counter->title}}</a></h2>
                     <div class="events-meta">
                         <span class="mr-2"><span
-                                    class="far fa-calendar-alt mr-2"></span>Monday 31st/12/2018 9:00 pm</span>
-                        <span class="mr-2"><span class="fas fa-location-arrow mr-2"></span>House Of Grace Church,
-                            Eldoret</span>
-                        {{--<span class="mr-2"><span class="fas fa-user mr-2"></span>Pastor Luis Matthew</span>--}}
+                                    class="far fa-calendar-alt mr-2"></span>{{date('j F, Y', strtotime($counter->start))}} -
+                                    {{date('j F, Y', strtotime($counter->end))}}</span> <br>
+                        <span class="mr-2"><span class="fas fa-location-arrow mr-2"></span>{{$counter->venue}},{{$counter->location}}
+                        </span> <br>
+                        <span class="mr-2"><span class="fas fa-user mr-2"></span>Guest:&nbsp;{{$counter->guest}}</span>
                     </div>
                 </div>
                 <div class="col-md-6 element-animate">
@@ -377,8 +378,8 @@
             });
 
         });
-
-        $('#date-countdown').countdown('2018/12/31', function (event) {
+// add date for counter
+        $('#date-countdown').countdown('@json($counter->start)', function (event) {
             var $this = $(this).html(event.strftime(''
                 + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
                 + '<span class="countdown-block"><span class="label">%d</span> days </span>'
