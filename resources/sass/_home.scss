@@ -244,7 +244,7 @@ section{
 ////////////////////// Event Date Area ////////////////////////////
 
 .upcoming-events-highlight {
-  border-bottom: 1px solid #2e2e2e;
+  //border-bottom: 1px solid #2e2e2e;
   padding: 3em 0;
   margin: 0px 0px 0px 0px;
   background: #f9f9ff;
@@ -350,13 +350,43 @@ section{
 }
 
 .services{
+    margin-top: 20px;
   .container{
     color: #fff;
-    background-color: #008ECC;
+    //background-color: #008ECC;
     //background-color:  rgba(0, 142, 204, 0.5);
     border-radius: 4px;
     padding: 0px 18px 20px 18px;
   }
+    h2 {
+        color: #008ECC;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .card{
+        min-height: 110%;
+        border: 0;
+        //background-color: rgba(0,142,204,0.5)
+        background-color: #008ECC;
+        .sv_title{
+            color: #fff;
+            font-family: 'Playfair Display SC', serif;
+            font-size: 1.6rem;
+            //text-align: center;
+            //color: white;
+            text-shadow: 5px 5px 10px #000000;
+        }
+        .sv_time{
+            font-family: 'Playfair Display ', serif;
+            font-size: 1.12rem;
+            color: #fff;
+        }
+        .sv_description{
+            color: #fff;
+            font-family: 'Playfair Display ', serif;
+            font-size: 1.12rem;
+        }
+    }
   h4{
     font-size: 2em;
     font-weight: bold;
@@ -479,6 +509,7 @@ section{
 }
 
 .section_gap{
+
   .container{
     //padding: 12px;
     margin-bottom: 15px;
@@ -495,7 +526,8 @@ section{
   }
 
   .event_post{
-    border-radius: 4%;
+      border: 1px solid #ccc;
+    border-radius: 1%;
     padding: 10px;
     //border-top: 1px solid #008ECC;
     .a{

@@ -25,76 +25,79 @@
 @section('content')
 
       <!-- =========================== SLIDER BEGIN  =========================== -->
-    <section class="home-slider">
+      <div class="container">
 
-        <div class="row ">
-            <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xs-12">
-                <div class="owl-carousel owl-theme">
-                    <!-- first slide -->
-                    <div class="item">
-                        <img src="{{asset('images/intro.jpg')}}">
+          <section class="home-slider">
 
-                    </div>
-                    <!-- second slide -->
-                    <div class="item ">
-                        <img src="{{asset('images/sermons2.jpg')}}">
-                        <div class="bottom-left">
-                            <div class="slidertextone" data-animation-in="fadeInLeft"
-                                 data-animation-out="animate-out fadeOutRight">
-                                Powerful
-                            </div>
-                            <div class="slidertexttwo" data-animation-in="fadeInRight"
-                                 data-animation-out="animate-out fadeOutLeft">
-                                Sermons
-                            </div>
-                        </div>
-                    </div>
-                    <!-- third slide-->
-                    <div class="item">
-                        <img src="{{asset('images/worship.jpg')}}">
-                        <div class="bottom-left">
-                            <div class="slidertextone" data-animation-in="fadeInLeft"
-                                 data-animation-out="animate-out fadeOutRight">
-                                Hearty
-                            </div>
-                            <div class="slidertexttwo" data-animation-in="fadeInRight"
-                                 data-animation-out="animate-out fadeOutLeft">
-                                Worship
-                            </div>
-                        </div>
-                    </div>
-                    <!-- fourth slide -->
-                    <div class="item">
-                        <img src="{{asset('images/blast.jpg')}}">
-                        <div class="bottom-left">
-                            <div class="slidertextone" data-animation-in="fadeInLeft"
-                                 data-animation-out="animate-out fadeOutRight">
-                                Blast Youth
-                            </div>
-                            <div class="slidertexttwo" data-animation-in="fadeInRight"
-                                 data-animation-out="animate-out fadeOutLeft">
-                                Ministry
-                            </div>
-                        </div>
-                    </div>
-                    <!-- fifth slide -->
-                    <div class="item">
-                        <img src="{{asset('images/children2.jpg')}}">
-                        <div class="bottom-left">
-                            <div class="slidertextone" data-animation-in="fadeInLeft"
-                                 data-animation-out="animate-out fadeOutRight">
-                                Dynamic Children
-                            </div>
-                            <div class="slidertexttwo" data-animation-in="fadeInRight"
-                                 data-animation-out="animate-out fadeOutLeft">
-                                Ministry
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+              <div class="row ">
+                  <div class="col-12 col-md-12 col-sm-12 col-lg-12 col-xs-12">
+                      <div class="owl-carousel owl-theme">
+                          <!-- first slide -->
+                          <div class="item">
+                              <img src="{{asset('images/intro.jpg')}}">
+
+                          </div>
+                          <!-- second slide -->
+                          <div class="item ">
+                              <img src="{{asset('images/sermons2.jpg')}}">
+                              <div class="bottom-left">
+                                  <div class="slidertextone" data-animation-in="fadeInLeft"
+                                       data-animation-out="animate-out fadeOutRight">
+                                      Powerful
+                                  </div>
+                                  <div class="slidertexttwo" data-animation-in="fadeInRight"
+                                       data-animation-out="animate-out fadeOutLeft">
+                                      Sermons
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- third slide-->
+                          <div class="item">
+                              <img src="{{asset('images/worship.jpg')}}">
+                              <div class="bottom-left">
+                                  <div class="slidertextone" data-animation-in="fadeInLeft"
+                                       data-animation-out="animate-out fadeOutRight">
+                                      Hearty
+                                  </div>
+                                  <div class="slidertexttwo" data-animation-in="fadeInRight"
+                                       data-animation-out="animate-out fadeOutLeft">
+                                      Worship
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- fourth slide -->
+                          <div class="item">
+                              <img src="{{asset('images/blast.jpg')}}">
+                              <div class="bottom-left">
+                                  <div class="slidertextone" data-animation-in="fadeInLeft"
+                                       data-animation-out="animate-out fadeOutRight">
+                                      Blast Youth
+                                  </div>
+                                  <div class="slidertexttwo" data-animation-in="fadeInRight"
+                                       data-animation-out="animate-out fadeOutLeft">
+                                      Ministry
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- fifth slide -->
+                          <div class="item">
+                              <img src="{{asset('images/children2.jpg')}}">
+                              <div class="bottom-left">
+                                  <div class="slidertextone" data-animation-in="fadeInLeft"
+                                       data-animation-out="animate-out fadeOutRight">
+                                      Dynamic Children
+                                  </div>
+                                  <div class="slidertexttwo" data-animation-in="fadeInRight"
+                                       data-animation-out="animate-out fadeOutLeft">
+                                      Ministry
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
 
     <!-- =========================== SLIDER END  =========================== -->
 
@@ -136,87 +139,117 @@
 
 
       <!-- =========================== SERVICES BEGIN  =========================== -->
-    <div class="bannertitle">
-        <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <hr class="hr-service">
-            </div>
-        </div>
-    </div>
+{{--    <div class="bannertitle">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-md-12 col-lg-12">--}}
+{{--                <hr class="hr-service">--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <section class="services">
         <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 >Our Services</h2>
+                </div>
+            </div>
             <div class="row ">
-                <div class="col-12 col-sm-12 col-md-6 mb-2 col-lg-6">
-                    <h4 class="text-center">SUNDAY SERVICES</h4>
-                    <ul>
-                        <li><span>Prayer Service </span> &nbsp; <br>
-                            <small>7:00am - 8:00am</small>
-                        </li>
-                        <br>
-                        <li><span>The Journey  </span><br>&nbsp;
-                            <small> 8:00am - 8:50am</small>
-                        </li>
-                        <br>
-                        <li><span>Family Service  </span>&nbsp;<br>
-                            <small>9:00am - 12:00pm</small>
-                        </li>
-                        <br>
-                        <li><span>Oasis of Grace Childrens Church </span><br>
-                            <small>10:00am - 12:00am</small>
-                        </li>
-                    </ul>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                           <span class="sv_title">Workers Service</span>  <br>
+                            <span class="sv_time">Time: 8:00 am - 9:00 am</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
-                    <h4 class="text-center">OTHER SERVICES</h4>
-                    <ul>
-                        <li><span>Blast Youth Service  </span>&nbsp;<br>
-                            <small> Every
-                                fortnight
-                                3:30pm -
-                                6:00pm
-                            </small>
-                        </li>
-                        <br>
-                        <li><span>Prayer BootCamp </span>&nbsp;<br>
-                            <small> Wednesdays 5:30pm -
-                                7:30pm
-                            </small>
-                        </li>
-                        <br>
-                        <li><span>Ladies Prayer Meeting  </span><br>&nbsp;<small>Tuesdays 5:00pm -
-                                6:00pm
-                            </small>
-                        </li>
-                        <br>
-                        <li><span>Throne Room Experience(TRE)  </span>&nbsp;<br>
-                            <small>2nd Friday Every month 6:00pm - 8:00pm</small>
-                        </li>
-                    </ul>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                           <span class="sv_title">Family Worship Service</span>  <br>
+                            <span class="sv_time">Time: 9:00 am - 12:00 pm</span>
+                        </div>
+                    </div>
                 </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <span class="sv_title">Fresh Fire Service</span>
+                            <br> <span class="sv_time"> Time: 6:00 pm - 8:00 pm</span>
+                            <br> <span class="sv_description">(Worship, Word, Prayer, Fellowship)</span>
+                        </div>
+                    </div>
+                </div>
+{{--                <div class="col-12 col-sm-12 col-md-6 mb-2 col-lg-6">--}}
+{{--                    <h4 class="text-center">SUNDAY SERVICES</h4>--}}
+{{--                    <ul>--}}
+{{--                        <li><span>Prayer Service </span> &nbsp; <br>--}}
+{{--                            <small>7:00am - 8:00am</small>--}}
+{{--                        </li>--}}
+{{--                        <br>--}}
+{{--                        <li><span>The Journey  </span><br>&nbsp;--}}
+{{--                            <small> 8:00am - 8:50am</small>--}}
+{{--                        </li>--}}
+{{--                        <br>--}}
+{{--                        <li><span>Family Service  </span>&nbsp;<br>--}}
+{{--                            <small>9:00am - 12:00pm</small>--}}
+{{--                        </li>--}}
+{{--                        <br>--}}
+{{--                        <li><span>Oasis of Grace Childrens Church </span><br>--}}
+{{--                            <small>10:00am - 12:00am</small>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
+{{--                <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">--}}
+{{--                    <h4 class="text-center">OTHER SERVICES</h4>--}}
+{{--                    <ul>--}}
+{{--                        <li><span>Blast Youth Service  </span>&nbsp;<br>--}}
+{{--                            <small> Every--}}
+{{--                                fortnight--}}
+{{--                                3:30pm ---}}
+{{--                                6:00pm--}}
+{{--                            </small>--}}
+{{--                        </li>--}}
+{{--                        <br>--}}
+{{--                        <li><span>Prayer BootCamp </span>&nbsp;<br>--}}
+{{--                            <small> Wednesdays 5:30pm ---}}
+{{--                                7:30pm--}}
+{{--                            </small>--}}
+{{--                        </li>--}}
+{{--                        <br>--}}
+{{--                        <li><span>Ladies Prayer Meeting  </span><br>&nbsp;<small>Tuesdays 5:00pm ---}}
+{{--                                6:00pm--}}
+{{--                            </small>--}}
+{{--                        </li>--}}
+{{--                        <br>--}}
+{{--                        <li><span>Throne Room Experience(TRE)  </span>&nbsp;<br>--}}
+{{--                            <small>2nd Friday Every month 6:00pm - 8:00pm</small>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
+{{--                </div>--}}
             </div>
         </div>
     </section>
     <!-- =========================== SERVICES END  =========================== -->
     <!-- =========================== YEAR BANNER AREA START  =========================== -->
 
-    <section class="banner_area ">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <img src="{{asset('images/banner.jpeg')}}">
-            </div>
-        </div>
-    </section>
+{{--    <section class="banner_area ">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-md-12 text-center">--}}
+{{--                <img src="{{asset('images/banner.jpeg')}}">--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </section>--}}
     <!-- =========================== YEAR BANNER AREA END  =========================== -->
 
 
     <!-- =========================== UPCOMING EVENTS BEGIN  =========================== -->
-    <div class="bannertitle">
-        <div class="row">
-            <div class="col-md-12 col-lg-12">
-                <hr class="hr-events">
-            </div>
-        </div>
-    </div>
+{{--    <div class="bannertitle">--}}
+{{--        <div class="row">--}}
+{{--            <div class="col-md-12 col-lg-12">--}}
+{{--                <hr class="hr-events">--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <section class="event_blog_area section_gap">
         <div class="container">
             <span class="section-heading">Upcoming Events</span>
