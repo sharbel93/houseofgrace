@@ -20,7 +20,11 @@
     <meta name="description"
           content=" <strong>House of Grace Church - Eldoret<strong>  was Launched on 16th January 2015. It is located
            in Kapsoya, opposite The Noble Hotel,a few meters from the Nairobi – Eldoret Highway.">
-    <meta name="keywords" content="house of grace eldoret, house of grace, church eldoret, house of grace church
+    <meta name="keywor205.83ms4.39MBGET manage/posts/{post}web: superadministrator@app.com
+5 statements were executed7.9ms
+select * from `users` where `id` = '1' limit 1
+3.42ms
+/vendor/ds" content="house of grace eldoret, house of grace, church eldoret, house of grace church
     eldoret, eldoret, church , Kenya, house of grace eldoret kenya">
     <!-- Fonts -->
     {{--<link rel="dns-prefetch" href="https://fonts.gstatic.com">--}}
@@ -36,6 +40,7 @@
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @yield('styles')
     <script src="//platform-api.sharethis.com/js/sharethis.js#property=5c10b7c81c98570011922822&product=inline-share-buttons"></script>
     <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128002808-1"></script>

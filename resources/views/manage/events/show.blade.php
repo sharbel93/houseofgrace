@@ -1,6 +1,23 @@
 @extends('layouts.manage')
 
+@section('styles')
 
+    <style type="text/css">
+      .ev-header-span{
+          font-size: 1rem;
+          font-weight: bold;
+          padding-bottom: 10px;
+      }
+      .ev-header-span-content{
+          font-size: 1rem;
+          font-weight: bold;
+          padding-bottom: 10px;
+          margin-top: 20px;
+      }
+
+    </style>
+
+@endsection
 @section('content')
 
 
@@ -29,26 +46,36 @@
                               </figure>
                           </div>
                           <div class="col-md-7">
-                              <div class="card" style="width: 18rem;">
-                                  <header class="card-header">
-                                      <p class="card-header-title">
-                                          Title : {{ $event->title }}
-                                      </p>
-                                  </header>
-                                  <div class="card-content">
-
-                                      <div class="card-content">
-                                          {!! $event->content !!}
-                                      </div>
+                              <div class="row">
+                                  <div class="col-lg-4">
+                                      <span class="ev-header-span" >Title :</span><br> <p>{{ $event->title }}</p>
                                   </div>
-
-                                  <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">Date: {{ $event->created
-                                        }}</li>
-                                      <li class="list-group-item">Location: {{ $event->location }}</li>
-                                      <li class="list-group-item">Venue: {{ $event->venue }}</li>
-                                  </ul>
+                                  <div class="col-lg-4">
+                                      <span class="ev-header-span">Event Start Date:</span> <br>
+                                      <p>{{ $event->start
+                                            }}</p>
+                                  </div>
+                                  <div class="col-lg-4">
+                                      <span class="ev-header-span">Event End Date:</span> <br>
+                                      <p>{{ $event->end
+                                        }}</p>
+                                  </div>
                               </div>
+                              <div class="row mt-5">
+                                  <div class="col-lg-4"> <span class="ev-header-span">Location:</span> <br> <p>{{ $event->location }}</p></div>
+                                  <div class="col-lg-4"> <span class="ev-header-span">Venue:</span> <br> <p>{{ $event->venue }}</p></div>
+                                  <div class="col-lg-4">
+                                      <span class="ev-header-span"> Host:</span> <br><p>{{ $event->host }}</p> <br>
+                                      <span class="ev-header-span"> Guest:</span> <br><p>{{ $event->guest }}</p>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-lg-12">
+                                      <span class="ev-header-span-content "> Event Description:</span>
+                                      <p>{!! $event->content !!}</p>
+                                  </div>
+                              </div>
+
                           </div>
 
                       </div>

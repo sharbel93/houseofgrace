@@ -2,6 +2,12 @@
 
 @section('styles')
     <link rel="stylesheet" href="{{asset('/js/summernote.css')}}">
+
+    <style type="text/css">
+
+
+    </style>
+
 @endsection
 
 @section('content')
@@ -37,19 +43,28 @@
                                  {{ Form::text('venue', null, ['class' => 'form-control form-control-lg'] ,
                                  ['placeholder' => '.form-control-lg']) }}
 
-                                 {{ Form::label('location', 'Event Location:') }}
+                                 {{ Form::label('location', 'Event Location:', ['class' => 'm-t-15']) }}
                                  {{ Form::text('location', null, ['class' => 'form-control form-control-lg'] ,
                                  ['placeholder' => '.form-control-lg']) }}
 
-                                 {{ Form::label('created', 'Event Date',  ['class' => 'm-t-15']) }}
-                                 {{ Form::date('created', null, ['class' => 'form-control form-control-lg']) }}
+                                 {{ Form::label('start', 'Event start Date',  ['class' => 'm-t-15']) }}
+                                 {{ Form::date('start', null, ['class' => 'form-control form-control-lg']) }}
 
-                                 {{ Form::label('thumbnail', 'Update Image',['class' => 'mb-2 my-2']) }}
-                                 {{ Form::file('thumbnail') }}
+                                 {{ Form::label('end', 'Event end Date',  ['class' => 'm-t-15']) }}
+                                 {{ Form::date('end', null, ['class' => 'form-control form-control-lg']) }}
+
+                                 {{ Form::label('host', 'Event Host:', ['class' => 'm-t-15']) }}
+                                 {{ Form::text('host', null, ['class' => 'form-control form-control-lg'] , ['placeholder' => '.form-control-lg']) }}
+
+                                 {{ Form::label('guest', 'Event Guest:', ['class' => 'm-t-15']) }}
+                                 {{ Form::text('guest', null, ['class' => 'form-control form-control-lg'] , ['placeholder' => '.form-control-lg']) }}
+
+                                 {{ Form::label('thumbnail', 'Update Image', ['class' => 'm-t-15 mb-2 my-2']) }}
+                                 {{ Form::file('thumbnail', ['class' => 'm-t-15']) }}
                                  <img src="{{ asset('/events/images/'.$event->thumbnail) }}" alt="image">
                                  <br>
 
-                                 {{ Form::label('content', 'Event Content:', ['class' => 'form-spacing-top']) }}
+                                 {{ Form::label('content', 'Event Content:', ['class' => 'm-t-15 form-spacing-top']) }}
                                  {{ Form::textarea('content',null, ['class' => 'form-control']) }}
 
                                  {{ Form::submit('Save Changes', ['class' => ' m-t-20 btn btn-success btn-block']) }}

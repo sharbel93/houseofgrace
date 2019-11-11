@@ -27,8 +27,8 @@
                                        <th scope="col">venue</th>
                                        <th scope="col">location</th>
                                        <th scope="col">thumbnail</th>
-                                       <th scope="col">content</th>
-                                       <th scope="col">time</th>
+                                       <th scope="col">start</th>
+                                       <th scope="col">end</th>
                                        <th scope="col">manage</th>
                                    </tr>
                                    </thead>
@@ -47,10 +47,11 @@
                                                    </li>
 
                                                </ul></td>
-                                           <td>{{ substr(strip_tags($event->content),0 , 50 ) }} {{ strlen
-                                                (strip_tags
-                                                ($event->content)) > 50 ? "..." : "" }}</td>
-                                           <td>{{ date('M j, Y', strtotime($event->created )) }}</td>
+{{--                                           <td>{{ substr(strip_tags($event->content),0 , 50 ) }} {{ strlen--}}
+{{--                                                (strip_tags--}}
+{{--                                                ($event->content)) > 50 ? "..." : "" }}</td>--}}
+                                           <td>{{ date('M j, Y', strtotime($event->start )) }}</td>
+                                           <td>{{ date('M j, Y', strtotime($event->end )) }}</td>
 
                                            <td><a href="{{ route('events.show', $event->id) }}" class="btn
                                                 btn-info btn-sm btn-outline-info ">View</a>

@@ -21,7 +21,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = Event::orderBy('created','ASC')->get();
+        $events = Event::orderBy('created_At','ASC')->get();
         return view('manage.events.index')->withEvents($events);
     }
 
@@ -55,7 +55,10 @@ class EventController extends Controller
         $event->title = $request->title;
         $event->venue = $request->venue;
         $event->location = $request->location;
-        $event->created = $request->created;
+        $event->start = $request->start;
+        $event->end = $request->end;
+        $event->host = $request->host;
+        $event->guest = $request->guest;
         $event->content = Purifier::clean($request->content);
 
         if( $request->hasFile('thumbnail') ) {

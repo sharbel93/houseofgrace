@@ -6,7 +6,7 @@ use Illuminate\Database\Migrations\Migration;
 
 class CreateEventsTable extends Migration
 {
-    /**
+    /**amp
      * Run the migrations.
      *
      * @return void
@@ -19,7 +19,7 @@ class CreateEventsTable extends Migration
             $table->string('venue');
             $table->string('location');
             $table->string('thumbnail');
-            $table->date('created');
+//            $table->date('created');
             $table->longText('content');
             $table->timestamps();
         });

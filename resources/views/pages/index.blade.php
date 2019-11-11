@@ -1,5 +1,27 @@
 @extends('layouts.app')
 @section('title', '| Home')
+@section('styles')
+
+    <style type="text/css">
+        .img-wrapper{
+            padding: 10px;
+            margin-right: 20px;
+        }
+        .title-wrapper{}
+        .time-wrapper{
+            font-size: .9rem;
+        }
+        .list-wrapper{
+            display: inline-flex;
+            background-color: #008ECC;
+            margin-bottom: 10px;
+            width: 100%;
+            color: #fff;
+            padding: 5px;
+        }
+    </style>
+
+@endsection
 @section('content')
 
       <!-- =========================== SLIDER BEGIN  =========================== -->
@@ -198,79 +220,48 @@
     <section class="event_blog_area section_gap">
         <div class="container">
             <span class="section-heading">Upcoming Events</span>
+            <span class="section-heading float-lg-right">Previous Events</span>
             {{--<div class="section_title text-center">--}}
             {{--<h2>Upcoming Events</h2>--}}
             {{--<p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast</p>--}}
             {{--</div>--}}
             <div class="row">
-                <div class="col-md-4">
-                    <div class="event_post">
-                        <img src="{{asset('images/cr.jpg')}}" alt="">
-                        <a href="#"><h2 class="event_title">Cross Over Service 2019</h2></a>
-                        <ul class="list_style sermons_category event_category">
-                            <li class="text-muted"><i class="far fa-calendar-alt mr-3"></i>Monday, 31<sup>st</sup>
-                                December,
-                                2018
-                            </li>
-                            <li class="text-muted"><i class="fas fa-landmark mr-3"></i>House of Grace Church</li>
-                            <li class="text-muted"><i class="fas fa-location-arrow mr-3"></i>Opp. Noble Hotel,
-                                Eldoret,
-                                Kenya
-                            </li>
-                        </ul>
-                        {{--<a href="#" class="btn btn_hover">View Details</a>--}}
+                @foreach($events as $event)
+                    <div class="col-md-4">
+                        <div class="event_post">
+                            <img src="{{ asset('events/images/'.$event->thumbnail)}}" alt="">
+                            <a href="#"><h2 class="event_title text-capitalize">{{$event->title}} </h2></a>
+                            <ul class="list_style sermons_category event_category">
+                                <li class="text-muted"><i class="far fa-calendar-alt mr-3"></i>{{date('j F, Y', strtotime($event->start))}} -
+                                    {{date('j F, Y', strtotime($event->end))}}
+                                </li>
+                                <li class="text-muted text-capitalize"><i class="fas fa-landmark mr-3"></i>{{$event->venue}}</li>
+                                <li class="text-muted text-capitalize"><i class="fas fa-location-arrow mr-3"></i>{{$event->location}}
+                                </li>
+                            </ul>
+                            {{--<a href="#" class="btn btn_hover">View Details</a>--}}
+                        </div>
                     </div>
-                </div>
+                @endforeach
                 <div class="col-md-4">
-                    <div class="event_post">
-                        <img src="{{asset('images/cr.jpg')}}" alt="">
-                        <a href="#"><h2 class="event_title">Cross Over Service 2019</h2></a>
-                        <ul class="list_style sermons_category event_category">
-                            <li class="text-muted"><i class="far fa-calendar-alt mr-3"></i>Monday, 31<sup>st</sup>
-                                December,
-                                2018
+                    <ul style="list-style-type: none; margin: 0">
+                        @foreach($upcoming as $up)
+                            <li class="list-wrapper">
+                                 <span class="img-wrapper"><i class="fas fa-calendar" aria-hidden="true"></i></span>
+                                 <p>
+                                     <span class="title-wrapper text-capitalize"> {{$up->title}}</span>
+                                     <br>
+                                     <span class="time-wrapper">{{date('j F, Y', strtotime($up->start))}} - {{date('j F, Y', strtotime($up->end))}}</span>
+                                 </p>
                             </li>
-                            <li class="text-muted"><i class="fas fa-landmark mr-3"></i>House of Grace Church</li>
-                            <li class="text-muted"><i class="fas fa-location-arrow mr-3"></i>Opp. Noble Hotel, Eldoret,
-                                Kenya
-                            </li>
-                        </ul>
-                        {{--<a href="#" class="btn btn_hover">View Details</a>--}}
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="event_post">
-                        <img src="{{asset('images/cr.jpg')}}" alt="">
-                        <a href="#"><h2 class="event_title">Cross Over Service 2019</h2></a>
-                        <ul class="list_style sermons_category event_category">
-                            <li class="text-muted"><i class="far fa-calendar-alt mr-3"></i>Monday, 31<sup>st</sup>
-                                December,
-                                2018
-                            </li>
-                            <li class="text-muted"><i class="fas fa-landmark mr-3"></i>House of Grace Church</li>
-                            <li class="text-muted"><i class="fas fa-location-arrow mr-3"></i>Opp. Noble Hotel, Eldoret,
-                                Kenya
-                            </li>
-                        </ul>
-                        {{--<a href="#" class="btn btn_hover">View Details</a>--}}
-                    </div>
+                        @endforeach
+                    </ul>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    Our Sermons
-                </div>
-                <div class="col-md-6">
-                   Our Events
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- =========================== UPCOMING EVENTS END  =========================== -->
 
     <!-- =========================== LOCATION GOOGLE MAPS BEGIN  =========================== -->

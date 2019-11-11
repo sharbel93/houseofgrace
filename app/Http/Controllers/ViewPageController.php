@@ -13,8 +13,10 @@ class ViewPageController extends Controller
 {
     //different view pages of the website
     public function getIndex() {
-        $eventss = Event::orderBy('id', 'desc')->take(3);
-        return view('pages.index')->withEvents($events);
+//        $events = Event::orderBy('id', 'desc')->take(3);
+        $events = Event::orderBy('start', 'desc')->get()->take(2);
+        $upcoming = Event::orderBy('start', 'asc')->get()->take(5);
+        return view('pages.index')->withEvents($events)->withUpcoming($upcoming);
     }
 
     public function getAbout() {
